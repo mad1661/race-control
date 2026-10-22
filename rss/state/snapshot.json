@@ -1,0 +1,567 @@
+{
+  "fetchedAt": "2026-10-22T23:47:11.545Z",
+  "days": [
+    {
+      "label": "Day 1",
+      "gid": "1204816373",
+      "date": "Thursday, October 22, 2026",
+      "title": "California Hot Rod Reunion",
+      "radio": "87.9 FM",
+      "items": [
+        {
+          "scheduled": "10:45 AM",
+          "name": "Hot Rod",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "AFX",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 3",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 2",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "D/Gas",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "C/Gas",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "B/Gas",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 1",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "A/Gas",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "7.0 Pro",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Junior Fuel",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "2:30 PM",
+          "name": "Nitro Testing",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "7:30 PM",
+          "name": "Secure",
+          "round": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "label": "Day 2",
+      "gid": "1971552262",
+      "date": "Friday, October 23, 2026",
+      "title": "Race weekend",
+      "radio": "",
+      "items": [
+        {
+          "scheduled": "8:15 AM",
+          "name": "Hot Rod",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 3",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 2",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "D/Gas",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "C/Gas",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "B/Gas",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 1",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "A/Gas",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "7.0 Pro",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "AFX",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 3",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "D/Gas",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "C/Gas",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 2",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "B/Gas",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 1",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "A/Gas",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "CA Funny Car",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "2:00 PM",
+          "name": "Pro Mod",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "2:30 PM",
+          "name": "Nostalgia Funny Car",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Fuel Altered",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "7.0 Pro",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Junior Fuel",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Comp",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "AFX",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "5:00 PM",
+          "name": "Nostalgia Top Fuel",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Funny Car",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Jets",
+          "round": "EX",
+          "note": ""
+        },
+        {
+          "scheduled": "6:30 PM",
+          "name": "Secure Track",
+          "round": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "label": "Day 3",
+      "gid": "1964663491",
+      "date": "Saturday, October 24, 2026",
+      "title": "Race weekend",
+      "radio": "",
+      "items": [
+        {
+          "scheduled": "8:15 AM",
+          "name": "Hot Rod",
+          "round": "TT-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 3",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 2",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "D/Gas",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "C/Gas",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "B/Gas",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 1",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "A/Gas",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "AFX",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "12:00 PM",
+          "name": "Pro Mod",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "12:30 PM",
+          "name": "Nostalgia Top Fuel",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Funny Car",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Fuel Altered",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "7.0 Pro",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Junior Fuel",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Comp",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "CA Funny Car",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "3:30 PM",
+          "name": "Nostalgia Top Fuel",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Funny Car",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Group 2 Eliminations",
+          "round": "",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Jets",
+          "round": "EX",
+          "note": ""
+        },
+        {
+          "scheduled": "6:00 PM",
+          "name": "Cacklefest",
+          "round": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "label": "Day 4",
+      "gid": "83601903",
+      "date": "Sunday, October 25, 2026",
+      "title": "California Hot Rod Reunion",
+      "radio": "",
+      "items": [
+        {
+          "scheduled": "11:00 AM",
+          "name": "TOP FUEL",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "1:05 PM",
+          "name": "TOP FUEL",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Parade of Champions",
+          "round": "",
+          "note": ""
+        },
+        {
+          "scheduled": "2:40 PM",
+          "name": "TOP FUEL",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "TOP FUEL",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Secure",
+          "round": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "label": "Day 5",
+      "gid": "945185004",
+      "date": "Monday, October 26, 2026",
+      "title": "California Hot Rod Reunion",
+      "radio": "87.9 FM",
+      "items": []
+    },
+    {
+      "label": "Day 6",
+      "gid": "511763545",
+      "date": "Tuesday, October 27, 2026",
+      "title": "California Hot Rod Reunion",
+      "radio": "87.9 FM",
+      "items": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sheetId": "1D7r0i8yevR9bBOAEO9I34pqw5Iy8vqNzwSX0uDFbfr0",
+  "tabs": [
+    ["Day 1", "1204816373"],
+    ["Day 2", "1971552262"],
+    ["Day 3", "1964663491"],
+    ["Day 4", "83601903"],
+    ["Day 5", "945185004"],
+    ["Day 6", "511763545"]
+  ],
+  "pageUrl": "https://www.nhraracer.com/racecontrol",
+  "feedUrl": "https://mad1661.github.io/race-control/feed.xml",
+  "feedTitle": "Race Control · Run Order changes",
+  "feedDescription": "Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.",
+  "maxItems": 50,
+  "summarizeOver": 12,
+  "ntfy": {
+    "enabled": false,
+    "server": "https://ntfy.sh",
+    "topic": "race-control-37c776ada377"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "race-control-rss",
+  "private": true,
+  "description": "Builds feed.xml from the DRS run-order Google Sheet. No dependencies.",
+  "engines": { "node": ">=18" },
+  "scripts": { "feed": "node generate.js" }
+}
