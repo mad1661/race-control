@@ -1,0 +1,59 @@
+name: Run order feed
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # GitHub runs this best-effort; expect 5-15 min in practice
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: run-order-feed
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      changed: ${{ steps.gen.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - id: gen
+        run: node rss/generate.js
+      - name: Commit feed and snapshot
+        if: steps.gen.outputs.changed == 'true'
+        run: |
+          git config user.name "race-control-feed"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed.xml rss/state
+          git diff --cached --quiet || git commit -m "Run order feed update"
+          git pull --rebase --quiet && git push
+
+  deploy:
+    needs: feed
+    if: needs.feed.outputs.changed == 'true' || github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Assemble site
+        run: mkdir _site && cp index.html feed.xml _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
