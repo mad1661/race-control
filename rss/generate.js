@@ -38,7 +38,8 @@ function parseDay(rows, label, gid) {
   for (const r of rows.slice(header + 1)) {
     const name = clean(r[5]);
     if (!name || name.startsWith('#')) continue;
-    items.push({ scheduled: clean(r[2]), name, round: clean(r[6]), note: clean(r[11]) });
+    // Column L notes render on the public page, but they are not part of the run order the feed tracks.
+    items.push({ scheduled: clean(r[2]), name, round: clean(r[6]) });
   }
   if (!date) throw new Error(`${label}: schedule date is missing`);
   return { label, gid, date, title, radio, items };
@@ -81,6 +82,18 @@ function roundText(round) {
 }
 const session = it => it.round ? `${it.name} ${roundText(it.round)}` : it.name;
 const populated = snap => snap.days.filter(d => d.items.length);
+// Fields that define the published run order. Session notes (and any other leftover keys) are dropped
+// so a note-only sheet edit does not diff, rewrite the snapshot, or produce a feed item.
+function scheduleView(snap) {
+  return snap.days.map(d => ({
+    label: d.label,
+    gid: d.gid,
+    date: d.date,
+    title: d.title,
+    radio: d.radio,
+    items: d.items.map(it => ({ scheduled: it.scheduled, name: it.name, round: it.round })),
+  }));
+}
 // Event name from the first tab that has a real 'PA Broadcast:' row title (tabs without one fall back to 'Race weekend').
 const eventTitle = snap => (snap.days.find(d => d.title && d.title !== 'Race weekend') || {}).title || '';
 
@@ -113,7 +126,6 @@ function diffDay(p, c) {
     let text = `${day}: ${session(it)} added to the run order`;
     if (it.scheduled) text += ` at ${it.scheduled}`;
     else if (before) text += `, after ${session(before)}`;
-    if (it.note) text += ` (${it.note})`;
     out.push(text);
   }
   pairs.sort((a, b) => a[1] - b[1]);
@@ -127,11 +139,6 @@ function diffDay(p, c) {
       if (a.scheduled && b.scheduled) out.push(`${day}: ${label} moved from ${a.scheduled} to ${b.scheduled}`);
       else if (b.scheduled) out.push(`${day}: ${label} now scheduled for ${b.scheduled}`);
       else out.push(`${day}: ${label} no longer has a set time (was ${a.scheduled}); it follows the run order`);
-    }
-    if (a.note !== b.note) {
-      if (b.note && a.note) out.push(`${day}: ${label} note changed to "${b.note}"`);
-      else if (b.note) out.push(`${day}: ${label} note added: "${b.note}"`);
-      else out.push(`${day}: ${label} note removed (was "${a.note}")`);
     }
   }
   return out;
@@ -236,9 +243,9 @@ async function main() {
   const fresh = changes.map((c, n) => makeItem(c, when, n));
   // Newest run first; within a run, top-to-bottom sheet order.
   if (fresh.length) items = [...fresh, ...items].slice(0, MAX_ITEMS);
-  // Only rewrite the snapshot when the schedule content changed, so CI commits stay quiet.
-  const sameContent = prev && JSON.stringify(prev.days) === JSON.stringify(cur.days);
-  if (!sameContent) writeAtomic(SNAPSHOT, JSON.stringify(cur, null, 2) + '\n');
+  // Only rewrite the snapshot when the published run order changed, so note-only edits stay quiet in CI.
+  const sameContent = prev && JSON.stringify(scheduleView(prev)) === JSON.stringify(scheduleView(cur));
+  if (!sameContent) writeAtomic(SNAPSHOT, JSON.stringify({ fetchedAt: cur.fetchedAt, days: scheduleView(cur) }, null, 2) + '\n');
   if (fresh.length) writeAtomic(ITEMS, JSON.stringify(items, null, 2) + '\n');
   if (fresh.length || !fs.existsSync(FEED_OUT)) writeAtomic(FEED_OUT, renderFeed(items, items[0]?.date || when));
   console.log(fresh.length ? `${fresh.length} new item(s):\n` + fresh.map(i => '  - ' + i.title).join('\n') : 'No changes.');

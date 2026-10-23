@@ -29,7 +29,7 @@
   "pageUrl": "https://www.nhraracer.com/racecontrol",
   "feedUrl": "https://race-control-feed.web.app/feed.xml",
   "feedTitle": "Race Control \u00b7 Run Order changes",
-  "feedDescription": "Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.",
+  "feedDescription": "Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.",
   "maxItems": 50,
   "summarizeOver": 12,
   "ntfy": {

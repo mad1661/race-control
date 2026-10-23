@@ -3,7 +3,7 @@
   <channel>
     <title>Race Control · Run Order changes</title>
     <link>https://www.nhraracer.com/racecontrol</link>
-    <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
+    <description>Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
     <lastBuildDate>Fri, 23 Oct 2026 10:27:33 GMT</lastBuildDate>
