@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T10:46:14.626Z",
+  "fetchedAt": "2026-10-23T10:49:40.052Z",
   "days": [
     {
       "label": "Day 1",
@@ -218,7 +218,7 @@
           "round": "Q-2"
         },
         {
-          "scheduled": "",
+          "scheduled": "5:50 PM",
           "name": "Jets",
           "round": "EX"
         },
