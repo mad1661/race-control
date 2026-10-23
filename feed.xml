@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 23 Oct 2026 10:49:40 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 10:50:38 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-5483216a35ded99bd881</guid>
+      <pubDate>Fri, 23 Oct 2026 10:50:38 GMT</pubDate>
+    </item>
     <item>
       <title>Friday: Jets EX now scheduled for 5:50 PM</title>
       <link>https://www.nhraracer.com/racecontrol</link>
