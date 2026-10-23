@@ -57,3 +57,16 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Sync feed to Firebase (Feedly Content-Type)
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          echo "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          npm i -g firebase-tools
+          mkdir -p /tmp/fb/public
+          cp feed.xml index.html /tmp/fb/public/
+          python3 -c "from pathlib import Path; import re; p=Path('/tmp/fb/public/feed.xml'); t=p.read_text(); p.write_text(re.sub(r'href=\"[^\"]+\" rel=\"self\"', 'href=\"https://race-control-feed.web.app/feed.xml\" rel=\"self\"', t))"
+          printf '%s\n' '{' '  "hosting": {' '    "public": "public",' '    "headers": [{' '      "source": "/feed.xml",' '      "headers": [' '        {"key": "Content-Type", "value": "application/rss+xml; charset=utf-8"},' '        {"key": "Access-Control-Allow-Origin", "value": "*"},' '        {"key": "Cache-Control", "value": "public, max-age=60"}' '      ]' '    }]' '  }' '}' > /tmp/fb/firebase.json
+          cd /tmp/fb && npx firebase-tools deploy --only hosting --project race-control-feed --non-interactive
