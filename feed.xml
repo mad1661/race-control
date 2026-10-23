@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 23 Oct 2026 10:26:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 10:27:33 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: Jets EX note removed (was &quot;RSS test&quot;)</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Jets EX note removed (was &amp;quot;RSS test&amp;quot;)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-62e4009f4f2c6c6bbb1e</guid>
+      <pubDate>Fri, 23 Oct 2026 10:27:33 GMT</pubDate>
+    </item>
     <item>
       <title>Friday: Jets EX note added: &quot;RSS test&quot;</title>
       <link>https://www.nhraracer.com/racecontrol</link>
