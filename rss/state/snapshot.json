@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T10:27:33.076Z",
+  "fetchedAt": "2026-10-23T10:45:04.148Z",
   "days": [
     {
       "label": "Day 1",
@@ -11,80 +11,67 @@
         {
           "scheduled": "10:45 AM",
           "name": "Hot Rod",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "AFX",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 3",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 2",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "D/Gas",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "C/Gas",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "B/Gas",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 1",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "A/Gas",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "7.0 Pro",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "Junior Fuel",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "2:30 PM",
           "name": "Nitro Testing",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "7:30 PM",
           "name": "Secure",
-          "round": "",
-          "note": ""
+          "round": ""
         }
       ]
     },
@@ -98,176 +85,147 @@
         {
           "scheduled": "8:15 AM",
           "name": "Hot Rod",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 3",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 2",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "D/Gas",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "C/Gas",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "B/Gas",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 1",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "A/Gas",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "7.0 Pro",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "AFX",
-          "round": "TT-1",
-          "note": ""
+          "round": "TT-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 3",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "D/Gas",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "C/Gas",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 2",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "B/Gas",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 1",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "A/Gas",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "CA Funny Car",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "2:00 PM",
           "name": "Pro Mod",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "2:30 PM",
           "name": "Nostalgia Funny Car",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "Fuel Altered",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "7.0 Pro",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "Junior Fuel",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "Pro Comp",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "AFX",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "5:00 PM",
           "name": "Nostalgia Top Fuel",
-          "round": "Q-1",
-          "note": ""
+          "round": "Q-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Funny Car",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
-          "scheduled": "",
+          "scheduled": "5:55 PM",
           "name": "Jets",
-          "round": "EX",
-          "note": ""
+          "round": "EX"
         },
         {
           "scheduled": "6:30 PM",
           "name": "Secure Track",
-          "round": "",
-          "note": ""
+          "round": ""
         }
       ]
     },
@@ -281,140 +239,117 @@
         {
           "scheduled": "8:15 AM",
           "name": "Hot Rod",
-          "round": "TT-2",
-          "note": ""
+          "round": "TT-2"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 3",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 2",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "D/Gas",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "C/Gas",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "B/Gas",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 1",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "A/Gas",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "AFX",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "12:00 PM",
           "name": "Pro Mod",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "12:30 PM",
           "name": "Nostalgia Top Fuel",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Funny Car",
-          "round": "Q-3",
-          "note": ""
+          "round": "Q-3"
         },
         {
           "scheduled": "",
           "name": "Fuel Altered",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "7.0 Pro",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "Junior Fuel",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "Pro Comp",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "CA Funny Car",
-          "round": "Q-2",
-          "note": ""
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "Q-3",
-          "note": ""
+          "round": "Q-3"
         },
         {
           "scheduled": "3:30 PM",
           "name": "Nostalgia Top Fuel",
-          "round": "Q-3",
-          "note": ""
+          "round": "Q-3"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Funny Car",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "Group 2 Eliminations",
-          "round": "",
-          "note": ""
+          "round": ""
         },
         {
           "scheduled": "",
           "name": "Jets",
-          "round": "EX",
-          "note": ""
+          "round": "EX"
         },
         {
           "scheduled": "6:00 PM",
           "name": "Cacklefest",
-          "round": "",
-          "note": ""
+          "round": ""
         }
       ]
     },
@@ -428,122 +363,102 @@
         {
           "scheduled": "11:00 AM",
           "name": "TOP FUEL",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-1",
-          "note": ""
+          "round": "R-1"
         },
         {
           "scheduled": "1:05 PM",
           "name": "TOP FUEL",
-          "round": "R-2",
-          "note": ""
+          "round": "R-2"
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "R-2",
-          "note": ""
+          "round": "R-2"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "R-2",
-          "note": ""
+          "round": "R-2"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-2",
-          "note": ""
+          "round": "R-2"
         },
         {
           "scheduled": "",
           "name": "Top Sportsman",
-          "round": "Final",
-          "note": ""
+          "round": "Final"
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "Final",
-          "note": ""
+          "round": "Final"
         },
         {
           "scheduled": "",
           "name": "Parade of Champions",
-          "round": "",
-          "note": ""
+          "round": ""
         },
         {
           "scheduled": "2:40 PM",
           "name": "TOP FUEL",
-          "round": "R-3",
-          "note": ""
+          "round": "R-3"
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "R-3",
-          "note": ""
+          "round": "R-3"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "R-3",
-          "note": ""
+          "round": "R-3"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-3",
-          "note": ""
+          "round": "R-3"
         },
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "Final",
-          "note": ""
+          "round": "Final"
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "Final",
-          "note": ""
+          "round": "Final"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "Final",
-          "note": ""
+          "round": "Final"
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "Final",
-          "note": ""
+          "round": "Final"
         },
         {
           "scheduled": "",
           "name": "Secure",
-          "round": "",
-          "note": ""
+          "round": ""
         }
       ]
     },
