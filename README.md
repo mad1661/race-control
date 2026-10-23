@@ -8,9 +8,11 @@ RSS feed of run-order changes (`feed.xml`) built by `rss/generate.js`.
 - `index.html` - current page. Feed link is relative (`feed.xml`), so page and feed must be hosted together.
 - `rss/generate.js` - Node 18+, no dependencies. Fetches all day tabs, diffs against `rss/state/snapshot.json`,
   appends plain-English items to `rss/state/items.json` (last 50) and rewrites `feed.xml` only when something changed.
+  Items are sessions added or removed, scheduled times, rounds, days, the event title, and the PA radio.
+  Session notes stay on the public page and are ignored here, so a note-only edit does not publish an item or rewrite the snapshot.
   If any tab fails to fetch or parse, it exits 1 and changes nothing (no false "removed" items).
 - `rss/config.json` - sheet tabs, page/feed URLs, summarize threshold, ntfy settings (off).
-- `rss/test/simulate.sh` - live test in a temp dir: two runs, fake edits, third run, XML check.
+- `rss/test/simulate.sh` - live test in a temp dir: two runs, fake run-order edits, a note-only edit that must stay silent, and an XML check.
 - `.github/workflows/feed.yml` - every-5-minute GitHub Actions job: run generator, commit state, deploy to GitHub Pages.
 
 No secrets anywhere: the sheet is public and the job uses only the built-in `GITHUB_TOKEN`.
