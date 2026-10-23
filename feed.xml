@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Race Control Run Order changes</title>
+    <title>Race Control · Run Order changes</title>
     <link>https://www.nhraracer.com/racecontrol</link>
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 22 Oct 2026 23:47:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 10:26:12 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: Jets EX note added: &quot;RSS test&quot;</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Jets EX note added: &amp;quot;RSS test&amp;quot;&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-2d95b224682459c1139c</guid>
+      <pubDate>Fri, 23 Oct 2026 10:26:12 GMT</pubDate>
+    </item>
     <item>
       <title>Run order published: California Hot Rod Reunion</title>
       <link>https://www.nhraracer.com/racecontrol</link>
