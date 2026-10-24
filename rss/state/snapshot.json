@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T10:50:38.433Z",
+  "fetchedAt": "2026-10-24T04:27:34.166Z",
   "days": [
     {
       "label": "Day 1",
@@ -244,12 +244,112 @@
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 3",
-          "round": "R-1"
+          "round": "Q-2"
         },
         {
           "scheduled": "",
           "name": "Nostalgia Eliminator 2",
-          "round": "R-1"
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "D/Gas",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "C/Gas",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "B/Gas",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Eliminator 1",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "A/Gas",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "AFX",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Comp",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "12:15 PM",
+          "name": "Nostalgia Top Fuel",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Funny Car",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Fuel Altered",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "7.0 Pro",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Junior Fuel",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Comp",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Outlaw Gassers",
+          "round": "TT-2"
+        },
+        {
+          "scheduled": "",
+          "name": "CA Funny Cars",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Junior Fuel",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "3:30 PM",
+          "name": "Nostalgia Top Fuel",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Nostalgia Funny Car",
+          "round": "Q-3"
         },
         {
           "scheduled": "",
@@ -263,91 +363,21 @@
         },
         {
           "scheduled": "",
-          "name": "B/Gas",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Eliminator 1",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "",
-          "name": "A/Gas",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "",
-          "name": "AFX",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "12:00 PM",
-          "name": "Pro Mod",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "12:30 PM",
-          "name": "Nostalgia Top Fuel",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Funny Car",
-          "round": "Q-3"
-        },
-        {
-          "scheduled": "",
-          "name": "Fuel Altered",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "7.0 Pro",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Junior Fuel",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Comp",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "CA Funny Car",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Q-3"
-        },
-        {
-          "scheduled": "3:30 PM",
-          "name": "Nostalgia Top Fuel",
-          "round": "Q-3"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Funny Car",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Group 2 Eliminations",
-          "round": ""
+          "name": "Outlaw Gassers",
+          "round": "TT-3"
         },
         {
           "scheduled": "",
           "name": "Jets",
-          "round": "EX"
+          "round": "Ex"
         },
         {
           "scheduled": "6:00 PM",
+          "name": "Secure",
+          "round": ""
+        },
+        {
+          "scheduled": "",
           "name": "Cacklefest",
           "round": ""
         }
