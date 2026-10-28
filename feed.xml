@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 28 Oct 2026 14:41:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 16:24:39 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Thursday: Stock Qualifying 1 note added: &quot;RC SMS test&quot;</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Thursday: Stock Qualifying 1 note added: &amp;quot;RC SMS test&amp;quot;&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-41dc1157568653b12117</guid>
+      <pubDate>Wed, 28 Oct 2026 16:24:39 GMT</pubDate>
+    </item>
     <item>
       <title>156 changes to the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
