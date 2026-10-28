@@ -1,75 +1,165 @@
 {
-  "fetchedAt": "2026-10-24T04:27:34.166Z",
+  "fetchedAt": "2026-10-28T12:01:47.466Z",
   "days": [
     {
       "label": "Day 1",
-      "gid": "1204816373",
-      "date": "Thursday, October 22, 2026",
-      "title": "California Hot Rod Reunion",
-      "radio": "87.9 FM",
+      "gid": "1587581206",
+      "date": "Thursday, October 29, 2026",
+      "title": "NHRA Las Vegas Nationals",
+      "radio": "106.1 FM",
       "items": [
         {
-          "scheduled": "10:45 AM",
-          "name": "Hot Rod",
+          "scheduled": "8:00 AM",
+          "name": "Stock",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Comp",
           "round": "TT-1"
         },
         {
           "scheduled": "",
-          "name": "AFX",
+          "name": "Super Stock",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Gas",
           "round": "TT-1"
         },
         {
           "scheduled": "",
-          "name": "Nostalgia Eliminator 3",
-          "round": "TT-1"
+          "name": "Top Dragster",
+          "round": "Q-1"
         },
         {
           "scheduled": "",
-          "name": "Nostalgia Eliminator 2",
-          "round": "TT-1"
+          "name": "Competition Eliminator",
+          "round": "Q-1"
         },
         {
           "scheduled": "",
-          "name": "D/Gas",
-          "round": "TT-1"
+          "name": "Top Sportsman",
+          "round": "Q-1"
         },
         {
           "scheduled": "",
-          "name": "C/Gas",
-          "round": "TT-1"
+          "name": "CJ E Mod",
+          "round": "Exh"
         },
         {
           "scheduled": "",
-          "name": "B/Gas",
-          "round": "TT-1"
+          "name": "Stock",
+          "round": "Q-2"
         },
         {
           "scheduled": "",
-          "name": "Nostalgia Eliminator 1",
-          "round": "TT-1"
+          "name": "Super Comp",
+          "round": "TT-2"
         },
         {
           "scheduled": "",
-          "name": "A/Gas",
-          "round": "TT-1"
+          "name": "Competition Eliminator",
+          "round": "Q-2"
         },
         {
           "scheduled": "",
-          "name": "7.0 Pro",
-          "round": "TT-1"
+          "name": "Super Stock",
+          "round": "Q-2"
         },
         {
           "scheduled": "",
-          "name": "Junior Fuel",
-          "round": "TT-1"
+          "name": "Super Gas",
+          "round": "TT-2"
         },
         {
-          "scheduled": "2:30 PM",
-          "name": "Nitro Testing",
-          "round": "TT-1"
+          "scheduled": "",
+          "name": "Top Dragster",
+          "round": "Q-2"
         },
         {
-          "scheduled": "7:30 PM",
+          "scheduled": "",
+          "name": "DeeCell Comp Clash",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "CJ E Mod",
+          "round": "Exh"
+        },
+        {
+          "scheduled": "",
+          "name": "Stock",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Comp",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "DeeCell Comp Clash",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Stock",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Gas",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Dragster",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "DeeCell Comp Clash",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Stock",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Comp",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Stock",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Gas",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Test class change",
+          "round": ""
+        },
+        {
+          "scheduled": "",
           "name": "Secure",
           "round": ""
         }
@@ -77,319 +167,464 @@
     },
     {
       "label": "Day 2",
-      "gid": "1971552262",
-      "date": "Friday, October 23, 2026",
+      "gid": "635308058",
+      "date": "Friday, October 30, 2026",
       "title": "Race weekend",
       "radio": "",
       "items": [
         {
-          "scheduled": "8:15 AM",
-          "name": "Hot Rod",
+          "scheduled": "8:00 AM",
+          "name": "Stock",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Comp",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Stock",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Gas",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Dragster",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Competition Eliminator",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "CJ E Mod",
+          "round": "Exh"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
           "round": "TT-1"
         },
         {
           "scheduled": "",
-          "name": "Nostalgia Eliminator 3",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Eliminator 2",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "D/Gas",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "C/Gas",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "B/Gas",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Eliminator 1",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "A/Gas",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "7.0 Pro",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "AFX",
+          "name": "Summit Pro ET",
           "round": "TT-1"
         },
         {
           "scheduled": "",
-          "name": "Nostalgia Eliminator 3",
-          "round": "Q-2"
+          "name": "Summit ET Motorcycle",
+          "round": "TT-1"
         },
         {
           "scheduled": "",
-          "name": "D/Gas",
-          "round": "Q-2"
+          "name": "Summit Super Pro ET",
+          "round": "TT-1"
         },
         {
           "scheduled": "",
-          "name": "C/Gas",
-          "round": "Q-2"
+          "name": "Super Comp",
+          "round": "R-4"
         },
         {
           "scheduled": "",
-          "name": "Nostalgia Eliminator 2",
-          "round": "Q-2"
+          "name": "Super Gas",
+          "round": "R-4"
         },
         {
           "scheduled": "",
-          "name": "B/Gas",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Eliminator 1",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "A/Gas",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "CA Funny Car",
+          "name": "Top Alcohol Funny Car",
           "round": "Q-1"
         },
         {
-          "scheduled": "2:00 PM",
+          "scheduled": "",
+          "name": "Competition Eliminator",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
           "name": "Pro Mod",
           "round": "Q-1"
         },
         {
-          "scheduled": "2:30 PM",
-          "name": "Nostalgia Funny Car",
+          "scheduled": "",
+          "name": "DeeCell Comp Clash",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "CJ E Mod",
+          "round": "Exh"
+        },
+        {
+          "scheduled": "1:00 PM",
+          "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-1"
         },
         {
           "scheduled": "",
-          "name": "Fuel Altered",
+          "name": "PRO STOCK",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "2:00 PM",
+          "name": "FUNNY CAR",
           "round": "Q-1"
         },
         {
           "scheduled": "",
-          "name": "7.0 Pro",
+          "name": "TOP FUEL",
+          "round": "Q-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "TT-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "TT-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "TT-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "TT-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Dodge Grudge Race",
+          "round": "TT"
+        },
+        {
+          "scheduled": "3:30 PM",
+          "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-2"
         },
         {
           "scheduled": "",
-          "name": "Junior Fuel",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Comp",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "AFX",
+          "name": "PRO STOCK",
           "round": "Q-2"
         },
         {
-          "scheduled": "5:00 PM",
-          "name": "Nostalgia Top Fuel",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Funny Car",
+          "scheduled": "4:30 PM",
+          "name": "FUNNY CAR",
           "round": "Q-2"
         },
         {
           "scheduled": "",
-          "name": "Jets",
-          "round": "EX"
+          "name": "TOP FUEL",
+          "round": "Q-2"
         },
         {
-          "scheduled": "6:30 PM",
-          "name": "Secure Track",
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "Q-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Secure",
           "round": ""
         }
       ]
     },
     {
       "label": "Day 3",
-      "gid": "1964663491",
-      "date": "Saturday, October 24, 2026",
+      "gid": "134284952",
+      "date": "Saturday, October 31, 2026",
       "title": "Race weekend",
       "radio": "",
       "items": [
         {
-          "scheduled": "8:15 AM",
-          "name": "Hot Rod",
-          "round": "TT-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Eliminator 3",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Eliminator 2",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "D/Gas",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "C/Gas",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "B/Gas",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Eliminator 1",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "A/Gas",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "AFX",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Comp",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "12:15 PM",
-          "name": "Nostalgia Top Fuel",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Funny Car",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Fuel Altered",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "7.0 Pro",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Junior Fuel",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Comp",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Outlaw Gassers",
-          "round": "TT-2"
-        },
-        {
-          "scheduled": "",
-          "name": "CA Funny Cars",
-          "round": "Q-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Junior Fuel",
-          "round": "Q-2"
-        },
-        {
-          "scheduled": "3:30 PM",
-          "name": "Nostalgia Top Fuel",
-          "round": "Q-3"
-        },
-        {
-          "scheduled": "",
-          "name": "Nostalgia Funny Car",
-          "round": "Q-3"
-        },
-        {
-          "scheduled": "",
-          "name": "D/Gas",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "",
-          "name": "C/Gas",
-          "round": "R-1"
-        },
-        {
-          "scheduled": "",
-          "name": "Outlaw Gassers",
-          "round": "TT-3"
-        },
-        {
-          "scheduled": "",
-          "name": "Jets",
-          "round": "Ex"
-        },
-        {
-          "scheduled": "6:00 PM",
-          "name": "Secure",
+          "scheduled": "8:00 AM",
+          "name": "Summit ET Pre-Race",
           "round": ""
         },
         {
           "scheduled": "",
-          "name": "Cacklefest",
+          "name": "Stock",
+          "round": "R-4"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Comp",
+          "round": "R-5"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Stock",
+          "round": "R-4"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Gas",
+          "round": "R-5"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Dragster",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Competition Eliminator",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "CJ E Mod",
+          "round": "Exh"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "TT-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "TT-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "TT-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "TT-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "CJ E Mod",
+          "round": "Exh"
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Dodge Grudge Race",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "12:00 PM",
+          "name": "TOP FUEL",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "1:00 PM",
+          "name": "PRO STOCK",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Dodge Grudge Race",
+          "round": "Final"
+        },
+        {
+          "scheduled": "2:30 PM",
+          "name": "TOP FUEL",
+          "round": "Q-4"
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Q-4"
+        },
+        {
+          "scheduled": "3:30 PM",
+          "name": "PRO STOCK",
+          "round": "Q-4"
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-4"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-4"
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Dragster",
+          "round": "R-4"
+        },
+        {
+          "scheduled": "",
+          "name": "Competition Eliminator",
+          "round": "R-4"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "R-4"
+        },
+        {
+          "scheduled": "",
+          "name": "Stock",
+          "round": "R-5"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Comp",
+          "round": "R-6"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Stock",
+          "round": "R-5"
+        },
+        {
+          "scheduled": "",
+          "name": "Super Gas",
+          "round": "R-6"
+        },
+        {
+          "scheduled": "",
+          "name": "Secure",
           "round": ""
         }
       ]
     },
     {
       "label": "Day 4",
-      "gid": "83601903",
-      "date": "Sunday, October 25, 2026",
-      "title": "California Hot Rod Reunion",
+      "gid": "1478580157",
+      "date": "Sunday, November 01, 2026",
+      "title": "NHRA Las Vegas Nationals",
       "radio": "",
       "items": [
+        {
+          "scheduled": "8:45 AM",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "R-1"
+        },
+        {
+          "scheduled": "9:30 AM",
+          "name": "Pre-Race Ceremonies",
+          "round": ""
+        },
         {
           "scheduled": "11:00 AM",
           "name": "TOP FUEL",
@@ -411,7 +646,37 @@
           "round": "R-1"
         },
         {
-          "scheduled": "1:05 PM",
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "R-2"
+        },
+        {
+          "scheduled": "",
           "name": "TOP FUEL",
           "round": "R-2"
         },
@@ -432,7 +697,82 @@
         },
         {
           "scheduled": "",
-          "name": "Top Sportsman",
+          "name": "Pro Mod",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Sportsman Finals",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Parade of Champions",
+          "round": ""
+        },
+        {
+          "scheduled": "",
+          "name": "TOP FUEL",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "R-3"
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Finals",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
           "round": "Final"
         },
         {
@@ -442,37 +782,22 @@
         },
         {
           "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "Jr Dragster",
+          "round": "Exh"
+        },
+        {
+          "scheduled": "",
           "name": "Parade of Champions",
           "round": ""
         },
         {
-          "scheduled": "2:40 PM",
-          "name": "TOP FUEL",
-          "round": "R-3"
-        },
-        {
-          "scheduled": "",
-          "name": "FUNNY CAR",
-          "round": "R-3"
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK",
-          "round": "R-3"
-        },
-        {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-3"
-        },
-        {
-          "scheduled": "",
-          "name": "TOP FUEL",
-          "round": "Final"
-        },
-        {
-          "scheduled": "",
-          "name": "FUNNY CAR",
           "round": "Final"
         },
         {
@@ -482,7 +807,52 @@
         },
         {
           "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "TOP FUEL",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "Secure",
+          "round": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "Jr Dragster",
+          "round": "Exh"
+        },
+        {
+          "scheduled": "",
+          "name": "Parade of Champions",
+          "round": ""
+        },
+        {
+          "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Final"
+        },
+        {
+          "scheduled": "",
+          "name": "TOP FUEL",
           "round": "Final"
         },
         {
@@ -494,18 +864,18 @@
     },
     {
       "label": "Day 5",
-      "gid": "945185004",
-      "date": "Monday, October 26, 2026",
-      "title": "California Hot Rod Reunion",
-      "radio": "87.9 FM",
+      "gid": "757068428",
+      "date": "Monday, November 02, 2026",
+      "title": "NHRA Las Vegas Nationals",
+      "radio": "106.1 FM",
       "items": []
     },
     {
       "label": "Day 6",
-      "gid": "511763545",
-      "date": "Tuesday, October 27, 2026",
-      "title": "California Hot Rod Reunion",
-      "radio": "87.9 FM",
+      "gid": "1339772692",
+      "date": "Tuesday, November 03, 2026",
+      "title": "NHRA Las Vegas Nationals",
+      "radio": "106.1 FM",
       "items": []
     }
   ]

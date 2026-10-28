@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 24 Oct 2026 04:27:34 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 12:01:47 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Run order updated for NHRA Las Vegas Nationals</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Run order updated for NHRA Las Vegas Nationals&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday, October 29, 2026: 31 sessions&lt;/li&gt;&lt;li&gt;Friday, October 30, 2026: 39 sessions&lt;/li&gt;&lt;li&gt;Saturday, October 31, 2026: 44 sessions&lt;/li&gt;&lt;li&gt;Sunday, November 01, 2026: 51 sessions&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-7b74628581049a47e6c1</guid>
+      <pubDate>Wed, 28 Oct 2026 12:01:47 GMT</pubDate>
+    </item>
     <item>
       <title>23 changes to the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
