@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T16:24:39.739Z",
+  "fetchedAt": "2026-10-28T16:59:55.060Z",
   "days": [
     {
       "label": "Day 1",
@@ -12,7 +12,7 @@
           "scheduled": "8:00 AM",
           "name": "Stock",
           "round": "Q-1",
-          "note": "RC SMS test"
+          "note": ""
         },
         {
           "scheduled": "",
