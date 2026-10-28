@@ -18,6 +18,8 @@ const STATE_DIR = path.resolve(arg('--state', process.env.STATE_DIR || path.join
 const FEED_OUT = path.resolve(arg('--out', process.env.FEED_OUT || path.join(HERE, '..', 'feed.xml')));
 const SNAPSHOT = path.join(STATE_DIR, 'snapshot.json');
 const ITEMS = path.join(STATE_DIR, 'items.json');
+// Discovered Day tabs, published next to feed.xml so the page can load the current event's GIDs.
+const DAYS_OUT = path.resolve(process.env.DAYS_OUT || path.join(path.dirname(FEED_OUT), 'days.json'));
 const PAGE_URL = process.env.PAGE_URL || config.pageUrl;
 const FEED_URL = process.env.FEED_URL || config.feedUrl;
 const MAX_ITEMS = config.maxItems || 50;
@@ -65,10 +67,51 @@ async function fetchTab(gid) {
   throw new Error(`tab ${gid}: ${lastError.message}`);
 }
 
+// ---------- Day tab discovery ----------
+// The DRS gets new tab GIDs for every event, so read the live tab list from the public
+// htmlview page instead of trusting hardcoded GIDs. config.tabs is only a fallback when
+// the htmlview page cannot be fetched at all.
+const unescapeJs = s => s.replace(/\\x([0-9a-f]{2})/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
+  .replace(/\\u([0-9a-f]{4})/gi, (_, h) => String.fromCharCode(parseInt(h, 16))).replace(/\\(.)/g, '$1');
+function parseTabList(html) {
+  const tabs = [], re = /items\.push\(\{name:\s*"((?:[^"\\]|\\.)*)"[^}]*?gid:\s*"(\d+)"/g;
+  let m;
+  while ((m = re.exec(html))) tabs.push({ name: unescapeJs(m[1]).trim(), gid: m[2] });
+  return tabs;
+}
+function dayTabs(tabs) {
+  const seen = new Set();
+  return tabs.map(t => ({ ...t, n: (/^Day\s*(\d+)$/i.exec(t.name) || [])[1] }))
+    .filter(t => t.n && !seen.has(+t.n) && seen.add(+t.n))
+    .sort((a, b) => a.n - b.n)
+    .map(t => [`Day ${+t.n}`, t.gid]);
+}
+async function discoverTabs() {
+  const url = `https://docs.google.com/spreadsheets/d/${config.sheetId}/htmlview`;
+  let html, lastError;
+  for (let attempt = 0; attempt < 3 && html === undefined; attempt++) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(20000), headers: { 'user-agent': 'race-control-rss/1.0' } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      html = await res.text();
+    } catch (e) { lastError = e; await new Promise(r => setTimeout(r, 1500 * (attempt + 1))); }
+  }
+  if (html === undefined) {
+    if (config.tabs?.length) { console.warn(`Tab discovery failed (${lastError.message}); using config.tabs fallback`); return { tabs: config.tabs, source: 'config' }; }
+    throw new Error(`could not load sheet tab list: ${lastError.message}`);
+  }
+  const all = parseTabList(html);
+  const tabs = dayTabs(all);
+  if (!tabs.length) throw new Error(`no "Day N" tabs found in sheet ${config.sheetId} (saw: ${all.map(t => t.name).join(', ') || 'none'})`);
+  return { tabs, source: 'htmlview' };
+}
+
 async function fetchSnapshot() {
+  const { tabs, source } = await discoverTabs();
+  console.log(`Day tabs (${source}): ` + tabs.map(([l, g]) => `${l}=${g}`).join(', '));
   const days = [];
-  for (const [label, gid] of config.tabs) days.push(parseDay(await fetchTab(gid), label, gid));
-  return { fetchedAt: new Date().toISOString(), days };
+  for (const [label, gid] of tabs) days.push(parseDay(await fetchTab(gid), label, gid));
+  return { fetchedAt: new Date().toISOString(), days, tabs };
 }
 
 // ---------- diffing ----------
@@ -248,9 +291,14 @@ async function main() {
   if (!sameContent) writeAtomic(SNAPSHOT, JSON.stringify({ fetchedAt: cur.fetchedAt, days: scheduleView(cur) }, null, 2) + '\n');
   if (fresh.length) writeAtomic(ITEMS, JSON.stringify(items, null, 2) + '\n');
   if (fresh.length || !fs.existsSync(FEED_OUT)) writeAtomic(FEED_OUT, renderFeed(items, items[0]?.date || when));
+  // days.json carries no timestamp so it only changes (and commits) when the sheet's Day tabs change.
+  const daysJson = JSON.stringify({ sheetId: config.sheetId, tabs: cur.tabs }, null, 2) + '\n';
+  const daysChanged = !fs.existsSync(DAYS_OUT) || fs.readFileSync(DAYS_OUT, 'utf8') !== daysJson;
+  if (daysChanged) writeAtomic(DAYS_OUT, daysJson);
   console.log(fresh.length ? `${fresh.length} new item(s):\n` + fresh.map(i => '  - ' + i.title).join('\n') : 'No changes.');
+  if (daysChanged) console.log('Day tabs changed; wrote ' + DAYS_OUT);
   // Machine-readable flag for CI: did the published files change?
-  if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${fresh.length ? 'true' : 'false'}\n`);
+  if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${fresh.length || daysChanged ? 'true' : 'false'}\n`);
   await notifyPhones(prev ? fresh : []);
 }
 
