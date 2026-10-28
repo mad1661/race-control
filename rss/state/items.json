@@ -1,5 +1,53 @@
 [
   {
+    "guid": "race-control-b90cfe3edf085355da7d",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Thursday, October 29 removed from the run order",
+    "description": "<p>Thursday, October 29 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-df0ff12a533af057e9f6",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Friday, October 30 removed from the run order",
+    "description": "<p>Friday, October 30 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-6fb920392a36b1fed31a",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Saturday, October 31 removed from the run order",
+    "description": "<p>Saturday, October 31 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-385215624cf86ee250a8",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Sunday, November 01 removed from the run order",
+    "description": "<p>Sunday, November 01 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-4e33d9348e8521cae93c",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Run order posted for Thursday, October 29 (30 sessions)",
+    "description": "<p>Run order posted for Thursday, October 29 (30 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-b41fa646609709d0b699",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Run order posted for Friday, October 30 (39 sessions)",
+    "description": "<p>Run order posted for Friday, October 30 (39 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-83296123a1f931d5a61e",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Run order posted for Saturday, October 31 (44 sessions)",
+    "description": "<p>Run order posted for Saturday, October 31 (44 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-8a539dc2c92c1e16036e",
+    "date": "2026-10-28T14:39:37.597Z",
+    "title": "Run order posted for Sunday, November 01 (43 sessions)",
+    "description": "<p>Run order posted for Sunday, November 01 (43 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-74066f6bd1bec09f7f17",
     "date": "2026-10-28T13:14:31.539Z",
     "title": "Thursday: Test change removed from the run order",

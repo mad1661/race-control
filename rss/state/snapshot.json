@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-10-28T13:14:31.539Z",
+  "fetchedAt": "2026-10-28T14:39:37.597Z",
   "days": [
     {
       "label": "Day 1",
-      "gid": "1587581206",
+      "gid": "907931825",
       "date": "Thursday, October 29, 2026",
       "title": "NHRA Las Vegas Nationals",
-      "radio": "106.1 FM",
+      "radio": "",
       "items": [
         {
           "scheduled": "8:00 AM",
@@ -162,7 +162,7 @@
     },
     {
       "label": "Day 2",
-      "gid": "635308058",
+      "gid": "311832100",
       "date": "Friday, October 30, 2026",
       "title": "Race weekend",
       "radio": "",
@@ -273,7 +273,7 @@
           "round": "Exh"
         },
         {
-          "scheduled": "1:00 PM",
+          "scheduled": "12:45 PM",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-1"
         },
@@ -283,7 +283,7 @@
           "round": "Q-1"
         },
         {
-          "scheduled": "2:00 PM",
+          "scheduled": "1:45 PM",
           "name": "FUNNY CAR",
           "round": "Q-1"
         },
@@ -366,7 +366,7 @@
     },
     {
       "label": "Day 3",
-      "gid": "134284952",
+      "gid": "1365806324",
       "date": "Saturday, October 31, 2026",
       "title": "Race weekend",
       "radio": "",
@@ -595,7 +595,7 @@
     },
     {
       "label": "Day 4",
-      "gid": "1478580157",
+      "gid": "610804353",
       "date": "Sunday, November 01, 2026",
       "title": "NHRA Las Vegas Nationals",
       "radio": "",
@@ -814,52 +814,12 @@
           "scheduled": "",
           "name": "Secure",
           "round": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Final"
-        },
-        {
-          "scheduled": "",
-          "name": "Jr Dragster",
-          "round": "Exh"
-        },
-        {
-          "scheduled": "",
-          "name": "Parade of Champions",
-          "round": ""
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK MOTORCYCLE",
-          "round": "Final"
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK",
-          "round": "Final"
-        },
-        {
-          "scheduled": "",
-          "name": "FUNNY CAR",
-          "round": "Final"
-        },
-        {
-          "scheduled": "",
-          "name": "TOP FUEL",
-          "round": "Final"
-        },
-        {
-          "scheduled": "",
-          "name": "Secure",
-          "round": ""
         }
       ]
     },
     {
       "label": "Day 5",
-      "gid": "757068428",
+      "gid": "941619583",
       "date": "Monday, November 02, 2026",
       "title": "NHRA Las Vegas Nationals",
       "radio": "106.1 FM",
@@ -867,7 +827,7 @@
     },
     {
       "label": "Day 6",
-      "gid": "1339772692",
+      "gid": "375036737",
       "date": "Tuesday, November 03, 2026",
       "title": "NHRA Las Vegas Nationals",
       "radio": "106.1 FM",

@@ -6,8 +6,64 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 28 Oct 2026 13:14:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 14:39:37 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Thursday, October 29 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Thursday, October 29 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-b90cfe3edf085355da7d</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday, October 30 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday, October 30 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-df0ff12a533af057e9f6</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday, October 31 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday, October 31 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-6fb920392a36b1fed31a</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday, November 01 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday, November 01 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-385215624cf86ee250a8</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
+    <item>
+      <title>Run order posted for Thursday, October 29 (30 sessions)</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Run order posted for Thursday, October 29 (30 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-4e33d9348e8521cae93c</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
+    <item>
+      <title>Run order posted for Friday, October 30 (39 sessions)</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Run order posted for Friday, October 30 (39 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-b41fa646609709d0b699</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
+    <item>
+      <title>Run order posted for Saturday, October 31 (44 sessions)</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Run order posted for Saturday, October 31 (44 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-83296123a1f931d5a61e</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
+    <item>
+      <title>Run order posted for Sunday, November 01 (43 sessions)</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Run order posted for Sunday, November 01 (43 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-8a539dc2c92c1e16036e</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
+    </item>
     <item>
       <title>Thursday: Test change removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
