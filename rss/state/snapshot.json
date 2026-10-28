@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T14:39:37.597Z",
+  "fetchedAt": "2026-10-28T14:41:07.403Z",
   "days": [
     {
       "label": "Day 1",
@@ -11,152 +11,182 @@
         {
           "scheduled": "8:00 AM",
           "name": "Stock",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "TT-1"
+          "round": "TT-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Stock",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "TT-1"
+          "round": "TT-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Dragster",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Competition Eliminator",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Sportsman",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "CJ E Mod",
-          "round": "Exh"
+          "round": "Exh",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Stock",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "TT-2"
+          "round": "TT-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Competition Eliminator",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Stock",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "TT-2"
+          "round": "TT-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Dragster",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "DeeCell Comp Clash",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Sportsman",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "CJ E Mod",
-          "round": "Exh"
+          "round": "Exh",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Stock",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "DeeCell Comp Clash",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Stock",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Dragster",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "DeeCell Comp Clash",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Sportsman",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Stock",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Stock",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Secure",
-          "round": ""
+          "round": "",
+          "note": ""
         }
       ]
     },
@@ -170,197 +200,236 @@
         {
           "scheduled": "8:00 AM",
           "name": "Stock",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Stock",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Dragster",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Competition Eliminator",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Sportsman",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "CJ E Mod",
-          "round": "Exh"
+          "round": "Exh",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "TT-1"
+          "round": "TT-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "TT-1"
+          "round": "TT-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Motorcycle",
-          "round": "TT-1"
+          "round": "TT-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
-          "round": "TT-1"
+          "round": "TT-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "R-4"
+          "round": "R-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "R-4"
+          "round": "R-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Funny Car",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Competition Eliminator",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "DeeCell Comp Clash",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "CJ E Mod",
-          "round": "Exh"
+          "round": "Exh",
+          "note": ""
         },
         {
           "scheduled": "12:45 PM",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "1:45 PM",
           "name": "FUNNY CAR",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "Q-1"
+          "round": "Q-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "TT-2"
+          "round": "TT-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "TT-2"
+          "round": "TT-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Motorcycle",
-          "round": "TT-2"
+          "round": "TT-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
-          "round": "TT-2"
+          "round": "TT-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Dodge Grudge Race",
-          "round": "TT"
+          "round": "TT",
+          "note": ""
         },
         {
           "scheduled": "3:30 PM",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "4:30 PM",
           "name": "FUNNY CAR",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Funny Car",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "Q-2"
+          "round": "Q-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Secure",
-          "round": ""
+          "round": "",
+          "note": ""
         }
       ]
     },
@@ -374,222 +443,266 @@
         {
           "scheduled": "8:00 AM",
           "name": "Summit ET Pre-Race",
-          "round": ""
+          "round": "",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Stock",
-          "round": "R-4"
+          "round": "R-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "R-5"
+          "round": "R-5",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Stock",
-          "round": "R-4"
+          "round": "R-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "R-5"
+          "round": "R-5",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Dragster",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Competition Eliminator",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Sportsman",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "CJ E Mod",
-          "round": "Exh"
+          "round": "Exh",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "TT-3"
+          "round": "TT-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "TT-3"
+          "round": "TT-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Motorcycle",
-          "round": "TT-3"
+          "round": "TT-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
-          "round": "TT-3"
+          "round": "TT-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Funny Car",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "CJ E Mod",
-          "round": "Exh"
+          "round": "Exh",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Dodge Grudge Race",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "12:00 PM",
           "name": "TOP FUEL",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "1:00 PM",
           "name": "PRO STOCK",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-3"
+          "round": "Q-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Motorcycle",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Dodge Grudge Race",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "2:30 PM",
           "name": "TOP FUEL",
-          "round": "Q-4"
+          "round": "Q-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "Q-4"
+          "round": "Q-4",
+          "note": ""
         },
         {
           "scheduled": "3:30 PM",
           "name": "PRO STOCK",
-          "round": "Q-4"
+          "round": "Q-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-4"
+          "round": "Q-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "Q-4"
+          "round": "Q-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Funny Car",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Dragster",
-          "round": "R-4"
+          "round": "R-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Competition Eliminator",
-          "round": "R-4"
+          "round": "R-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Sportsman",
-          "round": "R-4"
+          "round": "R-4",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Stock",
-          "round": "R-5"
+          "round": "R-5",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Comp",
-          "round": "R-6"
+          "round": "R-6",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Stock",
-          "round": "R-5"
+          "round": "R-5",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Super Gas",
-          "round": "R-6"
+          "round": "R-6",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Secure",
-          "round": ""
+          "round": "",
+          "note": ""
         }
       ]
     },
@@ -603,217 +716,260 @@
         {
           "scheduled": "8:45 AM",
           "name": "Top Alcohol Funny Car",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "9:30 AM",
           "name": "Pre-Race Ceremonies",
-          "round": ""
+          "round": "",
+          "note": ""
         },
         {
           "scheduled": "11:00 AM",
           "name": "TOP FUEL",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-1"
+          "round": "R-1",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Motorcycle",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-2"
+          "round": "R-2",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Funny Car",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Sportsman Finals",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Motorcycle",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Parade of Champions",
-          "round": ""
+          "round": "",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-3"
+          "round": "R-3",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Finals",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Funny Car",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Jr Dragster",
-          "round": "Exh"
+          "round": "Exh",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Parade of Champions",
-          "round": ""
+          "round": "",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "Final"
+          "round": "Final",
+          "note": ""
         },
         {
           "scheduled": "",
           "name": "Secure",
-          "round": ""
+          "round": "",
+          "note": ""
         }
       ]
     },
@@ -833,5 +989,31 @@
       "radio": "106.1 FM",
       "items": []
     }
+  ],
+  "tabs": [
+    [
+      "Day 1",
+      "907931825"
+    ],
+    [
+      "Day 2",
+      "311832100"
+    ],
+    [
+      "Day 3",
+      "1365806324"
+    ],
+    [
+      "Day 4",
+      "610804353"
+    ],
+    [
+      "Day 5",
+      "941619583"
+    ],
+    [
+      "Day 6",
+      "375036737"
+    ]
   ]
 }
