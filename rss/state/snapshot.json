@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T12:21:31.973Z",
+  "fetchedAt": "2026-10-28T13:14:31.539Z",
   "days": [
     {
       "label": "Day 1",
@@ -152,11 +152,6 @@
           "scheduled": "",
           "name": "Super Gas",
           "round": "R-2"
-        },
-        {
-          "scheduled": "",
-          "name": "Test change",
-          "round": ""
         },
         {
           "scheduled": "",

@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 28 Oct 2026 12:21:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 13:14:31 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Thursday: Test change removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Thursday: Test change removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-74066f6bd1bec09f7f17</guid>
+      <pubDate>Wed, 28 Oct 2026 13:14:31 GMT</pubDate>
+    </item>
     <item>
       <title>Thursday: Test change added to the run order, after Super Gas Round 2</title>
       <link>https://www.nhraracer.com/racecontrol</link>
