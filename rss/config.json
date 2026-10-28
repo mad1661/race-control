@@ -3,33 +3,33 @@
   "tabs": [
     [
       "Day 1",
-      "1587581206"
+      "907931825"
     ],
     [
       "Day 2",
-      "635308058"
+      "311832100"
     ],
     [
       "Day 3",
-      "134284952"
+      "1365806324"
     ],
     [
       "Day 4",
-      "1478580157"
+      "610804353"
     ],
     [
       "Day 5",
-      "757068428"
+      "941619583"
     ],
     [
       "Day 6",
-      "1339772692"
+      "375036737"
     ]
   ],
   "pageUrl": "https://www.nhraracer.com/racecontrol",
   "feedUrl": "https://race-control-feed.web.app/feed.xml",
   "feedTitle": "Race Control \u00b7 Run Order changes",
-  "feedDescription": "Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.",
+  "feedDescription": "Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.",
   "maxItems": 50,
   "summarizeOver": 12,
   "ntfy": {

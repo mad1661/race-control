@@ -8,11 +8,9 @@ RSS feed of run-order changes (`feed.xml`) built by `rss/generate.js`.
 - `index.html` - current page. Feed link is relative (`feed.xml`), so page and feed must be hosted together.
 - `rss/generate.js` - Node 18+, no dependencies. Fetches all day tabs, diffs against `rss/state/snapshot.json`,
   appends plain-English items to `rss/state/items.json` (last 50) and rewrites `feed.xml` only when something changed.
-  Items are sessions added or removed, scheduled times, rounds, days, the event title, and the PA radio.
-  Session notes stay on the public page and are ignored here, so a note-only edit does not publish an item or rewrite the snapshot.
   If any tab fails to fetch or parse, it exits 1 and changes nothing (no false "removed" items).
 - `rss/config.json` - sheet tabs, page/feed URLs, summarize threshold, ntfy settings (off).
-- `rss/test/simulate.sh` - live test in a temp dir: two runs, fake run-order edits, a note-only edit that must stay silent, and an XML check.
+- `rss/test/simulate.sh` - live test in a temp dir: two runs, fake edits, third run, XML check.
 - `.github/workflows/feed.yml` - every-5-minute GitHub Actions job: run generator, commit state, deploy to GitHub Pages.
 
 No secrets anywhere: the sheet is public and the job uses only the built-in `GITHUB_TOKEN`.
@@ -32,3 +30,29 @@ public repos after 60 days with no repo activity; re-enable from the Actions tab
 ## Phone push (optional, free): ntfy.sh
 Set `ntfy.enabled` to `true` in `rss/config.json`. Subscribers install the free ntfy app and subscribe to the
 topic in `ntfy.topic`. Anyone who knows the topic can read it (and could post to it), so treat it as public.
+
+- Finished classes are struck through when the next class has an Actual start time (column D); see `FINISHED-STRIKE.md`.
+
+## Schedule re-uploads (robust load)
+
+When DRS uploads a new event schedule, Google often **recreates the Day tabs with new GIDs**. The page now loads tabs by **sheet name** (`Day 1` … `Day N`) first, so a GID change cannot blank Race Control. `days.json` (written by the feed job from htmlview discovery) is only a fast path; stale GIDs fall through to name discovery automatically.
+
+## Dual publish (Wix + Firebase)
+
+As of 2026-10-27 Mark wants **both** surfaces kept current:
+
+- **Wix:** https://www.nhraracer.com/racecontrol (HTML embed paste)
+- **Firebase:** https://race-control-feed.web.app
+
+**Source of truth:** `index.html` in this folder (same bytes as `embed.txt` / `race-control-wix-embed-FIXED.html`).
+
+After any Race Control HTML change, run:
+
+```bash
+/workspace/shared/race-control/publish-both.sh
+```
+
+That copies the canonical file into the Wix paste paths **and** deploys Firebase Hosting. Then paste `embed.txt` into the Wix HTML embed and Publish (Wix has no deploy API from here). Do not update only one side.
+
+The old GitHub→Firebase watch (`firebase-host/watch-sync.sh`) has been failing with 403 on `mad1661/race-control` since 2026-10-24 — prefer `publish-both.sh` from the shared folder.
+

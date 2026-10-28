@@ -3,143 +3,17 @@
   <channel>
     <title>Race Control · Run Order changes</title>
     <link>https://www.nhraracer.com/racecontrol</link>
-    <description>Changes to the race weekend run order: sessions added or removed, scheduled times, and rounds.</description>
+    <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 28 Oct 2026 14:39:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 14:39:39 GMT</lastBuildDate>
     <ttl>5</ttl>
-    <item>
-      <title>Thursday, October 29 removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday, October 29 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b90cfe3edf085355da7d</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday, October 30 removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday, October 30 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-df0ff12a533af057e9f6</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday, October 31 removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday, October 31 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-6fb920392a36b1fed31a</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Sunday, November 01 removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Sunday, November 01 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-385215624cf86ee250a8</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Thursday, October 29 (30 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Thursday, October 29 (30 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-4e33d9348e8521cae93c</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Friday, October 30 (39 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Friday, October 30 (39 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b41fa646609709d0b699</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Saturday, October 31 (44 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Saturday, October 31 (44 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-83296123a1f931d5a61e</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Sunday, November 01 (43 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Sunday, November 01 (43 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-8a539dc2c92c1e16036e</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Thursday: Test change removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday: Test change removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-74066f6bd1bec09f7f17</guid>
-      <pubDate>Wed, 28 Oct 2026 13:14:31 GMT</pubDate>
-    </item>
-    <item>
-      <title>Thursday: Test change added to the run order, after Super Gas Round 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday: Test change added to the run order, after Super Gas Round 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b96a885b1c2c61270862</guid>
-      <pubDate>Wed, 28 Oct 2026 12:21:31 GMT</pubDate>
-    </item>
-    <item>
-      <title>Thursday: Test class change removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday: Test class change removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b4436baada8db5da664e</guid>
-      <pubDate>Wed, 28 Oct 2026 12:11:24 GMT</pubDate>
-    </item>
     <item>
       <title>Run order updated for NHRA Las Vegas Nationals</title>
       <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order updated for NHRA Las Vegas Nationals&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday, October 29, 2026: 31 sessions&lt;/li&gt;&lt;li&gt;Friday, October 30, 2026: 39 sessions&lt;/li&gt;&lt;li&gt;Saturday, October 31, 2026: 44 sessions&lt;/li&gt;&lt;li&gt;Sunday, November 01, 2026: 51 sessions&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-7b74628581049a47e6c1</guid>
-      <pubDate>Wed, 28 Oct 2026 12:01:47 GMT</pubDate>
-    </item>
-    <item>
-      <title>23 changes to the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;23 changes to the run order&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Saturday: CA Funny Car Qualifying 2 removed from the run order&lt;/li&gt;&lt;li&gt;Saturday: Group 2 Eliminations removed from the run order&lt;/li&gt;&lt;li&gt;Saturday: D/Gas Qualifying 2 added to the run order, after Nostalgia Eliminator 2 Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: C/Gas Qualifying 2 added to the run order, after D/Gas Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Comp Qualifying 1 added to the run order, after AFX Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Junior Fuel Qualifying 1 added to the run order, after 7.0 Pro Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Outlaw Gassers Time Trial 2 added to the run order, after Pro Mod Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: CA Funny Cars Qualifying 1 added to the run order, after Outlaw Gassers Time Trial 2&lt;/li&gt;&lt;li&gt;Saturday: Outlaw Gassers Time Trial 3 added to the run order, after C/Gas Round 1&lt;/li&gt;&lt;li&gt;Saturday: Secure added to the run order at 6:00 PM&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 3 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 2 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: B/Gas changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 1 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: A/Gas changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: AFX changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Mod changed from Qualifying 3 to Qualifying 1&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Top Fuel Qualifying 2 moved from 12:30 PM to 12:15 PM&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Funny Car changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: 7.0 Pro changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Mod Qualifying 2 no longer has a set time (was 12:00 PM); it follows the run order&lt;/li&gt;&lt;li&gt;Saturday: Jets changed from EX to Ex&lt;/li&gt;&lt;li&gt;Saturday: Cacklefest no longer has a set time (was 6:00 PM); it follows the run order&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-d95466d3a014fea23748</guid>
-      <pubDate>Sat, 24 Oct 2026 04:27:34 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-5483216a35ded99bd881</guid>
-      <pubDate>Fri, 23 Oct 2026 10:50:38 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX now scheduled for 5:50 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX now scheduled for 5:50 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-ccad5e9a36f37964fb4a</guid>
-      <pubDate>Fri, 23 Oct 2026 10:49:40 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX no longer has a set time (was 5:55 PM); it follows the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX no longer has a set time (was 5:55 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-a7baf4695b0bd22388a2</guid>
-      <pubDate>Fri, 23 Oct 2026 10:46:14 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX now scheduled for 5:55 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX now scheduled for 5:55 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-091b6974de4f6332028b</guid>
-      <pubDate>Fri, 23 Oct 2026 10:45:04 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX note removed (was &quot;RSS test&quot;)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX note removed (was &amp;quot;RSS test&amp;quot;)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-62e4009f4f2c6c6bbb1e</guid>
-      <pubDate>Fri, 23 Oct 2026 10:27:33 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX note added: &quot;RSS test&quot;</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX note added: &amp;quot;RSS test&amp;quot;&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-2d95b224682459c1139c</guid>
-      <pubDate>Fri, 23 Oct 2026 10:26:12 GMT</pubDate>
+      <description>&lt;p&gt;Run order updated for NHRA Las Vegas Nationals&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday, October 29, 2026: 30 sessions&lt;/li&gt;&lt;li&gt;Friday, October 30, 2026: 39 sessions&lt;/li&gt;&lt;li&gt;Saturday, October 31, 2026: 44 sessions&lt;/li&gt;&lt;li&gt;Sunday, November 01, 2026: 43 sessions&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d1bb9f7136347510b626</guid>
+      <pubDate>Wed, 28 Oct 2026 14:39:39 GMT</pubDate>
     </item>
     <item>
       <title>Run order published: California Hot Rod Reunion</title>

@@ -19,10 +19,11 @@ html.framed thead{position:static}html.framed .top{display:none!important}
 const SHEET_BASE='https://docs.google.com/spreadsheets/d/1D7r0i8yevR9bBOAEO9I34pqw5Iy8vqNzwSX0uDFbfr0/';
 // RSS feed of run order changes, published next to this page by the feed job.
 const FEED_URL='https://race-control-feed.web.app/feed.xml';
-// Current event's Day tabs come from days.json, which the feed job discovers from the sheet each run.
-// These hardcoded IDs are only the fallback if days.json can't be loaded.
+// Day tabs: prefer stable sheet NAMES (survive DRS schedule re-uploads that mint new GIDs).
+// days.json GIDs are a fast path when fresh; if they fail, we rediscover by name.
 const DAYS_URL=FEED_URL.replace(/feed\.xml$/,'days.json');
-let DAILY_TABS=[['Day 1','1587581206'],['Day 2','635308058'],['Day 3','134284952'],['Day 4','1478580157'],['Day 5','757068428'],['Day 6','1339772692']];
+const MAX_DAY_TABS=8;
+let DAILY_TABS=[['Day 1','name'],['Day 2','name'],['Day 3','name'],['Day 4','name'],['Day 5','name'],['Day 6','name']];
 function clean(v){return String(v??'').trim();}
 function hasActual(v){return /\d/.test(v)&&!v.startsWith('#');}
 /* Actual is the class start time (e.g. "8:00 AM"). Minutes since midnight for compare; null if unparsable. */
@@ -59,8 +60,13 @@ function parseDay(rows,label,gid){
   if(!date)throw new Error('Schedule date is missing');
   return {date,title,radio,items,label,gid};
 }
-function googleFeed(gid){return new Promise((resolve,reject)=>{
-  const callback='raceFeed_'+gid+'_'+Date.now()+'_'+Math.random().toString(36).slice(2);
+function googleFeed(ref){return new Promise((resolve,reject)=>{
+  // ref: numeric GID string, or {sheet:'Day 1'} / ['Day 1','name'] style — sheet NAME survives GID churn.
+  const isObj=ref&&typeof ref==='object';
+  const sheetName=isObj?(ref.sheet||ref[0]):null;
+  const gid=(!isObj&&/^\d+$/.test(String(ref)))?String(ref):(isObj&&/^\d+$/.test(String(ref.gid||ref[1]||''))?String(ref.gid||ref[1]):null);
+  const key=(sheetName||gid||'x').replace(/\W+/g,'_');
+  const callback='raceFeed_'+key+'_'+Date.now()+'_'+Math.random().toString(36).slice(2);
   const script=document.createElement('script');let settled=false;
   const cleanup=()=>{clearTimeout(timer);script.remove();window[callback]=()=>{};setTimeout(()=>delete window[callback],60000);};
   const fail=()=>{if(settled)return;settled=true;cleanup();reject(new Error('Google feed unavailable'));};
@@ -69,9 +75,29 @@ function googleFeed(gid){return new Promise((resolve,reject)=>{
     if(response.status!=='ok'||!response.table?.rows){reject(new Error('Google feed response invalid'));return;}
     resolve(response.table.rows.map(row=>Array.from({length:response.table.cols.length},(_,i)=>{const c=row.c[i];return c?clean(c.f??c.v):'';})));
   };
-  const params=new URLSearchParams({gid,headers:'0',range:'A1:L1000',tqx:'out:json;responseHandler:'+callback});
+  const params=new URLSearchParams({headers:'0',range:'A1:L1000',tqx:'out:json;responseHandler:'+callback});
+  if(sheetName)params.set('sheet',sheetName); else params.set('gid',gid);
   script.src=SHEET_BASE+'gviz/tq?'+params;script.onerror=fail;document.head.append(script);
 });}
+function tabLooksValid(rows){
+  try{const header=rows.findIndex(r=>/^ELIMINATOR$/i.test(clean(r[5])));
+    if(header<0)return false;
+    const date=clean((rows.slice(0,header).find(r=>datePattern.test(clean(r[2])))||[])[2]);
+    return !!date;
+  }catch(e){return false;}
+}
+async function discoverTabsByName(){
+  const found=[];
+  for(let n=1;n<=MAX_DAY_TABS;n++){
+    const label='Day '+n;
+    try{
+      const rows=await googleFeed({sheet:label});
+      if(!tabLooksValid(rows))break;
+      found.push([label,'name',rows]);
+    }catch(e){break;}
+  }
+  return found;
+}
 const el=id=>document.getElementById(id);
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
 let data=null,view='daily',busy=false,selected={daily:0,weekend:0};
@@ -93,15 +119,34 @@ function render(){
   el('radioText').textContent=event.radio||'PA broadcast';el('dateRange').textContent=day.date.replace(/^\w+, /,'');
   el('asideTitle').textContent=event.title;el('days').replaceChildren();list.forEach(d=>{const li=node('li');li.append(node('span',d.date.split(',')[0]),node('span',d.items.length+' sessions'));el('days').append(li);});
 }
-async function loadTabs(){try{const res=await fetch(DAYS_URL,{cache:'no-store',signal:AbortSignal.timeout?AbortSignal.timeout(5000):undefined});if(!res.ok)return;const j=await res.json();
-  const tabs=(j&&Array.isArray(j.tabs)?j.tabs:[]).filter(t=>Array.isArray(t)&&/^Day \d+$/.test(t[0])&&/^\d+$/.test(t[1]));if(tabs.length)DAILY_TABS=tabs;}catch(e){}}
+async function loadTabsFromDaysJson(){try{const res=await fetch(DAYS_URL,{cache:'no-store',signal:AbortSignal.timeout?AbortSignal.timeout(5000):undefined});if(!res.ok)return null;const j=await res.json();
+  const tabs=(j&&Array.isArray(j.tabs)?j.tabs:[]).filter(t=>Array.isArray(t)&&/^Day \d+$/.test(t[0])&&/^\d+$/.test(String(t[1])));return tabs.length?tabs:null;}catch(e){return null;}}
 async function refresh(){if(busy)return;busy=true;el('refreshBtn').disabled=true;el('refreshBtn').classList.add('spinning');
-  try{await loadTabs();const responses=await Promise.all(DAILY_TABS.map(t=>googleFeed(t[1])));
-    const allDays=DAILY_TABS.map((t,i)=>parseDay(responses[i],...t));const populated=allDays.filter(d=>d.items.length);const daily=populated.length?populated:allDays;
-    const previousGid=data?.daily[selected.daily]?.gid;const firstLoad=!data;data={daily};if(!firstLoad){const match=daily.findIndex(d=>d.gid===previousGid);selected.daily=match>=0?match:0;}
+  try{
+    // Robust path: always resolve Day tabs by sheet NAME so a DRS re-upload (new GIDs) cannot blank the page.
+    // days.json GIDs are tried first only as a speed hint; any miss falls through to name discovery.
+    let allDays=null;
+    const hinted=await loadTabsFromDaysJson();
+    if(hinted){
+      try{
+        const responses=await Promise.all(hinted.map(t=>googleFeed(t[1])));
+        if(responses.every(tabLooksValid)){
+          allDays=hinted.map((t,i)=>parseDay(responses[i],t[0],t[1]));
+          DAILY_TABS=hinted;
+        }
+      }catch(e){allDays=null;}
+    }
+    if(!allDays){
+      const found=await discoverTabsByName();
+      if(!found.length)throw new Error('No Day tabs found by name');
+      allDays=found.map(([label,gid,rows])=>parseDay(rows,label,gid));
+      DAILY_TABS=found.map(([label,gid])=>[label,gid]);
+    }
+    const populated=allDays.filter(d=>d.items.length);const daily=populated.length?populated:allDays;
+    const previousKey=data?.daily[selected.daily]?.date;const firstLoad=!data;data={daily};
+    if(!firstLoad){const match=daily.findIndex(d=>d.date===previousKey);selected.daily=match>=0?match:0;}
     if(firstLoad){const today=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});const found=daily.findIndex(d=>d.date===today);selected.daily=found>=0?found:0;}
     updateDays();render();el('syncText').textContent='Fetched '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+' · From Google Sheets';el('error').hidden=true;
-    // Google's public gviz feed does not expose the sheet's edit time, so this is when this page last loaded the sheet data.
     const lu=el('lastUpdated');lu.replaceChildren(document.createTextNode('Last updated: '),node('b',fmtET(new Date())),document.createTextNode(' · page refresh of sheet data'));
   }catch(error){el('syncText').textContent=data?'Refresh failed · Showing the last fetched data':'Google Sheets feed unavailable';el('error').textContent='The run order could not refresh. '+(data?'Previously fetched data remains visible. ':'')+'It will try again automatically, or use Refresh.';el('error').hidden=false;if(!data){el('empty').textContent='The schedule is temporarily unavailable. Try Refresh in a moment.';el('scheduleDate').textContent='Schedule unavailable';}}
   finally{busy=false;el('refreshBtn').disabled=false;el('refreshBtn').classList.remove('spinning');}
