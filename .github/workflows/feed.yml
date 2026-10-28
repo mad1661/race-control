@@ -37,6 +37,26 @@ jobs:
           git add feed.xml rss/state days.json
           git diff --cached --quiet || git commit -m "Run order feed update"
           git pull --rebase --quiet && git push
+      # Run health: generate.js writes rss/state/last-run.json on EVERY exit (ok or not).
+      # Commit it when the job failed, when it recovers, or when the error text changes,
+      # so a broken feed is visible in the repo (and GitHub emails the failed run).
+      # Healthy no-change runs do not commit (keeps history quiet).
+      - name: Record run health
+        if: always()
+        run: |
+          f=rss/state/last-run.json
+          [ -f "$f" ] || { echo "no $f (script did not start)"; exit 0; }
+          cat "$f"
+          now=$(node -e 'const j=require("./"+process.argv[1]);console.log(j.ok+"|"+(j.error||""))' "$f")
+          was=$(git show HEAD:$f 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const j=JSON.parse(s);console.log(j.ok+"|"+(j.error||""))}catch(e){console.log("none")}})')
+          if [ "$now" = "$was" ]; then echo "health unchanged ($now); not committing"; exit 0; fi
+          git config user.name "race-control-feed"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$f"
+          git diff --cached --quiet && exit 0
+          git commit -m "Feed health: ${now%%|*}" --quiet
+          for i in 1 2 3; do git pull --rebase --quiet && git push --quiet && exit 0; sleep 5; done
+          echo "::warning::could not push last-run.json"
 
   deploy:
     needs: feed

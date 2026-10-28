@@ -24,6 +24,15 @@ const PAGE_URL = process.env.PAGE_URL || config.pageUrl;
 const FEED_URL = process.env.FEED_URL || config.feedUrl;
 const MAX_ITEMS = config.maxItems || 50;
 const SUMMARIZE_OVER = config.summarizeOver || 25;
+// Every exit (success or failure) writes this so a broken run is visible in the repo.
+const LAST_RUN = path.join(STATE_DIR, 'last-run.json');
+// Network hardening: Google gviz/htmlview hiccups are common on busy weekends.
+const FETCH_TRIES = 5;
+const backoff = attempt => new Promise(r => setTimeout(r, 2000 * (attempt + 1))); // 2s,4s,6s,8s (~20s worst case per tab)
+// Give up retrying after this so the script always exits (and writes last-run.json) before the
+// workflow's 5-minute job timeout kills it.
+const DEADLINE = Date.now() + 210000;
+const pastDeadline = () => Date.now() > DEADLINE;
 
 // ---------- parsing (mirrors parseDay() in index.html) ----------
 const clean = v => String(v ?? '').trim();
@@ -50,7 +59,7 @@ async function fetchTab(gid) {
   const params = new URLSearchParams({ gid, headers: '0', range: 'A1:L1000', tqx: 'out:json' });
   const url = `https://docs.google.com/spreadsheets/d/${config.sheetId}/gviz/tq?${params}`;
   let lastError;
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < FETCH_TRIES; attempt++) {
     try {
       const res = await fetch(url, { signal: AbortSignal.timeout(20000), headers: { 'user-agent': 'race-control-rss/1.0' } });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -61,9 +70,14 @@ async function fetchTab(gid) {
       if (json.status !== 'ok' || !json.table?.rows) throw new Error('gviz status ' + json.status);
       const width = json.table.cols.length;
       return json.table.rows.map(row => Array.from({ length: width }, (_, i) => { const c = row.c[i]; return c ? clean(c.f ?? c.v) : ''; }));
-    } catch (e) { lastError = e; await new Promise(r => setTimeout(r, 1500 * (attempt + 1))); }
+    } catch (e) {
+      lastError = e;
+      console.warn(`tab ${gid}: attempt ${attempt + 1}/${FETCH_TRIES} failed (${e.message})`);
+      if (pastDeadline()) break;
+      if (attempt < FETCH_TRIES - 1) await backoff(attempt);
+    }
   }
-  throw new Error(`tab ${gid}: ${lastError.message}`);
+  throw new Error(`tab ${gid}: ${lastError.message} after ${FETCH_TRIES} tries`);
 }
 
 // ---------- Day tab discovery ----------
@@ -88,12 +102,17 @@ function dayTabs(tabs) {
 async function discoverTabs() {
   const url = `https://docs.google.com/spreadsheets/d/${config.sheetId}/htmlview`;
   let html, lastError;
-  for (let attempt = 0; attempt < 3 && html === undefined; attempt++) {
+  for (let attempt = 0; attempt < FETCH_TRIES && html === undefined; attempt++) {
     try {
       const res = await fetch(url, { signal: AbortSignal.timeout(20000), headers: { 'user-agent': 'race-control-rss/1.0' } });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       html = await res.text();
-    } catch (e) { lastError = e; await new Promise(r => setTimeout(r, 1500 * (attempt + 1))); }
+    } catch (e) {
+      lastError = e;
+      console.warn(`tab list: attempt ${attempt + 1}/${FETCH_TRIES} failed (${e.message})`);
+      if (pastDeadline()) break;
+      if (attempt < FETCH_TRIES - 1) await backoff(attempt);
+    }
   }
   if (html === undefined) {
     if (config.tabs?.length) { console.warn(`Tab discovery failed (${lastError.message}); using config.tabs fallback`); return { tabs: config.tabs, source: 'config' }; }
@@ -263,6 +282,20 @@ async function notifyPhones(items) {
   } catch (e) { console.warn('ntfy failed:', e.message); }
 }
 
+// last-run.json: {ok, at, error, lastOkAt, consecutiveFailures}. Written on every exit; success clears error.
+// Only the health fields live here (no timestamps of no-change runs beyond `at`), committed by CI.
+function writeLastRun(ok, error) {
+  let prev = {};
+  try { prev = JSON.parse(fs.readFileSync(LAST_RUN, 'utf8')); } catch (e) {}
+  const at = new Date().toISOString();
+  const out = ok
+    ? { ok: true, at, error: null, lastOkAt: at, consecutiveFailures: 0 }
+    : { ok: false, at, error: String(error || 'unknown error').slice(0, 500), lastOkAt: prev.lastOkAt || null,
+        consecutiveFailures: (prev.consecutiveFailures || 0) + 1 };
+  try { writeAtomic(LAST_RUN, JSON.stringify(out, null, 2) + '\n'); } catch (e) { console.error('could not write last-run.json:', e.message); }
+  return out;
+}
+
 async function main() {
   const cur = await fetchSnapshot(); // throws (and changes nothing) if any tab fails
   const prev = fs.existsSync(SNAPSHOT) ? JSON.parse(fs.readFileSync(SNAPSHOT, 'utf8')) : null;
@@ -295,4 +328,17 @@ async function main() {
   await notifyPhones(prev ? fresh : []);
 }
 
-main().catch(e => { console.error('Feed not updated:', e.message); process.exit(1); });
+(async () => {
+  let ok = false, error = null;
+  try {
+    await main();
+    ok = true;
+  } catch (e) {
+    error = e.message;
+    console.error('Feed not updated:', e.message);
+  } finally {
+    const r = writeLastRun(ok, error);
+    if (!ok) console.error(`::error title=Race Control feed failed::${error} (failure #${r.consecutiveFailures} in a row; last good run ${r.lastOkAt || 'unknown'})`);
+  }
+  process.exit(ok ? 0 : 1);
+})();
