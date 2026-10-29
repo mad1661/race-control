@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-10-28T16:59:55.060Z",
+  "fetchedAt": "2026-10-29T23:00:29.758Z",
   "days": [
     {
       "label": "Day 1",
       "gid": "907931825",
       "date": "Thursday, October 29, 2026",
-      "title": "NHRA Las Vegas Nationals",
-      "radio": "106.1 FM",
+      "title": "MOPAR NHRA Las Vegas Nationals powered by Dodge",
+      "radio": "",
       "items": [
         {
           "scheduled": "8:00 AM",
@@ -52,7 +52,7 @@
         },
         {
           "scheduled": "",
-          "name": "CJ E Mod",
+          "name": "Ford Racing Mustang Cobra Jet 2200",
           "round": "Exh",
           "note": ""
         },
@@ -106,7 +106,7 @@
         },
         {
           "scheduled": "",
-          "name": "CJ E Mod",
+          "name": "Ford Racing Mustang Cobra Jet 2200",
           "round": "Exh",
           "note": ""
         },
@@ -710,7 +710,7 @@
       "label": "Day 4",
       "gid": "610804353",
       "date": "Sunday, November 01, 2026",
-      "title": "NHRA Las Vegas Nationals",
+      "title": "MOPAR NHRA Las Vegas Nationals powered by Dodge",
       "radio": "106.1 FM",
       "items": [
         {
@@ -977,7 +977,7 @@
       "label": "Day 5",
       "gid": "941619583",
       "date": "Monday, November 02, 2026",
-      "title": "NHRA Las Vegas Nationals",
+      "title": "MOPAR NHRA Las Vegas Nationals powered by Dodge",
       "radio": "106.1 FM",
       "items": []
     },
@@ -985,7 +985,7 @@
       "label": "Day 6",
       "gid": "375036737",
       "date": "Tuesday, November 03, 2026",
-      "title": "NHRA Las Vegas Nationals",
+      "title": "MOPAR NHRA Las Vegas Nationals powered by Dodge",
       "radio": "106.1 FM",
       "items": []
     }
