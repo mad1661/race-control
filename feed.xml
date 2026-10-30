@@ -6,8 +6,64 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 30 Oct 2026 15:58:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 21:08:03 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-dce2387e9a43ebe7a696</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-19149f82249bb624c073</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d97714fba41b0bc10ccc</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: Dodge Grudge Race changed from TT to Exh</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Dodge Grudge Race changed from TT to Exh&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-bd5a8482dee25b0c2d23</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: FUNNY CAR changed from Qualifying 2 to Time Trial 2</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: FUNNY CAR changed from Qualifying 2 to Time Trial 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-c7ce105fc3a2218abadd</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: FUNNY CAR Time Trial 2 no longer has a set time (was 4:30 PM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: FUNNY CAR Time Trial 2 no longer has a set time (was 4:30 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-7d478dd4a9de8ee144d6</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: TOP FUEL changed from Qualifying 2 to Time Trial 2</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: TOP FUEL changed from Qualifying 2 to Time Trial 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d2d20fbc03ff69a00500</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 3:30 PM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 3:30 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-78caeb4b85602f9e3d80</guid>
+      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
+    </item>
     <item>
       <title>Friday: CJ E Mod Exh removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>

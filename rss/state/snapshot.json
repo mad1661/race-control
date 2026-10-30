@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T15:58:20.396Z",
+  "fetchedAt": "2026-10-30T21:08:03.862Z",
   "days": [
     {
       "label": "Day 1",
@@ -194,7 +194,7 @@
       "label": "Day 2",
       "gid": "311832100",
       "date": "Friday, October 30, 2026",
-      "title": "Race weekend",
+      "title": "MOPAR NHRA Las Vegas Nationals powered by Dodge",
       "radio": "",
       "items": [
         {
@@ -277,14 +277,14 @@
         },
         {
           "scheduled": "",
-          "name": "Super Gas",
-          "round": "R-4",
+          "name": "Top Alcohol Funny Car",
+          "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "name": "Top Alcohol Funny Car",
-          "round": "Q-1",
+          "name": "Super Gas",
+          "round": "R-4",
           "note": ""
         },
         {
@@ -324,7 +324,25 @@
           "note": ""
         },
         {
-          "scheduled": "12:45 PM",
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "TOP FUEL",
+          "round": "Q-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-1",
           "note": ""
@@ -336,15 +354,39 @@
           "note": ""
         },
         {
-          "scheduled": "1:45 PM",
+          "scheduled": "",
+          "name": "Dodge Grudge Race",
+          "round": "Exh",
+          "note": ""
+        },
+        {
+          "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "Q-1",
+          "round": "TT-2",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "Q-1",
+          "round": "TT-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-2",
           "note": ""
         },
         {
@@ -361,56 +403,14 @@
         },
         {
           "scheduled": "",
-          "name": "Summit Super Pro ET",
-          "round": "TT-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
           "name": "Summit Pro ET",
           "round": "TT-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "name": "Dodge Grudge Race",
-          "round": "TT",
-          "note": ""
-        },
-        {
-          "scheduled": "3:30 PM",
-          "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "4:30 PM",
-          "name": "FUNNY CAR",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "TOP FUEL",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Q-2",
+          "name": "Summit Super Pro ET",
+          "round": "TT-2",
           "note": ""
         },
         {
@@ -422,6 +422,12 @@
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
           "round": "Q-2",
           "note": ""
         },

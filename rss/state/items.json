@@ -1,5 +1,53 @@
 [
   {
+    "guid": "race-control-dce2387e9a43ebe7a696",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1",
+    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-19149f82249bb624c073",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order",
+    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-d97714fba41b0bc10ccc",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order",
+    "description": "<p>Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-bd5a8482dee25b0c2d23",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: Dodge Grudge Race changed from TT to Exh",
+    "description": "<p>Friday: Dodge Grudge Race changed from TT to Exh</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-c7ce105fc3a2218abadd",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: FUNNY CAR changed from Qualifying 2 to Time Trial 2",
+    "description": "<p>Friday: FUNNY CAR changed from Qualifying 2 to Time Trial 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-7d478dd4a9de8ee144d6",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: FUNNY CAR Time Trial 2 no longer has a set time (was 4:30 PM); it follows the run order",
+    "description": "<p>Friday: FUNNY CAR Time Trial 2 no longer has a set time (was 4:30 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-d2d20fbc03ff69a00500",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: TOP FUEL changed from Qualifying 2 to Time Trial 2",
+    "description": "<p>Friday: TOP FUEL changed from Qualifying 2 to Time Trial 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-78caeb4b85602f9e3d80",
+    "date": "2026-10-30T21:08:03.862Z",
+    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 3:30 PM); it follows the run order",
+    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 3:30 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-e1e84561a6f39193985e",
     "date": "2026-10-30T15:58:20.396Z",
     "title": "Friday: CJ E Mod Exh removed from the run order",
