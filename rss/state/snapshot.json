@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T23:00:29.758Z",
+  "fetchedAt": "2026-10-30T15:58:20.396Z",
   "days": [
     {
       "label": "Day 1",
@@ -241,19 +241,13 @@
         },
         {
           "scheduled": "",
-          "name": "CJ E Mod",
+          "name": "Ford Racing Mustang Cobra Jet 2200",
           "round": "Exh",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "TT-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Pro ET",
           "round": "TT-1",
           "note": ""
         },
@@ -266,6 +260,12 @@
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
+          "round": "TT-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
           "round": "TT-1",
           "note": ""
         },
@@ -319,7 +319,7 @@
         },
         {
           "scheduled": "",
-          "name": "CJ E Mod",
+          "name": "Ford Racing Mustang Cobra Jet 2200",
           "round": "Exh",
           "note": ""
         },
@@ -355,12 +355,6 @@
         },
         {
           "scheduled": "",
-          "name": "Summit Pro ET",
-          "round": "TT-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
           "name": "Summit ET Motorcycle",
           "round": "TT-2",
           "note": ""
@@ -368,6 +362,12 @@
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
+          "round": "TT-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
           "round": "TT-2",
           "note": ""
         },
