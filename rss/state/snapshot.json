@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T21:08:03.862Z",
+  "fetchedAt": "2026-10-30T21:20:04.765Z",
   "days": [
     {
       "label": "Day 1",
@@ -330,7 +330,7 @@
           "note": ""
         },
         {
-          "scheduled": "",
+          "scheduled": "3:30 PM",
           "name": "FUNNY CAR",
           "round": "Q-1",
           "note": ""
