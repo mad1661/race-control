@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-dc10aa1b72cc2bf73467",
+    "date": "2026-10-31T21:23:14.494Z",
+    "title": "Saturday: PRO STOCK Qualifying 4 no longer has a set time (was 2:30 PM); it follows the run order",
+    "description": "<p>Saturday: PRO STOCK Qualifying 4 no longer has a set time (was 2:30 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-9a50b2c3853ddfcfd153",
     "date": "2026-10-31T20:43:46.119Z",
     "title": "Saturday: Pro Mod Qualifying 4 added to the run order, after Summit Pro ET Round 1",
@@ -292,11 +298,5 @@
     "date": "2026-10-28T14:39:37.597Z",
     "title": "Sunday, November 01 removed from the run order",
     "description": "<p>Sunday, November 01 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-4e33d9348e8521cae93c",
-    "date": "2026-10-28T14:39:37.597Z",
-    "title": "Run order posted for Thursday, October 29 (30 sessions)",
-    "description": "<p>Run order posted for Thursday, October 29 (30 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

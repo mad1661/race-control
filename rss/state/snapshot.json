@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T20:43:46.119Z",
+  "fetchedAt": "2026-10-31T21:23:14.494Z",
   "days": [
     {
       "label": "Day 1",
@@ -437,7 +437,7 @@
       "label": "Day 3",
       "gid": "1365806324",
       "date": "Saturday, October 31, 2026",
-      "title": "Race weekend",
+      "title": "MOPAR NHRA Las Vegas Nationals powered by Dodge",
       "radio": "",
       "items": [
         {
@@ -555,7 +555,7 @@
           "note": ""
         },
         {
-          "scheduled": "2:30 PM",
+          "scheduled": "",
           "name": "PRO STOCK",
           "round": "Q-4",
           "note": ""

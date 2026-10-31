@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 31 Oct 2026 20:43:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 21:23:14 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Saturday: PRO STOCK Qualifying 4 no longer has a set time (was 2:30 PM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: PRO STOCK Qualifying 4 no longer has a set time (was 2:30 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-dc10aa1b72cc2bf73467</guid>
+      <pubDate>Sat, 31 Oct 2026 21:23:14 GMT</pubDate>
+    </item>
     <item>
       <title>Saturday: Pro Mod Qualifying 4 added to the run order, after Summit Pro ET Round 1</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -349,13 +356,6 @@
       <link>https://www.nhraracer.com/racecontrol</link>
       <description>&lt;p&gt;Sunday, November 01 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-385215624cf86ee250a8</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Thursday, October 29 (30 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Thursday, October 29 (30 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-4e33d9348e8521cae93c</guid>
       <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
     </item>
   </channel>
