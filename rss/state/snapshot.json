@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T01:02:21.385Z",
+  "fetchedAt": "2026-10-31T02:46:45.132Z",
   "days": [
     {
       "label": "Day 1",
@@ -447,9 +447,177 @@
       "radio": "",
       "items": [
         {
-          "scheduled": "8:00 AM",
+          "scheduled": "7:45 AM",
           "name": "Summit ET Pre-Race",
           "round": "",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "TT-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "TT-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "TT-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "TT-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Ford Racing Mustang Cobra Jet 2200",
+          "round": "Exh",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Dodge Grudge Race",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "11:00 AM",
+          "name": "TOP FUEL",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "12:00 PM",
+          "name": "PRO STOCK",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Dodge Grudge Race",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "1:30 PM",
+          "name": "TOP FUEL",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "2:30 PM",
+          "name": "PRO STOCK",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Dragster",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Competition Eliminator",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "R-3",
           "note": ""
         },
         {
@@ -474,180 +642,6 @@
           "scheduled": "",
           "name": "Super Gas",
           "round": "R-5",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Dragster",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Competition Eliminator",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Sportsman",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "CJ E Mod",
-          "round": "Exh",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Sportsman ET",
-          "round": "TT-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Pro ET",
-          "round": "TT-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit ET Motorcycle",
-          "round": "TT-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Super Pro ET",
-          "round": "TT-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Alcohol Dragster",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Alcohol Funny Car",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "CJ E Mod",
-          "round": "Exh",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Dodge Grudge Race",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "12:00 PM",
-          "name": "TOP FUEL",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "FUNNY CAR",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "1:00 PM",
-          "name": "PRO STOCK",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Sportsman ET",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Pro ET",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit ET Motorcycle",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Super Pro ET",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Dodge Grudge Race",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "2:30 PM",
-          "name": "TOP FUEL",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "FUNNY CAR",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "3:30 PM",
-          "name": "PRO STOCK",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "R-1",
           "note": ""
         },
         {
