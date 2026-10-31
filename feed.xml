@@ -6,8 +6,36 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 31 Oct 2026 17:31:56 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 20:09:02 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Saturday: Pro Mod Qualifying 4 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Pro Mod Qualifying 4 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-284cf585a00c816984e9</guid>
+      <pubDate>Sat, 31 Oct 2026 20:09:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Legacy Nitro Funny Car Qualifying 3 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Legacy Nitro Funny Car Qualifying 3 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-fee92a04c0f04cb6a3ff</guid>
+      <pubDate>Sat, 31 Oct 2026 20:09:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Top Alcohol Dragster Round 1 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Top Alcohol Dragster Round 1 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d3ae5e3011000178be6b</guid>
+      <pubDate>Sat, 31 Oct 2026 20:09:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Top Alcohol Funny Car Round 1 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Top Alcohol Funny Car Round 1 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-89f09201827bb4cd36ea</guid>
+      <pubDate>Sat, 31 Oct 2026 20:09:02 GMT</pubDate>
+    </item>
     <item>
       <title>Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -329,34 +357,6 @@
       <description>&lt;p&gt;Thursday: Test change removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-74066f6bd1bec09f7f17</guid>
       <pubDate>Wed, 28 Oct 2026 13:14:31 GMT</pubDate>
-    </item>
-    <item>
-      <title>Thursday: Test change added to the run order, after Super Gas Round 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday: Test change added to the run order, after Super Gas Round 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b96a885b1c2c61270862</guid>
-      <pubDate>Wed, 28 Oct 2026 12:21:31 GMT</pubDate>
-    </item>
-    <item>
-      <title>Thursday: Test class change removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday: Test class change removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b4436baada8db5da664e</guid>
-      <pubDate>Wed, 28 Oct 2026 12:11:24 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order updated for NHRA Las Vegas Nationals</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order updated for NHRA Las Vegas Nationals&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday, October 29, 2026: 31 sessions&lt;/li&gt;&lt;li&gt;Friday, October 30, 2026: 39 sessions&lt;/li&gt;&lt;li&gt;Saturday, October 31, 2026: 44 sessions&lt;/li&gt;&lt;li&gt;Sunday, November 01, 2026: 51 sessions&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-7b74628581049a47e6c1</guid>
-      <pubDate>Wed, 28 Oct 2026 12:01:47 GMT</pubDate>
-    </item>
-    <item>
-      <title>23 changes to the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;23 changes to the run order&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Saturday: CA Funny Car Qualifying 2 removed from the run order&lt;/li&gt;&lt;li&gt;Saturday: Group 2 Eliminations removed from the run order&lt;/li&gt;&lt;li&gt;Saturday: D/Gas Qualifying 2 added to the run order, after Nostalgia Eliminator 2 Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: C/Gas Qualifying 2 added to the run order, after D/Gas Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Comp Qualifying 1 added to the run order, after AFX Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Junior Fuel Qualifying 1 added to the run order, after 7.0 Pro Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Outlaw Gassers Time Trial 2 added to the run order, after Pro Mod Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: CA Funny Cars Qualifying 1 added to the run order, after Outlaw Gassers Time Trial 2&lt;/li&gt;&lt;li&gt;Saturday: Outlaw Gassers Time Trial 3 added to the run order, after C/Gas Round 1&lt;/li&gt;&lt;li&gt;Saturday: Secure added to the run order at 6:00 PM&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 3 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 2 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: B/Gas changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 1 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: A/Gas changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: AFX changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Mod changed from Qualifying 3 to Qualifying 1&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Top Fuel Qualifying 2 moved from 12:30 PM to 12:15 PM&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Funny Car changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: 7.0 Pro changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Mod Qualifying 2 no longer has a set time (was 12:00 PM); it follows the run order&lt;/li&gt;&lt;li&gt;Saturday: Jets changed from EX to Ex&lt;/li&gt;&lt;li&gt;Saturday: Cacklefest no longer has a set time (was 6:00 PM); it follows the run order&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-d95466d3a014fea23748</guid>
-      <pubDate>Sat, 24 Oct 2026 04:27:34 GMT</pubDate>
     </item>
   </channel>
 </rss>

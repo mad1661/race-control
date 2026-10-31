@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T17:31:56.683Z",
+  "fetchedAt": "2026-10-31T20:09:02.706Z",
   "days": [
     {
       "label": "Day 1",
@@ -538,30 +538,6 @@
         },
         {
           "scheduled": "",
-          "name": "Summit Sportsman ET",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit ET Motorcycle",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Super Pro ET",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Pro ET",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
           "name": "Dodge Grudge Race",
           "round": "Final",
           "note": ""
@@ -592,25 +568,25 @@
         },
         {
           "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Alcohol Dragster",
+          "name": "Summit Sportsman ET",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "name": "Top Alcohol Funny Car",
+          "name": "Summit ET Motorcycle",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
           "round": "R-1",
           "note": ""
         },
