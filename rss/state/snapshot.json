@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T04:14:54.196Z",
+  "fetchedAt": "2026-10-31T16:21:29.342Z",
   "days": [
     {
       "label": "Day 1",
@@ -472,6 +472,12 @@
         },
         {
           "scheduled": "",
+          "name": "Ford Racing Mustang Cobra Jet 2200",
+          "round": "Exh",
+          "note": ""
+        },
+        {
+          "scheduled": "",
           "name": "Top Alcohol Dragster",
           "round": "Q-3",
           "note": ""
@@ -598,48 +604,6 @@
         },
         {
           "scheduled": "",
-          "name": "Top Dragster",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Competition Eliminator",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Sportsman",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Stock",
-          "round": "R-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Super Comp",
-          "round": "R-5",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Super Stock",
-          "round": "R-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Super Gas",
-          "round": "R-5",
-          "note": ""
-        },
-        {
-          "scheduled": "",
           "name": "Top Alcohol Dragster",
           "round": "R-1",
           "note": ""
@@ -653,6 +617,48 @@
         {
           "scheduled": "",
           "name": "Top Dragster",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Competition Eliminator",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Sportsman",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Stock",
+          "round": "R-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Super Comp",
+          "round": "R-5",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Super Stock",
+          "round": "R-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Super Gas",
+          "round": "R-5",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Dragster",
           "round": "R-4",
           "note": ""
         },
@@ -690,6 +696,18 @@
           "scheduled": "",
           "name": "Super Gas",
           "round": "R-6",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-2",
           "note": ""
         },
         {

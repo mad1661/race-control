@@ -1,5 +1,23 @@
 [
   {
+    "guid": "race-control-9501d041274182043e1d",
+    "date": "2026-10-31T16:21:29.342Z",
+    "title": "Saturday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Alcohol Funny Car Qualifying 3",
+    "description": "<p>Saturday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Alcohol Funny Car Qualifying 3</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-6c8fd9fa21f3c4b3d7fe",
+    "date": "2026-10-31T16:21:29.342Z",
+    "title": "Saturday: Top Alcohol Dragster Round 2 added to the run order, after Super Gas Round 6",
+    "description": "<p>Saturday: Top Alcohol Dragster Round 2 added to the run order, after Super Gas Round 6</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-7ac63992c310b39deace",
+    "date": "2026-10-31T16:21:29.342Z",
+    "title": "Saturday: Top Alcohol Funny Car Round 2 added to the run order, after Top Alcohol Dragster Round 2",
+    "description": "<p>Saturday: Top Alcohol Funny Car Round 2 added to the run order, after Top Alcohol Dragster Round 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-0002bb3ce606649da98d",
     "date": "2026-10-31T04:14:54.196Z",
     "title": "Friday: Legacy Nitro Funny Car Qualifying 2 removed from the run order",
@@ -280,23 +298,5 @@
     "date": "2026-10-23T10:45:04.148Z",
     "title": "Friday: Jets EX now scheduled for 5:55 PM",
     "description": "<p>Friday: Jets EX now scheduled for 5:55 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-62e4009f4f2c6c6bbb1e",
-    "date": "2026-10-23T10:27:33.076Z",
-    "title": "Friday: Jets EX note removed (was \"RSS test\")",
-    "description": "<p>Friday: Jets EX note removed (was &quot;RSS test&quot;)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-2d95b224682459c1139c",
-    "date": "2026-10-23T10:26:12.147Z",
-    "title": "Friday: Jets EX note added: \"RSS test\"",
-    "description": "<p>Friday: Jets EX note added: &quot;RSS test&quot;</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-5dad792dac4412e461ae",
-    "date": "2026-10-22T23:47:11.545Z",
-    "title": "Run order published: California Hot Rod Reunion",
-    "description": "<p>Run order published: California Hot Rod Reunion</p><ul><li>Thursday, October 22, 2026: 13 sessions</li><li>Friday, October 23, 2026: 29 sessions</li><li>Saturday, October 24, 2026: 23 sessions</li><li>Sunday, October 25, 2026: 20 sessions</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
