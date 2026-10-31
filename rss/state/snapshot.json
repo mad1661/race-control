@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T20:09:02.706Z",
+  "fetchedAt": "2026-10-31T20:43:46.119Z",
   "days": [
     {
       "label": "Day 1",
@@ -588,6 +588,30 @@
           "scheduled": "",
           "name": "Summit Pro ET",
           "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-3",
           "note": ""
         },
         {

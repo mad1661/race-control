@@ -6,8 +6,36 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 31 Oct 2026 20:09:02 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 20:43:46 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Saturday: Pro Mod Qualifying 4 added to the run order, after Summit Pro ET Round 1</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Pro Mod Qualifying 4 added to the run order, after Summit Pro ET Round 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-9a50b2c3853ddfcfd153</guid>
+      <pubDate>Sat, 31 Oct 2026 20:43:46 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Top Alcohol Dragster Round 1 added to the run order, after Pro Mod Qualifying 4</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Top Alcohol Dragster Round 1 added to the run order, after Pro Mod Qualifying 4&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-2f2e3e4e057fc1e469e5</guid>
+      <pubDate>Sat, 31 Oct 2026 20:43:46 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Top Alcohol Funny Car Round 1 added to the run order, after Top Alcohol Dragster Round 1</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Top Alcohol Funny Car Round 1 added to the run order, after Top Alcohol Dragster Round 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-bc218ec72719804d2691</guid>
+      <pubDate>Sat, 31 Oct 2026 20:43:46 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Legacy Nitro Funny Car Qualifying 3 added to the run order, after Top Alcohol Funny Car Round 1</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Legacy Nitro Funny Car Qualifying 3 added to the run order, after Top Alcohol Funny Car Round 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-358aa118c6f18a2eeea4</guid>
+      <pubDate>Sat, 31 Oct 2026 20:43:46 GMT</pubDate>
+    </item>
     <item>
       <title>Saturday: Pro Mod Qualifying 4 removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -329,34 +357,6 @@
       <description>&lt;p&gt;Run order posted for Thursday, October 29 (30 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-4e33d9348e8521cae93c</guid>
       <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Friday, October 30 (39 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Friday, October 30 (39 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b41fa646609709d0b699</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Saturday, October 31 (44 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Saturday, October 31 (44 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-83296123a1f931d5a61e</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order posted for Sunday, November 01 (43 sessions)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order posted for Sunday, November 01 (43 sessions)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-8a539dc2c92c1e16036e</guid>
-      <pubDate>Wed, 28 Oct 2026 14:39:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Thursday: Test change removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday: Test change removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-74066f6bd1bec09f7f17</guid>
-      <pubDate>Wed, 28 Oct 2026 13:14:31 GMT</pubDate>
     </item>
   </channel>
 </rss>

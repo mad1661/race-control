@@ -1,5 +1,29 @@
 [
   {
+    "guid": "race-control-9a50b2c3853ddfcfd153",
+    "date": "2026-10-31T20:43:46.119Z",
+    "title": "Saturday: Pro Mod Qualifying 4 added to the run order, after Summit Pro ET Round 1",
+    "description": "<p>Saturday: Pro Mod Qualifying 4 added to the run order, after Summit Pro ET Round 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-2f2e3e4e057fc1e469e5",
+    "date": "2026-10-31T20:43:46.119Z",
+    "title": "Saturday: Top Alcohol Dragster Round 1 added to the run order, after Pro Mod Qualifying 4",
+    "description": "<p>Saturday: Top Alcohol Dragster Round 1 added to the run order, after Pro Mod Qualifying 4</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-bc218ec72719804d2691",
+    "date": "2026-10-31T20:43:46.119Z",
+    "title": "Saturday: Top Alcohol Funny Car Round 1 added to the run order, after Top Alcohol Dragster Round 1",
+    "description": "<p>Saturday: Top Alcohol Funny Car Round 1 added to the run order, after Top Alcohol Dragster Round 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-358aa118c6f18a2eeea4",
+    "date": "2026-10-31T20:43:46.119Z",
+    "title": "Saturday: Legacy Nitro Funny Car Qualifying 3 added to the run order, after Top Alcohol Funny Car Round 1",
+    "description": "<p>Saturday: Legacy Nitro Funny Car Qualifying 3 added to the run order, after Top Alcohol Funny Car Round 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-284cf585a00c816984e9",
     "date": "2026-10-31T20:09:02.706Z",
     "title": "Saturday: Pro Mod Qualifying 4 removed from the run order",
@@ -274,29 +298,5 @@
     "date": "2026-10-28T14:39:37.597Z",
     "title": "Run order posted for Thursday, October 29 (30 sessions)",
     "description": "<p>Run order posted for Thursday, October 29 (30 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-b41fa646609709d0b699",
-    "date": "2026-10-28T14:39:37.597Z",
-    "title": "Run order posted for Friday, October 30 (39 sessions)",
-    "description": "<p>Run order posted for Friday, October 30 (39 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-83296123a1f931d5a61e",
-    "date": "2026-10-28T14:39:37.597Z",
-    "title": "Run order posted for Saturday, October 31 (44 sessions)",
-    "description": "<p>Run order posted for Saturday, October 31 (44 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-8a539dc2c92c1e16036e",
-    "date": "2026-10-28T14:39:37.597Z",
-    "title": "Run order posted for Sunday, November 01 (43 sessions)",
-    "description": "<p>Run order posted for Sunday, November 01 (43 sessions)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-74066f6bd1bec09f7f17",
-    "date": "2026-10-28T13:14:31.539Z",
-    "title": "Thursday: Test change removed from the run order",
-    "description": "<p>Thursday: Test change removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
