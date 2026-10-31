@@ -6,8 +6,22 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 31 Oct 2026 17:21:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 17:31:56 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-a5b4327495014c3880e0</guid>
+      <pubDate>Sat, 31 Oct 2026 17:31:56 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Qualifying 2 to Exh</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Qualifying 2 to Exh&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d39552a7ffb1bb55a574</guid>
+      <pubDate>Sat, 31 Oct 2026 17:31:56 GMT</pubDate>
+    </item>
     <item>
       <title>Saturday: Legacy Nitro Funny Car changed from Qualifying 2 to Exh</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -343,20 +357,6 @@
       <description>&lt;p&gt;23 changes to the run order&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Saturday: CA Funny Car Qualifying 2 removed from the run order&lt;/li&gt;&lt;li&gt;Saturday: Group 2 Eliminations removed from the run order&lt;/li&gt;&lt;li&gt;Saturday: D/Gas Qualifying 2 added to the run order, after Nostalgia Eliminator 2 Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: C/Gas Qualifying 2 added to the run order, after D/Gas Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Comp Qualifying 1 added to the run order, after AFX Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Junior Fuel Qualifying 1 added to the run order, after 7.0 Pro Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Outlaw Gassers Time Trial 2 added to the run order, after Pro Mod Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: CA Funny Cars Qualifying 1 added to the run order, after Outlaw Gassers Time Trial 2&lt;/li&gt;&lt;li&gt;Saturday: Outlaw Gassers Time Trial 3 added to the run order, after C/Gas Round 1&lt;/li&gt;&lt;li&gt;Saturday: Secure added to the run order at 6:00 PM&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 3 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 2 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: B/Gas changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Eliminator 1 changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: A/Gas changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: AFX changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Mod changed from Qualifying 3 to Qualifying 1&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Top Fuel Qualifying 2 moved from 12:30 PM to 12:15 PM&lt;/li&gt;&lt;li&gt;Saturday: Nostalgia Funny Car changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: 7.0 Pro changed from Round 1 to Qualifying 2&lt;/li&gt;&lt;li&gt;Saturday: Pro Mod Qualifying 2 no longer has a set time (was 12:00 PM); it follows the run order&lt;/li&gt;&lt;li&gt;Saturday: Jets changed from EX to Ex&lt;/li&gt;&lt;li&gt;Saturday: Cacklefest no longer has a set time (was 6:00 PM); it follows the run order&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-d95466d3a014fea23748</guid>
       <pubDate>Sat, 24 Oct 2026 04:27:34 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-5483216a35ded99bd881</guid>
-      <pubDate>Fri, 23 Oct 2026 10:50:38 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Jets EX now scheduled for 5:50 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Jets EX now scheduled for 5:50 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-ccad5e9a36f37964fb4a</guid>
-      <pubDate>Fri, 23 Oct 2026 10:49:40 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T17:21:53.930Z",
+  "fetchedAt": "2026-10-31T17:31:56.683Z",
   "days": [
     {
       "label": "Day 1",
@@ -491,13 +491,13 @@
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "Exh",
+          "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "Ford Racing Mustang Cobra Jet 2200",
-          "round": "Q-2",
+          "round": "Exh",
           "note": ""
         },
         {

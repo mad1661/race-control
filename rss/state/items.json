@@ -1,5 +1,17 @@
 [
   {
+    "guid": "race-control-a5b4327495014c3880e0",
+    "date": "2026-10-31T17:31:56.683Z",
+    "title": "Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2",
+    "description": "<p>Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-d39552a7ffb1bb55a574",
+    "date": "2026-10-31T17:31:56.683Z",
+    "title": "Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Qualifying 2 to Exh",
+    "description": "<p>Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Qualifying 2 to Exh</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-5a629f5051524beb19ca",
     "date": "2026-10-31T17:21:53.930Z",
     "title": "Saturday: Legacy Nitro Funny Car changed from Qualifying 2 to Exh",
@@ -286,17 +298,5 @@
     "date": "2026-10-24T04:27:34.166Z",
     "title": "23 changes to the run order",
     "description": "<p>23 changes to the run order</p><ul><li>Saturday: CA Funny Car Qualifying 2 removed from the run order</li><li>Saturday: Group 2 Eliminations removed from the run order</li><li>Saturday: D/Gas Qualifying 2 added to the run order, after Nostalgia Eliminator 2 Qualifying 2</li><li>Saturday: C/Gas Qualifying 2 added to the run order, after D/Gas Qualifying 2</li><li>Saturday: Pro Comp Qualifying 1 added to the run order, after AFX Qualifying 2</li><li>Saturday: Junior Fuel Qualifying 1 added to the run order, after 7.0 Pro Qualifying 2</li><li>Saturday: Outlaw Gassers Time Trial 2 added to the run order, after Pro Mod Qualifying 2</li><li>Saturday: CA Funny Cars Qualifying 1 added to the run order, after Outlaw Gassers Time Trial 2</li><li>Saturday: Outlaw Gassers Time Trial 3 added to the run order, after C/Gas Round 1</li><li>Saturday: Secure added to the run order at 6:00 PM</li><li>Saturday: Nostalgia Eliminator 3 changed from Round 1 to Qualifying 2</li><li>Saturday: Nostalgia Eliminator 2 changed from Round 1 to Qualifying 2</li><li>Saturday: B/Gas changed from Round 1 to Qualifying 2</li><li>Saturday: Nostalgia Eliminator 1 changed from Round 1 to Qualifying 2</li><li>Saturday: A/Gas changed from Round 1 to Qualifying 2</li><li>Saturday: AFX changed from Round 1 to Qualifying 2</li><li>Saturday: Pro Mod changed from Qualifying 3 to Qualifying 1</li><li>Saturday: Nostalgia Top Fuel Qualifying 2 moved from 12:30 PM to 12:15 PM</li><li>Saturday: Nostalgia Funny Car changed from Round 1 to Qualifying 2</li><li>Saturday: 7.0 Pro changed from Round 1 to Qualifying 2</li><li>Saturday: Pro Mod Qualifying 2 no longer has a set time (was 12:00 PM); it follows the run order</li><li>Saturday: Jets changed from EX to Ex</li><li>Saturday: Cacklefest no longer has a set time (was 6:00 PM); it follows the run order</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-5483216a35ded99bd881",
-    "date": "2026-10-23T10:50:38.433Z",
-    "title": "Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order",
-    "description": "<p>Friday: Jets EX no longer has a set time (was 5:50 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-ccad5e9a36f37964fb4a",
-    "date": "2026-10-23T10:49:40.052Z",
-    "title": "Friday: Jets EX now scheduled for 5:50 PM",
-    "description": "<p>Friday: Jets EX now scheduled for 5:50 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
