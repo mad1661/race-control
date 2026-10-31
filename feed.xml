@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 30 Oct 2026 22:27:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 01:02:21 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: FUNNY CAR Qualifying 2 now scheduled for 5:30 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 2 now scheduled for 5:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-dc381d4cafb6f820735b</guid>
+      <pubDate>Sat, 31 Oct 2026 01:02:21 GMT</pubDate>
+    </item>
     <item>
       <title>Friday: FUNNY CAR changed from Time Trial 2 to Qualifying 2</title>
       <link>https://www.nhraracer.com/racecontrol</link>
