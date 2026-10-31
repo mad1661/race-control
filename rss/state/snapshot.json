@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T02:46:45.132Z",
+  "fetchedAt": "2026-10-31T04:14:54.196Z",
   "days": [
     {
       "label": "Day 1",
@@ -422,12 +422,6 @@
         {
           "scheduled": "",
           "name": "Top Alcohol Dragster",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
           "round": "Q-2",
           "note": ""
         },
