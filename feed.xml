@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 01 Nov 2026 19:59:37 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 22:54:33 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-647f34052f23bb497faf</guid>
+      <pubDate>Sun, 01 Nov 2026 22:54:33 GMT</pubDate>
+    </item>
     <item>
       <title>Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -349,13 +356,6 @@
       <link>https://www.nhraracer.com/racecontrol</link>
       <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-19149f82249bb624c073</guid>
-      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-d97714fba41b0bc10ccc</guid>
       <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
     </item>
   </channel>

@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-647f34052f23bb497faf",
+    "date": "2026-11-01T22:54:33.637Z",
+    "title": "Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM",
+    "description": "<p>Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-2b108c3340a108ffe77e",
     "date": "2026-11-01T19:59:37.847Z",
     "title": "Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM",
@@ -292,11 +298,5 @@
     "date": "2026-10-30T21:08:03.862Z",
     "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order",
     "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-d97714fba41b0bc10ccc",
-    "date": "2026-10-30T21:08:03.862Z",
-    "title": "Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order",
-    "description": "<p>Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
