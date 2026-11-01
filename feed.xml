@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 01 Nov 2026 18:57:04 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 19:02:06 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Sunday: Pro Mod Round 2 added to the run order, after PRO STOCK MOTORCYCLE Round 2</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Pro Mod Round 2 added to the run order, after PRO STOCK MOTORCYCLE Round 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-12d15a8ac4c91549097e</guid>
+      <pubDate>Sun, 01 Nov 2026 19:02:06 GMT</pubDate>
+    </item>
     <item>
       <title>Sunday: Pro Mod Round 2 removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -349,13 +356,6 @@
       <link>https://www.nhraracer.com/racecontrol</link>
       <description>&lt;p&gt;Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Sportsman Round 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-4dc7214b35cbe82092e2</guid>
-      <pubDate>Fri, 30 Oct 2026 15:58:20 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after DeeCell Comp Clash Final</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after DeeCell Comp Clash Final&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-73da1e5c20191291b554</guid>
       <pubDate>Fri, 30 Oct 2026 15:58:20 GMT</pubDate>
     </item>
   </channel>

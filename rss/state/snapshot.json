@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T18:57:04.084Z",
+  "fetchedAt": "2026-11-01T19:02:06.913Z",
   "days": [
     {
       "label": "Day 1",
@@ -818,7 +818,7 @@
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "R-3",
+          "round": "R-2",
           "note": ""
         },
         {
@@ -896,6 +896,12 @@
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
           "round": "R-3",
           "note": ""
         },

@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-12d15a8ac4c91549097e",
+    "date": "2026-11-01T19:02:06.913Z",
+    "title": "Sunday: Pro Mod Round 2 added to the run order, after PRO STOCK MOTORCYCLE Round 2",
+    "description": "<p>Sunday: Pro Mod Round 2 added to the run order, after PRO STOCK MOTORCYCLE Round 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-50c0916fd523edb0449f",
     "date": "2026-11-01T18:57:04.084Z",
     "title": "Sunday: Pro Mod Round 2 removed from the run order",
@@ -292,11 +298,5 @@
     "date": "2026-10-30T15:58:20.396Z",
     "title": "Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Sportsman Round 2",
     "description": "<p>Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Sportsman Round 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-73da1e5c20191291b554",
-    "date": "2026-10-30T15:58:20.396Z",
-    "title": "Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after DeeCell Comp Clash Final",
-    "description": "<p>Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after DeeCell Comp Clash Final</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
