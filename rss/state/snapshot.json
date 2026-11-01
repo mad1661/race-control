@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T19:02:06.913Z",
+  "fetchedAt": "2026-11-01T19:44:30.286Z",
   "days": [
     {
       "label": "Day 1",
@@ -763,6 +763,36 @@
         },
         {
           "scheduled": "",
+          "name": "TOP FUEL",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "FUNNY CAR",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
           "name": "Legacy Nitro Funny Car",
           "round": "R-1",
           "note": ""
@@ -794,37 +824,37 @@
         {
           "scheduled": "",
           "name": "TOP FUEL",
-          "round": "R-2",
+          "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "FUNNY CAR",
-          "round": "R-2",
+          "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK",
-          "round": "R-2",
+          "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-2",
+          "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "Pro Mod",
-          "round": "R-2",
+          "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
-          "round": "R-2",
+          "round": "R-3",
           "note": ""
         },
         {
@@ -837,12 +867,6 @@
           "scheduled": "",
           "name": "Top Alcohol Dragster",
           "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Sportsman Finals",
-          "round": "Final",
           "note": ""
         },
         {
@@ -871,67 +895,7 @@
         },
         {
           "scheduled": "",
-          "name": "Parade of Champions",
-          "round": "",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "TOP FUEL",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "FUNNY CAR",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "PRO STOCK MOTORCYCLE",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit ET Finals",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Alcohol Funny Car",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Alcohol Dragster",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Pro Mod",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
+          "name": "Sportsman Finals",
           "round": "Final",
           "note": ""
         },
@@ -968,6 +932,54 @@
         {
           "scheduled": "",
           "name": "TOP FUEL",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Pro Mod",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
           "round": "Final",
           "note": ""
         },

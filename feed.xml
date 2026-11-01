@@ -6,8 +6,57 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 01 Nov 2026 19:02:06 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 19:44:30 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Sunday: Summit ET Finals Final removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Summit ET Finals Final removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-9dc8cb8232e1addde958</guid>
+      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Parade of Champions removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Parade of Champions removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-091b1ac93c180004bce6</guid>
+      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Summit Sportsman ET Final added to the run order, after Pro Mod Final</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Summit Sportsman ET Final added to the run order, after Pro Mod Final&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-fe0574d5bf7a5882af1d</guid>
+      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Summit ET Motorcycle Final added to the run order, after Summit Sportsman ET Final</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Summit ET Motorcycle Final added to the run order, after Summit Sportsman ET Final&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d59a18aed38bf6324796</guid>
+      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Summit Super Pro ET Final added to the run order, after Summit ET Motorcycle Final</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Summit Super Pro ET Final added to the run order, after Summit ET Motorcycle Final&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-907361ec9591e2792ebe</guid>
+      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Summit Pro ET Final added to the run order, after Summit Super Pro ET Final</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Summit Pro ET Final added to the run order, after Summit Super Pro ET Final&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-568884b671c93f33aabb</guid>
+      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Legacy Nitro Funny Car changed from Round 2 to Round 3</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Legacy Nitro Funny Car changed from Round 2 to Round 3&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d0b9957886f3c93ab623</guid>
+      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
+    </item>
     <item>
       <title>Sunday: Pro Mod Round 2 added to the run order, after PRO STOCK MOTORCYCLE Round 2</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -308,55 +357,6 @@
       <description>&lt;p&gt;Friday: Dodge Grudge Race changed from TT to Exh&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-bd5a8482dee25b0c2d23</guid>
       <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: FUNNY CAR changed from Qualifying 2 to Time Trial 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: FUNNY CAR changed from Qualifying 2 to Time Trial 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-c7ce105fc3a2218abadd</guid>
-      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: FUNNY CAR Time Trial 2 no longer has a set time (was 4:30 PM); it follows the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: FUNNY CAR Time Trial 2 no longer has a set time (was 4:30 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-7d478dd4a9de8ee144d6</guid>
-      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: TOP FUEL changed from Qualifying 2 to Time Trial 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: TOP FUEL changed from Qualifying 2 to Time Trial 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-d2d20fbc03ff69a00500</guid>
-      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 3:30 PM); it follows the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 3:30 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-78caeb4b85602f9e3d80</guid>
-      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: CJ E Mod Exh removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: CJ E Mod Exh removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-e1e84561a6f39193985e</guid>
-      <pubDate>Fri, 30 Oct 2026 15:58:20 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: CJ E Mod Exh removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: CJ E Mod Exh removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-c7bc4ea543b98da0cc15</guid>
-      <pubDate>Fri, 30 Oct 2026 15:58:20 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Sportsman Round 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Sportsman Round 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-4dc7214b35cbe82092e2</guid>
-      <pubDate>Fri, 30 Oct 2026 15:58:20 GMT</pubDate>
     </item>
   </channel>
 </rss>
