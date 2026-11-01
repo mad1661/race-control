@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T03:57:15.627Z",
+  "fetchedAt": "2026-11-01T18:57:04.084Z",
   "days": [
     {
       "label": "Day 1",
@@ -723,14 +723,8 @@
       "gid": "610804353",
       "date": "Sunday, November 01, 2026",
       "title": "MOPAR NHRA Las Vegas Nationals powered by Dodge",
-      "radio": "106.1 FM",
+      "radio": "",
       "items": [
-        {
-          "scheduled": "9:45 AM",
-          "name": "Pro Mod",
-          "round": "R-1",
-          "note": ""
-        },
         {
           "scheduled": "10:30 AM",
           "name": "Pre-Race Ceremonies",
@@ -763,14 +757,14 @@
         },
         {
           "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
+          "name": "Pro Mod",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "name": "Pro Mod",
-          "round": "R-2",
+          "name": "Legacy Nitro Funny Car",
+          "round": "R-1",
           "note": ""
         },
         {

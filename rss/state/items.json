@@ -1,5 +1,17 @@
 [
   {
+    "guid": "race-control-50c0916fd523edb0449f",
+    "date": "2026-11-01T18:57:04.084Z",
+    "title": "Sunday: Pro Mod Round 2 removed from the run order",
+    "description": "<p>Sunday: Pro Mod Round 2 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-ac067e8f1e6274696638",
+    "date": "2026-11-01T18:57:04.084Z",
+    "title": "Sunday: Pro Mod Round 1 no longer has a set time (was 9:45 AM); it follows the run order",
+    "description": "<p>Sunday: Pro Mod Round 1 no longer has a set time (was 9:45 AM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-ceaa2564b827a373f639",
     "date": "2026-11-01T03:57:15.627Z",
     "title": "Sunday: Pro Mod Round 1 moved from 9:15 AM to 9:45 AM",
@@ -286,17 +298,5 @@
     "date": "2026-10-30T15:58:20.396Z",
     "title": "Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after DeeCell Comp Clash Final",
     "description": "<p>Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after DeeCell Comp Clash Final</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-1d53d309a24b9eb7c55a",
-    "date": "2026-10-29T23:00:29.758Z",
-    "title": "Run order updated for MOPAR NHRA Las Vegas Nationals powered by Dodge",
-    "description": "<p>Run order updated for MOPAR NHRA Las Vegas Nationals powered by Dodge</p><ul><li>Thursday, October 29, 2026: 30 sessions</li><li>Friday, October 30, 2026: 39 sessions</li><li>Saturday, October 31, 2026: 44 sessions</li><li>Sunday, November 01, 2026: 43 sessions</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-de0b887be23aced88395",
-    "date": "2026-10-28T16:59:55.060Z",
-    "title": "Thursday: Stock Qualifying 1 note removed (was \"RC SMS test\")",
-    "description": "<p>Thursday: Stock Qualifying 1 note removed (was &quot;RC SMS test&quot;)</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

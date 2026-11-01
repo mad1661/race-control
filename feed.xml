@@ -6,8 +6,22 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 01 Nov 2026 03:57:15 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 18:57:04 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Sunday: Pro Mod Round 2 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Pro Mod Round 2 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-50c0916fd523edb0449f</guid>
+      <pubDate>Sun, 01 Nov 2026 18:57:04 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Pro Mod Round 1 no longer has a set time (was 9:45 AM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Pro Mod Round 1 no longer has a set time (was 9:45 AM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-ac067e8f1e6274696638</guid>
+      <pubDate>Sun, 01 Nov 2026 18:57:04 GMT</pubDate>
+    </item>
     <item>
       <title>Sunday: Pro Mod Round 1 moved from 9:15 AM to 9:45 AM</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -343,20 +357,6 @@
       <description>&lt;p&gt;Friday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after DeeCell Comp Clash Final&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-73da1e5c20191291b554</guid>
       <pubDate>Fri, 30 Oct 2026 15:58:20 GMT</pubDate>
-    </item>
-    <item>
-      <title>Run order updated for MOPAR NHRA Las Vegas Nationals powered by Dodge</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Run order updated for MOPAR NHRA Las Vegas Nationals powered by Dodge&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday, October 29, 2026: 30 sessions&lt;/li&gt;&lt;li&gt;Friday, October 30, 2026: 39 sessions&lt;/li&gt;&lt;li&gt;Saturday, October 31, 2026: 44 sessions&lt;/li&gt;&lt;li&gt;Sunday, November 01, 2026: 43 sessions&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-1d53d309a24b9eb7c55a</guid>
-      <pubDate>Thu, 29 Oct 2026 23:00:29 GMT</pubDate>
-    </item>
-    <item>
-      <title>Thursday: Stock Qualifying 1 note removed (was &quot;RC SMS test&quot;)</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Thursday: Stock Qualifying 1 note removed (was &amp;quot;RC SMS test&amp;quot;)&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-de0b887be23aced88395</guid>
-      <pubDate>Wed, 28 Oct 2026 16:59:55 GMT</pubDate>
     </item>
   </channel>
 </rss>
