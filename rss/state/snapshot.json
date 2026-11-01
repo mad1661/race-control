@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T19:44:30.286Z",
+  "fetchedAt": "2026-11-01T19:59:37.847Z",
   "days": [
     {
       "label": "Day 1",
@@ -762,7 +762,7 @@
           "note": ""
         },
         {
-          "scheduled": "",
+          "scheduled": "1:15 PM",
           "name": "TOP FUEL",
           "round": "R-2",
           "note": ""

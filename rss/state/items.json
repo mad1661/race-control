@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-2b108c3340a108ffe77e",
+    "date": "2026-11-01T19:59:37.847Z",
+    "title": "Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM",
+    "description": "<p>Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-9dc8cb8232e1addde958",
     "date": "2026-11-01T19:44:30.286Z",
     "title": "Sunday: Summit ET Finals Final removed from the run order",
@@ -292,11 +298,5 @@
     "date": "2026-10-30T21:08:03.862Z",
     "title": "Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order",
     "description": "<p>Friday: FUNNY CAR Qualifying 1 no longer has a set time (was 1:45 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-bd5a8482dee25b0c2d23",
-    "date": "2026-10-30T21:08:03.862Z",
-    "title": "Friday: Dodge Grudge Race changed from TT to Exh",
-    "description": "<p>Friday: Dodge Grudge Race changed from TT to Exh</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
