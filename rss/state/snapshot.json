@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T03:52:15.353Z",
+  "fetchedAt": "2026-11-01T03:57:15.627Z",
   "days": [
     {
       "label": "Day 1",
@@ -726,7 +726,7 @@
       "radio": "106.1 FM",
       "items": [
         {
-          "scheduled": "9:15 AM",
+          "scheduled": "9:45 AM",
           "name": "Pro Mod",
           "round": "R-1",
           "note": ""
