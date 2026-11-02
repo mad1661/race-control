@@ -6,8 +6,43 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 01 Nov 2026 22:54:33 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:35:30 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Sunday: Jr Dragster Exh removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Jr Dragster Exh removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-ab4352d9017df8e5f34b</guid>
+      <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Parade of Champions removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Parade of Champions removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-90eb3df8dccb0d04662f</guid>
+      <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Legacy Nitro Funny Car Final removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Legacy Nitro Funny Car Final removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-48fd7163c11389b5be80</guid>
+      <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-a96b7dfb680d13467a23</guid>
+      <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-1fe4dd6648349bf326d0</guid>
+      <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
+    </item>
     <item>
       <title>Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -322,41 +357,6 @@
       <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 2 now scheduled for 5:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-dc381d4cafb6f820735b</guid>
       <pubDate>Sat, 31 Oct 2026 01:02:21 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: FUNNY CAR changed from Time Trial 2 to Qualifying 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: FUNNY CAR changed from Time Trial 2 to Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-3961fa25d20a48321d54</guid>
-      <pubDate>Fri, 30 Oct 2026 22:27:27 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: TOP FUEL changed from Time Trial 2 to Qualifying 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: TOP FUEL changed from Time Trial 2 to Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-1b7fa1adbde56c79ac62</guid>
-      <pubDate>Fri, 30 Oct 2026 22:27:27 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: FUNNY CAR Qualifying 1 now scheduled for 3:30 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 1 now scheduled for 3:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-59bb67233d94e54b2d7a</guid>
-      <pubDate>Fri, 30 Oct 2026 21:20:04 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-dce2387e9a43ebe7a696</guid>
-      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-19149f82249bb624c073</guid>
-      <pubDate>Fri, 30 Oct 2026 21:08:03 GMT</pubDate>
     </item>
   </channel>
 </rss>

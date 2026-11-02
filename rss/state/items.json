@@ -1,5 +1,35 @@
 [
   {
+    "guid": "race-control-ab4352d9017df8e5f34b",
+    "date": "2026-11-02T00:35:30.817Z",
+    "title": "Sunday: Jr Dragster Exh removed from the run order",
+    "description": "<p>Sunday: Jr Dragster Exh removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-90eb3df8dccb0d04662f",
+    "date": "2026-11-02T00:35:30.817Z",
+    "title": "Sunday: Parade of Champions removed from the run order",
+    "description": "<p>Sunday: Parade of Champions removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-48fd7163c11389b5be80",
+    "date": "2026-11-02T00:35:30.817Z",
+    "title": "Sunday: Legacy Nitro Funny Car Final removed from the run order",
+    "description": "<p>Sunday: Legacy Nitro Funny Car Final removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-a96b7dfb680d13467a23",
+    "date": "2026-11-02T00:35:30.817Z",
+    "title": "Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1",
+    "description": "<p>Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-1fe4dd6648349bf326d0",
+    "date": "2026-11-02T00:35:30.817Z",
+    "title": "Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM",
+    "description": "<p>Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-647f34052f23bb497faf",
     "date": "2026-11-01T22:54:33.637Z",
     "title": "Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM",
@@ -268,35 +298,5 @@
     "date": "2026-10-31T01:02:21.385Z",
     "title": "Friday: FUNNY CAR Qualifying 2 now scheduled for 5:30 PM",
     "description": "<p>Friday: FUNNY CAR Qualifying 2 now scheduled for 5:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-3961fa25d20a48321d54",
-    "date": "2026-10-30T22:27:27.614Z",
-    "title": "Friday: FUNNY CAR changed from Time Trial 2 to Qualifying 2",
-    "description": "<p>Friday: FUNNY CAR changed from Time Trial 2 to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-1b7fa1adbde56c79ac62",
-    "date": "2026-10-30T22:27:27.614Z",
-    "title": "Friday: TOP FUEL changed from Time Trial 2 to Qualifying 2",
-    "description": "<p>Friday: TOP FUEL changed from Time Trial 2 to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-59bb67233d94e54b2d7a",
-    "date": "2026-10-30T21:20:04.765Z",
-    "title": "Friday: FUNNY CAR Qualifying 1 now scheduled for 3:30 PM",
-    "description": "<p>Friday: FUNNY CAR Qualifying 1 now scheduled for 3:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-dce2387e9a43ebe7a696",
-    "date": "2026-10-30T21:08:03.862Z",
-    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1",
-    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 1 added to the run order, after TOP FUEL Qualifying 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-19149f82249bb624c073",
-    "date": "2026-10-30T21:08:03.862Z",
-    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order",
-    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 1 no longer has a set time (was 12:45 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

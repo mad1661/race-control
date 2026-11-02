@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T22:54:33.637Z",
+  "fetchedAt": "2026-11-02T00:35:30.817Z",
   "days": [
     {
       "label": "Day 1",
@@ -798,30 +798,6 @@
           "note": ""
         },
         {
-          "scheduled": "",
-          "name": "Summit Sportsman ET",
-          "round": "R-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit ET Motorcycle",
-          "round": "R-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Super Pro ET",
-          "round": "R-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Summit Pro ET",
-          "round": "R-2",
-          "note": ""
-        },
-        {
           "scheduled": "3:05 PM",
           "name": "TOP FUEL",
           "round": "R-3",
@@ -854,6 +830,12 @@
         {
           "scheduled": "",
           "name": "Legacy Nitro Funny Car",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
           "round": "R-3",
           "note": ""
         },
@@ -865,54 +847,30 @@
         },
         {
           "scheduled": "",
-          "name": "Top Alcohol Dragster",
-          "round": "R-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
           "name": "Summit Sportsman ET",
-          "round": "R-3",
+          "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit ET Motorcycle",
-          "round": "R-3",
+          "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Super Pro ET",
-          "round": "R-3",
+          "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "R-3",
+          "round": "R-2",
           "note": ""
         },
         {
-          "scheduled": "",
-          "name": "Sportsman Finals",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Jr Dragster",
-          "round": "Exh",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Parade of Champions",
-          "round": "",
-          "note": ""
-        },
-        {
-          "scheduled": "",
+          "scheduled": "4:40 PM",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Final",
           "note": ""
@@ -943,6 +901,48 @@
         },
         {
           "scheduled": "",
+          "name": "Sportsman Finals",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Sportsman ET",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit ET Motorcycle",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Super Pro ET",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Summit Pro ET",
+          "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "name": "Top Alcohol Dragster",
+          "round": "Final",
+          "note": ""
+        },
+        {
+          "scheduled": "",
           "name": "Summit Sportsman ET",
           "round": "Final",
           "note": ""
@@ -962,24 +962,6 @@
         {
           "scheduled": "",
           "name": "Summit Pro ET",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Alcohol Funny Car",
-          "round": "Final",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "name": "Top Alcohol Dragster",
           "round": "Final",
           "note": ""
         },
