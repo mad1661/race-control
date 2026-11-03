@@ -38,7 +38,15 @@
   #btnSend:disabled{background:#5c2832}
   #btnTest{width:100%;background:#2458c5;font-size:16px;padding:14px}
   #btnSource{width:100%;background:#2a313c;border:1px solid #4a5362;font-size:16px;padding:14px}
-  #btnUnlock{width:100%;background:#f4f5f7;color:#12141a;font-size:17px;padding:14px}
+  .gate{background:#10131a;border:1px solid #f4f5f7;border-radius:16px;padding:16px;margin:0 0 18px}
+  .gate h2{margin:0 0 6px;font-size:18px;letter-spacing:-.03em;text-transform:none;color:#fff}
+  .covers{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;padding:0;list-style:none}
+  .covers li{font-size:12px;font-weight:700;color:#e8eaee;border:1px solid #4a5362;border-radius:999px;padding:5px 9px}
+  .pin-row{display:flex;gap:8px;align-items:stretch}
+  .pin-row input{margin:0;flex:1;min-width:0}
+  #btnUnlock{width:auto;flex:0 0 auto;background:#f4f5f7;color:#12141a;font-size:16px;padding:0 16px;min-height:48px}
+  #unlockedBar{margin:0;color:#8ee7b0;font-weight:700}
+  #dash.locked{opacity:.4;filter:grayscale(.35)}
   #msg{min-height:22px;margin-top:12px;font-size:15px;text-align:center}
   .err{color:#ff9b9b}.ok{color:#8ee7b0}
   .foot{color:#8b919c;font-size:12px;margin-top:18px}
@@ -51,18 +59,30 @@
   <h1>Race Control</h1>
   <p class="sub">Text alerts, cost, and schedule source.</p>
 
-  <section class="card" id="lockCard">
-    <label for="pin">Admin PIN</label>
-    <input id="pin" type="password" inputmode="text" autocomplete="current-password" placeholder="PIN">
-    <button id="btnUnlock" type="button">Submit</button>
-    <p class="hint">Submit the PIN to unlock the dashboard.</p>
+  <section id="lockCard" class="gate" aria-label="Unlock the dashboard">
+    <div id="pinForm">
+      <h2>Unlock the dashboard</h2>
+      <p class="hint" id="gateCopy">One PIN opens every setting below. It is not tied to a single switch.</p>
+      <ul class="covers">
+        <li>Automatic / Manual</li>
+        <li>Schedule text</li>
+        <li>Text test</li>
+        <li>Sheets / SharePoint</li>
+      </ul>
+      <label for="pin">Admin PIN</label>
+      <div class="pin-row">
+        <input id="pin" type="password" inputmode="text" autocomplete="current-password" placeholder="PIN">
+        <button id="btnUnlock" type="button">Unlock</button>
+      </div>
+    </div>
+    <p id="unlockedBar" class="hint" hidden>Dashboard unlocked. This PIN covers every setting below.</p>
   </section>
 
-  <div id="dash" hidden>
+  <div id="dash" class="locked" inert>
     <section id="status" class="card status unk" aria-live="polite">
-      <div class="big" id="state">…</div>
+      <div class="big" id="state">Locked</div>
       <div class="people" id="people"></div>
-      <div class="meta" id="meta">Checking…</div>
+      <div class="meta" id="meta">Locked until you unlock the PIN above.</div>
     </section>
 
     <section class="card" aria-label="Estimated cost">
@@ -82,11 +102,11 @@
 
     <section class="card" id="pendingCard">
       <h2>Schedule text</h2>
-      <p id="pendingState">Checking…</p>
+      <p id="pendingState">Locked until you unlock the PIN above.</p>
       <label for="manualText">Message</label>
       <textarea id="manualText" rows="5"></textarea>
       <p class="hint" id="segmentHint"></p>
-      <button id="btnSend" type="button">Send update</button>
+      <button id="btnSend" type="button" disabled>Send update</button>
     </section>
 
     <section class="card">
@@ -291,7 +311,7 @@
   function requirePin() {
     if (pin()) return true;
     msg('Enter the PIN first.', 'err');
-    if (!$('lockCard').hidden) $('pin').focus();
+    if (!$('pinForm').hidden) $('pin').focus();
     return false;
   }
   function unlock() {
@@ -310,8 +330,10 @@
         return;
       }
       try { sessionStorage.setItem('rcPin', pin()); } catch (e) {}
-      $('lockCard').hidden = true;
-      $('dash').hidden = false;
+      $('pinForm').hidden = true;
+      $('unlockedBar').hidden = false;
+      $('dash').classList.remove('locked');
+      $('dash').inert = false;
       if (res.source === 'sharepoint') $('srcShare').checked = true; else $('srcSheets').checked = true;
       if (res.sharepointUrl) $('spUrl').value = res.sharepointUrl;
       msg('Dashboard unlocked.', 'ok');
@@ -401,7 +423,7 @@
     .then(function (cfg) {
       api = (override || cfg.adminScriptUrl || '').trim();
       if (!/^https:\/\/script\.google(usercontent)?\.com\//.test(api)) {
-        $('lockCard').querySelector('.hint').textContent = 'Switch not connected yet (Apps Script web app URL missing).';
+        msg('Switch not connected yet (Apps Script web app URL missing).', 'err');
         $('btnUnlock').disabled = true;
         return;
       }

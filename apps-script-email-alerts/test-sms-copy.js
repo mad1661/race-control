@@ -107,9 +107,11 @@ assert.ok(!adminHtml.includes('>Turn on<') && !adminHtml.includes('>Turn off<'))
 assert.ok(!adminHtml.includes('setSmsEnabled'));
 assert.ok(!adminHtml.includes('btnOn') && !adminHtml.includes('btnOff'));
 assert.ok(adminHtml.includes('id="btnUnlock"'));
-assert.ok(adminHtml.includes('id="dash" hidden'));
+assert.ok(adminHtml.includes('id="dash" class="locked"'));
 assert.ok(adminHtml.includes('id="manualText"'));
-assert.ok(adminHtml.includes('Submit the PIN to unlock the dashboard.'));
+assert.ok(adminHtml.includes('Unlock the dashboard'));
+assert.ok(adminHtml.includes('>Unlock</button>'));
+assert.ok(adminHtml.includes('One PIN opens every setting below.'));
 function extractHtml(name) {
   const start = adminHtml.indexOf('function ' + name + '(');
   if (start < 0) throw new Error('missing ' + name);
