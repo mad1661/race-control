@@ -27,7 +27,7 @@ firebase deploy --only hosting --project race-control-feed --non-interactive
 
 If that command would publish a different folder, copy `sms-admin.html` onto the existing file at the site root instead. `sms-config.json` already has the public web-app URL. Do not put the PIN or API key in it.
 
-Until the new Code.gs is deployed, the new page still shows ON/OFF from the old script. Cost, Manual, Send update, Text test, and SharePoint light up after step 1.
+Until the new Code.gs is deployed, the new page still loads status from the old script. Manual send of an edited message, and sending with nothing waiting, need this Code.gs deployed as a new web app version. Cost, Manual, Send update, Text test, and SharePoint light up after step 1. The page no longer shows Turn on / Turn off.
 
 ## 3. Public page (look + Sheets/SharePoint hook)
 
@@ -49,9 +49,11 @@ GitHub Pages is updated by `.github/workflows/feed.yml` on push.
 ## Behavior after paste
 
 - Texts say: “There has been a change in the schedule.” plus the Race Control link and Reply STOP. They do not name the class.
-- **Automatic** (default) matches today: next new feed item texts the list.
-- **Manual**: the feed is still marked seen, nothing goes out until **Send update**. Manual → Automatic, and OFF → ON, do not send a backlog.
-- Dashboard shows active count, estimated blast cost (`count × segments × rate`), and last-blast cost from sent × segments.
+- **Automatic** (default): the next new feed item texts the list with the fixed one-segment sentence. The dashboard does not send that one by hand.
+- **Manual**: the feed item is still marked seen (no backlog when you switch back to Automatic). **Send update** is always available. It does not wait for a detected change. The message box starts with the fixed sentence and can be edited; that edited text is what goes out. A detected change is only a note. Sending clears it if one is waiting.
+- **No Turn on / Turn off.** `SMS_ENABLED` is unchanged by this page. The script still sends only when that property is exactly `true` (default is off when the property is unset). It is already `true` on the live script as of 2026-11-03. To stop all texts, set the property to `false` in Apps Script Project Settings. To let Automatic and Manual send again, set it back to `true`. There is no dashboard button for that switch.
+- **PIN Submit** unlocks the whole dashboard. Wrong PIN leaves it locked. The PIN stays in Script Property `SMS_ADMIN_PIN`.
+- Dashboard shows active count, estimated blast cost (`count × segments × rate`), and last-blast cost from sent × segments. The message box shows GSM-7 vs Unicode segment count for the text about to be sent (Manual, up to 6 segments).
 - **Google Sheets** stays the schedule source until someone picks SharePoint and the feed run succeeds.
 - Opt-out pruning (Quo `0201400`) is unchanged.
 

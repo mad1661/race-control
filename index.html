@@ -61,11 +61,70 @@ tbody tr:hover{background:#f6f8fb}
   th:last-child,td:last-child{padding-right:12px}
 }
 </style>
+<style id="rc-mobile-times">
+/* Narrow phone and the Wix iframe: fit Class, Status, Round, and the full
+   Scheduled time inside the board. The page itself does not grow sideways.
+   The No. column stays in the table (width 0) so column widths do not shift. */
+@media (max-width: 680px) {
+  .board, .table-scroll { max-width: 100%; }
+  .table-scroll { overflow: hidden; }
+  .table-scroll table { table-layout: fixed; width: 100%; }
+  col.c-no { width: 0; }
+  col.c-status { width: 64px; }
+  col.c-round { width: 44px; }
+  col.c-time { width: 78px; }
+  th.sequence, td.sequence {
+    display: table-cell !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    overflow: hidden !important;
+  }
+  .table-scroll th, .table-scroll td { padding: 8px 3px; }
+  .table-scroll th:nth-child(2), .table-scroll td:nth-child(2) { padding-left: 8px; }
+  .table-scroll th:last-child, .table-scroll td.time { padding-left: 2px; padding-right: 4px; }
+  .table-scroll th { font-size: 8px; letter-spacing: .02em; line-height: 1.15; }
+  .table-scroll th:last-child {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 9px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .session-name { font-size: 13px; line-height: 1.25; overflow-wrap: break-word; }
+  .note { overflow-wrap: break-word; }
+  th.status-col, td.status-cell {
+    width: 64px;
+    white-space: normal;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  tr.done .done-badge, .done-badge, .run-badge {
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+    padding: 3px 3px;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: 1.15;
+  }
+  .round { font-size: 8px; letter-spacing: 0; padding: 2px 3px; }
+  td.time { font-size: 12px; letter-spacing: 0; white-space: nowrap; }
+}
+</style>
 </head><body>
 <svg aria-hidden="true" style="display:none"><symbol id="bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="1320" height="244" rx="2"/><path d="M7 3v4m10-4v4M3 11h18"/></symbol><symbol id="radio" viewBox="0 0 24 24"><path d="M8 8a6 6 0 0 0 0 8m8-8a6 6 0 0 1 0 8M4 4a12 12 0 0 0 0 16M20 4a12 12 0 0 1 0 16"/><circle cx="12" cy="12" r="1"/></symbol></svg>
 <header class="top"><img class="banner" src="https://race-control-feed.web.app/race-control-header.jpg" width="1320" height="315" alt="NHRA Race Control — Event Operations &amp; Safety · Championship Drag Racing" decoding="async" fetchpriority="high"></header>
 <section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow" id="eventTitle">RACE WEEKEND</div><h1 id="heroTitle">Race weekend.<br><span>Run order.</span></h1><p class="hero-copy">Find your class. Follow the run order. Keep the entire race weekend in view.</p><div class="meta"><span><svg><use href="#calendar"/></svg><span id="dateRange">Race schedule</span></span><span><svg><use href="#radio"/></svg><span id="radioText">PA broadcast</span></span></div></div><div class="subscribe-area"><button class="cta" data-subscribe><svg><use href="#bell"/></svg>Get Text Alerts<svg class="arrow"><use href="#arrow"/></svg></button><p>Get text (SMS) alerts from NHRA / Race Control at the number you provide.<br>Full consent terms appear before you tap Submit. Reply STOP to unsubscribe.</p></div></div></section>
-<main class="wrap dashboard"><div class="section-heading"><div><h2>Your weekend, at a glance.</h2><p id="syncText" role="status">Connecting to the schedule…</p></div><button id="refreshBtn" class="refresh-btn" type="button" aria-label="Refresh run order" title="Refresh run order"><svg aria-hidden="true"><use href="#refresh"/></svg><span class="refresh-label">Refresh</span></button></div><div id="error" class="error" role="alert" hidden></div><div class="grid"><section class="board" aria-label="Race schedule"><div class="board-top"><nav class="tabs" aria-label="Schedule views"><button class="tab" data-view="daily" aria-pressed="true">Daily run order</button><button class="tab" data-view="weekend" aria-pressed="false">Weekend</button></nav><span class="source-badge" id="sourceBadge"><span class="dot"></span><span id="sourceBadgeText">Google Sheets</span></span></div><div id="customView"><p id="lastUpdated" class="last-updated" role="status">Last updated: loading…</p><div class="tools"><label class="search"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><span class="sr-only">Find a class or round</span><input id="search" type="search" placeholder="Find your class or round…" autocomplete="off"></label><label class="sr-only" for="daySelect">Choose a schedule day</label><select id="daySelect"></select></div><div class="date-title"><h3 id="scheduleDate">Loading run order…</h3><span id="count"></span></div><div class="table-scroll"><table><thead><tr><th class="sequence">No.</th><th>Class / session</th><th class="status-col">Status</th><th>Round</th><th>Scheduled</th></tr></thead><tbody id="rows"></tbody></table><div class="empty" id="empty">Fetching the published schedule…</div></div><div class="table-foot">All daily run orders are subject to change. Blank scheduled times follow the run order; they are not estimated start times.</div></div></section><aside class="side"><section class="info"><span class="overline">The race weekend</span><h3 id="asideTitle">Weekend schedule</h3><ul id="days" class="day-list"></ul></section><section class="info alert-card"><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Stay in the loop</span><h3>Plans change.<br>Stay a step ahead.</h3><p>Get text alerts from NHRA / Race Control on your mobile. Full consent terms appear before you tap Submit.</p><button data-subscribe>Get Text Alerts</button></section></aside></div><footer class="footer"><span>RACE CONTROL / RUN ORDER<br>Times are shown exactly as published by the event.</span><span id="refreshNote">Refreshes every 60 seconds while open.<br>Google data refresh delays may apply.</span></footer></main>
+<main class="wrap dashboard"><div class="section-heading"><div><h2>Your weekend, at a glance.</h2><p id="syncText" role="status">Connecting to the schedule…</p></div><button id="refreshBtn" class="refresh-btn" type="button" aria-label="Refresh run order" title="Refresh run order"><svg aria-hidden="true"><use href="#refresh"/></svg><span class="refresh-label">Refresh</span></button></div><div id="error" class="error" role="alert" hidden></div><div class="grid"><section class="board" aria-label="Race schedule"><div class="board-top"><nav class="tabs" aria-label="Schedule views"><button class="tab" data-view="daily" aria-pressed="true">Daily run order</button><button class="tab" data-view="weekend" aria-pressed="false">Weekend</button></nav><span class="source-badge" id="sourceBadge"><span class="dot"></span><span id="sourceBadgeText">Google Sheets</span></span></div><div id="customView"><p id="lastUpdated" class="last-updated" role="status">Last updated: loading…</p><div class="tools"><label class="search"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><span class="sr-only">Find a class or round</span><input id="search" type="search" placeholder="Find your class or round…" autocomplete="off"></label><label class="sr-only" for="daySelect">Choose a schedule day</label><select id="daySelect"></select></div><div class="date-title"><h3 id="scheduleDate">Loading run order…</h3><span id="count"></span></div><div class="table-scroll"><table><colgroup><col class="c-no"><col class="c-class"><col class="c-status"><col class="c-round"><col class="c-time"></colgroup><thead><tr><th class="sequence">No.</th><th>Class / session</th><th class="status-col">Status</th><th>Round</th><th>Scheduled</th></tr></thead><tbody id="rows"></tbody></table><div class="empty" id="empty">Fetching the published schedule…</div></div><div class="table-foot">All daily run orders are subject to change. Blank scheduled times follow the run order; they are not estimated start times.</div></div></section><aside class="side"><section class="info"><span class="overline">The race weekend</span><h3 id="asideTitle">Weekend schedule</h3><ul id="days" class="day-list"></ul></section><section class="info alert-card"><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Stay in the loop</span><h3>Plans change.<br>Stay a step ahead.</h3><p>Get text alerts from NHRA / Race Control on your mobile. Full consent terms appear before you tap Submit.</p><button data-subscribe>Get Text Alerts</button></section></aside></div><footer class="footer"><span>RACE CONTROL / RUN ORDER<br>Times are shown exactly as published by the event.</span><span id="refreshNote">Refreshes every 60 seconds while open.<br>Google data refresh delays may apply.</span></footer></main>
 <dialog id="subscribeDialog" aria-labelledby="dialogTitle"><button class="close" aria-label="Close subscription dialog"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Text alerts</span><h2 id="dialogTitle">Get Text Alerts</h2><p id="dialogCopy">Add your mobile number to get text (SMS) alerts from NHRA / Race Control at the number you provide. Please review the full consent below before tapping Submit. Reply STOP to unsubscribe. Msg &amp; data rates may apply.</p><form id="smsForm" class="sms-form" novalidate><label for="smsPhone" class="sms-label">Mobile phone number</label><input id="smsPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(555) 555-5555" maxlength="20" required><input type="text" name="website" id="smsWebsite" tabindex="-1" autocomplete="off" aria-hidden="true" class="sms-hp"><p id="smsConsent" class="sms-consent">By clicking “Submit” below, you consent to receiving automated promotional and personalized marketing text messages from NHRA at the phone number provided above. You agree to the NHRA’s Communications Program Terms and Conditions.   Consent is not a condition of purchase. Reply HELP for help or STOP to end messages. Message frequency varies. Carrier and data rates may apply.</p><button id="smsSubmit" class="cta sms-cta" type="submit">Submit</button><small id="smsStatus" class="sms-status" role="status" aria-live="polite"></small></form><span class="rss-divider">Or follow with RSS</span><div class="feed-box"><label class="sr-only" for="feedUrl">RSS feed address</label><input id="feedUrl" type="text" readonly><button id="copyFeed" type="button">Copy link</button></div><div class="reader-row"><a href="https://www.inoreader.com/?add_feed=https%3A%2F%2Frace-control-feed.web.app%2Ffeed.xml" target="_blank" rel="noopener">Follow in Inoreader</a><a href="https://race-control-feed.web.app/feed.xml" target="_blank" rel="noopener">Open feed link</a></div><small id="copyStatus" role="status">Text alerts are the easiest way: enter your mobile number above and tap Submit. RSS is optional — copy the feed link into Inoreader or NetNewsWire.</small></dialog>
 <script>
 // Public spreadsheet read through the gviz feed. No keys or secrets live in this page.

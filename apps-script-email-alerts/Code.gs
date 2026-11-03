@@ -14,8 +14,10 @@
  * SMS MASTER SWITCH: Script Property SMS_ENABLED ('true' | 'false', default
  *   false when unset). When off, checkFeedAndAlert still records the newest
  *   feed item as seen (lastFeedGuid), so turning SMS on later does NOT blast a
- *   backlog. Toggle from https://race-control-feed.web.app/sms-admin.html
- *   (calls this script's web app; PIN in Script Property SMS_ADMIN_PIN).
+ *   backlog. The admin page no longer toggles this switch (Automatic vs Manual
+ *   is the control there). Set SMS_ENABLED in Script Properties. It stays
+ *   whatever it already is; a fresh unset property is still off, so nothing
+ *   sends until it is exactly 'true'. PIN: Script Property SMS_ADMIN_PIN.
  *
  * EMAIL ALERTS DISCONTINUED (2026-10-28). checkFeedAndAlert no longer sends
  * email. The SES / MailApp helpers below are kept only for a manual one-off.
@@ -58,7 +60,10 @@
  *
  * SEND MODE (2026-11): Script Property SMS_SEND_MODE = auto (default) | manual.
  *   Manual still records lastFeedGuid (no lost tracking, no backlog on Manual→Auto
- *   or OFF→ON) but does not text until the admin page "Send update" button.
+ *   or OFF→ON). It does not auto-text. Send update on the admin page sends the
+ *   message in the box (prefilled with the fixed sentence) anytime, with or
+ *   without a waiting feed change. Automatic still sends that fixed sentence
+ *   itself when a new feed item appears.
  *   QUO_SMS_COST_USD optional per-segment estimate (default 0.01, Quo's published
  *   API rate for local US/Canada SMS). SCHEDULE_SOURCE = sheets | sharepoint and
  *   SHAREPOINT_URL live in Script Properties. FEED_CONFIG_TOKEN lets the feed job
@@ -138,8 +143,9 @@ var CONFIG = {
   GH_WORKFLOW_DISPATCH_URL: 'https://api.github.com/repos/mad1661/race-control/actions/workflows/feed.yml/dispatches',
   LOCK_WAIT_MS: 5000,           // wait this long for the script lock, then exit quietly
   SWITCH_CHECK_EVERY: 10,       // re-read SMS_ENABLED every N chunks during a blast
-  SMS_MAX_CHARS: 160,           // one GSM-7 segment
-  PIN_MAX_FAILS: 10,            // per hour, then the toggle is locked for the hour
+  SMS_MAX_CHARS: 160,           // one GSM-7 segment (automatic / default sentence)
+  SMS_MANUAL_MAX_SEGMENTS: 6,   // cap for an edited Manual message
+  PIN_MAX_FAILS: 10,            // per hour, then the PIN is locked for the hour
   PROP_SMS_MODE: 'SMS_SEND_MODE',                 // auto (default) | manual
   PROP_PENDING_GUID: 'smsPendingGuid',
   PROP_PENDING_TITLE: 'smsPendingTitle',
@@ -658,6 +664,28 @@ function testSmsText_() {
  */
 function smsText_(item) {
   return scheduleAlertBody_();
+}
+
+/**
+ * Manual dashboard text. `provided` false keeps the fixed one-segment sentence
+ * (older clients that omit `text`). A provided message is sent as written,
+ * even when no feed change is waiting. gsmSafe_ folds smart quotes so the
+ * segment count stays GSM-7 when the characters allow it.
+ */
+function prepareManualText_(customText, provided) {
+  if (!provided) {
+    var fixed = scheduleAlertBody_();
+    return { ok: true, text: fixed, segments: smsSegments_(fixed) };
+  }
+  var text = gsmSafe_(customText).trim();
+  if (!text) return { ok: false, error: 'Enter a message.' };
+  if (text.length > 900) return { ok: false, error: 'Message is too long.' };
+  var segments = smsSegments_(text);
+  var maxSeg = CONFIG.SMS_MANUAL_MAX_SEGMENTS || 6;
+  if (segments > maxSeg) {
+    return { ok: false, error: 'Message is ' + segments + ' segments. Shorten it to ' + maxSeg + ' or fewer.' };
+  }
+  return { ok: true, text: text, segments: segments };
 }
 
 /** Swap common "smart" characters for plain ones so the text stays GSM-7 (160/segment, not 70). */
@@ -1593,15 +1621,20 @@ function smsCostReport_(phoneCount) {
 }
 
 /**
- * PIN-gated manual blast of the generic schedule text. Same lock, resume, and
- * opt-out path as an automatic alert. Does nothing when nothing is pending.
+ * PIN-gated manual blast. Same lock, resume, and opt-out path as an automatic
+ * alert. Does not require a waiting feed change. Pass the edited message;
+ * omit it to send the fixed schedule sentence. A waiting change, if any, is
+ * cleared when the send starts so it is not left sitting after the text goes out.
+ * Caller (handleSmsAction_) has already checked the PIN.
+ * SMS_ENABLED is still required and is not changed here.
  */
-/** Caller (handleSmsAction_) has already checked the PIN. */
-function sendPendingUpdate_() {
-  if (!isSmsEnabled_()) return { ok: false, error: 'Text alerts are OFF. Turn them on before sending.' };
+function sendPendingUpdate_(customText) {
+  if (!isSmsEnabled_()) return { ok: false, error: 'Text alerts are off (Script Property SMS_ENABLED is not true). The dashboard does not change that switch.' };
   if (!isManualMode_()) return { ok: false, error: 'Send update is only for Manual mode.' };
+  var prepared = prepareManualText_(customText, customText !== undefined);
+  if (!prepared.ok) return prepared;
+  var text = prepared.text;
   var p = PropertiesService.getScriptProperties();
-  if (!p.getProperty(CONFIG.PROP_PENDING_GUID)) return { ok: false, error: 'Nothing new to send.' };
   if (p.getProperty(CONFIG.PROP_QUEUE_GUID)) return { ok: false, error: 'A send is already in progress.' };
   var provider = getSmsProvider_();
   if (!provider) return { ok: false, error: 'No SMS provider configured.' };
@@ -1610,23 +1643,23 @@ function sendPendingUpdate_() {
   var pendingGuid = '';
   var pendingTitle = '';
   try {
-    pendingGuid = p.getProperty(CONFIG.PROP_PENDING_GUID) || '';
-    pendingTitle = p.getProperty(CONFIG.PROP_PENDING_TITLE) || '';
-    if (!pendingGuid) return { ok: false, error: 'Nothing new to send.' };
     if (p.getProperty(CONFIG.PROP_QUEUE_GUID)) return { ok: false, error: 'A send is already in progress.' };
     var phones = getPhones_(getUnsubscribed_().phones);
     if (!phones.length) return { ok: false, error: 'No active numbers on the list.' };
-    var text = smsText_(null);
+    pendingGuid = p.getProperty(CONFIG.PROP_PENDING_GUID) || '';
+    pendingTitle = p.getProperty(CONFIG.PROP_PENDING_TITLE) || '';
+    var guid = pendingGuid || ('manual-' + Date.now());
     RUN_STARTED_ = Date.now();
-    clearSmsPending_();
+    if (pendingGuid) clearSmsPending_();
     try {
-      sendSmsFrom_(provider, phones, text, pendingGuid, 0, null, true);
+      sendSmsFrom_(provider, phones, text, guid, 0, null, true);
     } catch (e) {
-      setSmsPending_({ id: pendingGuid, title: pendingTitle });
+      if (pendingGuid) setSmsPending_({ id: pendingGuid, title: pendingTitle });
       return { ok: false, error: scrubNumbers_(e).slice(0, 300) };
     }
     var st = smsStatus_();
     st.ok = true;
+    st.segments = prepared.segments;
     return st;
   } finally {
     lock.releaseLock();
@@ -1776,8 +1809,9 @@ function scheduleSourceForFeed_(token) {
  * Web app (Deploy → Web app, Execute as: Me, Who has access: Anyone).
  *   ?email=… or ?phone=…        unsubscribe (unchanged)
  *   ?action=smsStatus           public JSON: enabled, phoneCount, cost, mode, pending, lastSms. No full phone numbers. No share link.
- *   ?action=setSmsEnabled&enabled=1|0&pin=…   PIN-gated toggle (GET fallback)
+ *   ?action=setSmsEnabled&enabled=1|0&pin=…   PIN-gated toggle still works if called, but the dashboard no longer shows it
  *   action=setSmsMode|sendPending|sendTestSms|setScheduleSource|getScheduleSource + pin
+ *   sendPending may include text (the edited Manual message). Omit text for the fixed sentence. No pending change required.
  *   action=scheduleSourceForFeed&token=…      feed job only (FEED_CONFIG_TOKEN)
  *   action=optOuts + pin (POST preferred)     PIN-gated: full list of Quo opted-out numbers removed
  * doPost (text/plain JSON body) is what sms-admin.html uses, so the PIN is not put in a URL.
@@ -1839,7 +1873,8 @@ function handleSmsAction_(q) {
   if (action === 'sendPending') {
     var pendingCheck = checkAdminPin_(q.pin);
     if (!pendingCheck.ok) return json_({ ok: false, error: pendingCheck.error });
-    return json_(sendPendingUpdate_());
+    var textArg = Object.prototype.hasOwnProperty.call(q, 'text') ? q.text : undefined;
+    return json_(sendPendingUpdate_(textArg));
   }
   if (action === 'sendTestSms') {
     return json_(sendAdminTestSms_(q.pin, q.phone));
