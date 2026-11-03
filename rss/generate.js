@@ -9,6 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { readXlsxGrids } = require('./xlsx-grid');
 
 const args = process.argv.slice(2);
 const arg = (name, def) => { const i = args.indexOf(name); return i >= 0 && args[i + 1] ? args[i + 1] : def; };
@@ -20,6 +21,10 @@ const SNAPSHOT = path.join(STATE_DIR, 'snapshot.json');
 const ITEMS = path.join(STATE_DIR, 'items.json');
 // Discovered Day tabs, published next to feed.xml so the page can load the current event's GIDs.
 const DAYS_OUT = path.resolve(process.env.DAYS_OUT || path.join(path.dirname(FEED_OUT), 'days.json'));
+const SCHEDULE_SOURCE_FILE = path.join(HERE, 'schedule-source.json');
+// Public, no share link: the page reads this to decide gviz vs schedule.json.
+const SCHEDULE_META_OUT = path.resolve(process.env.SCHEDULE_META_OUT || path.join(path.dirname(FEED_OUT), 'schedule-meta.json'));
+const SCHEDULE_JSON_OUT = path.resolve(process.env.SCHEDULE_JSON_OUT || path.join(path.dirname(FEED_OUT), 'schedule.json'));
 const PAGE_URL = process.env.PAGE_URL || config.pageUrl;
 const FEED_URL = process.env.FEED_URL || config.feedUrl;
 const MAX_ITEMS = config.maxItems || 50;
@@ -49,7 +54,7 @@ function parseDay(rows, label, gid) {
   for (const r of rows.slice(header + 1)) {
     const name = clean(r[5]);
     if (!name || name.startsWith('#')) continue;
-    items.push({ scheduled: clean(r[2]), name, round: clean(r[6]), note: clean(r[11]) });
+    items.push({ scheduled: clean(r[2]), actual: clean(r[3]), name, round: clean(r[6]), note: clean(r[11]) });
   }
   if (!date) throw new Error(`${label}: schedule date is missing`);
   return { label, gid, date, title, radio, items };
@@ -124,12 +129,118 @@ async function discoverTabs() {
   return { tabs, source: 'htmlview' };
 }
 
-async function fetchSnapshot() {
+async function fetchGoogleSnapshot() {
   const { tabs, source } = await discoverTabs();
   console.log(`Day tabs (${source}): ` + tabs.map(([l, g]) => `${l}=${g}`).join(', '));
   const days = [];
   for (const [label, gid] of tabs) days.push(parseDay(await fetchTab(gid), label, gid));
-  return { fetchedAt: new Date().toISOString(), days, tabs };
+  return { fetchedAt: new Date().toISOString(), days, tabs, scheduleSource: 'sheets' };
+}
+
+function toDownloadUrl(raw) {
+  const u = new URL(String(raw || '').trim());
+  if (u.protocol !== 'https:') throw new Error('SharePoint link must be https');
+  const host = u.hostname.toLowerCase();
+  const allowed = host === 'sharepoint.com' || host.endsWith('.sharepoint.com') || host === '1drv.ms' ||
+    host === 'onedrive.live.com' || host.endsWith('.onedrive.live.com');
+  if (!allowed) throw new Error('SharePoint link host is not sharepoint.com, 1drv.ms, or onedrive.live.com');
+  u.searchParams.delete('web');
+  if (!u.searchParams.has('download')) u.searchParams.set('download', '1');
+  return u.toString();
+}
+
+function snapshotFromXlsxBuffer(buf) {
+  const grids = readXlsxGrids(buf);
+  const named = grids.map(g => ({ name: g.name, gid: 'sharepoint' }));
+  const tabs = dayTabs(named);
+  if (!tabs.length) {
+    throw new Error('no "Day N" sheets in the SharePoint workbook (saw: ' + grids.map(g => g.name).join(', ') + ')');
+  }
+  const byName = new Map(grids.map(g => [g.name.trim().toLowerCase(), g.rows]));
+  const days = [];
+  for (const [label] of tabs) {
+    const rows = byName.get(label.toLowerCase());
+    if (!rows) throw new Error(label + ' was listed but has no rows');
+    days.push(parseDay(rows, label, 'sharepoint'));
+  }
+  return { fetchedAt: new Date().toISOString(), days, tabs, scheduleSource: 'sharepoint' };
+}
+
+async function downloadXlsx(rawUrl) {
+  const url = toDownloadUrl(rawUrl);
+  let lastError;
+  for (let attempt = 0; attempt < FETCH_TRIES; attempt++) {
+    try {
+      const res = await fetch(url, {
+        redirect: 'follow',
+        signal: AbortSignal.timeout(30000),
+        headers: { 'user-agent': 'race-control-rss/1.0', accept: '*/*' },
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const buf = Buffer.from(await res.arrayBuffer());
+      if (buf.length < 4 || buf[0] !== 0x50 || buf[1] !== 0x4b) {
+        throw new Error('link did not return an xlsx. Share the workbook so anyone with the link can view, and paste the file link (not a folder). Graph sign-in is not used.');
+      }
+      return buf;
+    } catch (e) {
+      lastError = e;
+      console.warn(`SharePoint download attempt ${attempt + 1}/${FETCH_TRIES} failed (${e.message})`);
+      if (pastDeadline()) break;
+      if (attempt < FETCH_TRIES - 1) await backoff(attempt);
+    }
+  }
+  throw new Error('SharePoint workbook: ' + lastError.message);
+}
+
+async function resolveScheduleSource() {
+  let file = {};
+  try { file = JSON.parse(fs.readFileSync(SCHEDULE_SOURCE_FILE, 'utf8')); } catch (e) { file = {}; }
+  const envSource = (process.env.SCHEDULE_SOURCE || '').trim().toLowerCase();
+  const envUrl = (process.env.SHAREPOINT_URL || '').trim();
+  let source = envSource || String(file.source || 'sheets').toLowerCase();
+  let sharepointUrl = envUrl || String(file.sharepointUrl || '').trim();
+  const admin = (process.env.ADMIN_SCRIPT_URL || file.adminScriptUrl || '').trim();
+  const token = (process.env.FEED_CONFIG_TOKEN || '').trim();
+  // Env SCHEDULE_SOURCE wins so an operator can force Sheets without Apps Script.
+  if (!envSource && token && admin) {
+    try {
+      const join = admin.includes('?') ? '&' : '?';
+      const url = admin + join + 'action=scheduleSourceForFeed&token=' + encodeURIComponent(token);
+      const res = await fetch(url, {
+        redirect: 'follow',
+        signal: AbortSignal.timeout(20000),
+        headers: { 'user-agent': 'race-control-rss/1.0' },
+      });
+      const j = JSON.parse(await res.text());
+      if (res.ok && j && j.ok && (j.source === 'sheets' || j.source === 'sharepoint')) {
+        source = j.source;
+        if (!envUrl && j.sharepointUrl) sharepointUrl = String(j.sharepointUrl).trim();
+        console.log('Schedule source from Apps Script: ' + source);
+      } else {
+        console.warn('Apps Script schedule source was not usable; using rss/schedule-source.json');
+      }
+    } catch (e) {
+      console.warn('Apps Script schedule source failed (' + e.message + '); using rss/schedule-source.json');
+    }
+  }
+  if (source !== 'sharepoint') source = 'sheets';
+  return { source, sharepointUrl };
+}
+
+async function fetchSharePointSnapshot(src) {
+  if (!src.sharepointUrl) {
+    throw new Error('Schedule source is SharePoint but no workbook link is available. Save the link on the admin dashboard and set FEED_CONFIG_TOKEN (script property + GitHub secret), or set secret SHAREPOINT_URL. Sheets was not used as a fallback, so nothing was published.');
+  }
+  const snap = snapshotFromXlsxBuffer(await downloadXlsx(src.sharepointUrl));
+  console.log('SharePoint Day tabs: ' + snap.tabs.map(([l]) => l).join(', '));
+  return snap;
+}
+
+async function fetchSnapshot() {
+  const src = await resolveScheduleSource();
+  console.log('Schedule source: ' + src.source);
+  if (src.source === 'sharepoint') return fetchSharePointSnapshot(src);
+  return fetchGoogleSnapshot();
 }
 
 // ---------- diffing ----------
@@ -301,11 +412,17 @@ async function main() {
   const prev = fs.existsSync(SNAPSHOT) ? JSON.parse(fs.readFileSync(SNAPSHOT, 'utf8')) : null;
   let items = fs.existsSync(ITEMS) ? JSON.parse(fs.readFileSync(ITEMS, 'utf8')) : [];
   const when = cur.fetchedAt;
+  const prevSource = prev ? (prev.scheduleSource || 'sheets') : null;
+  const sourceChanged = !!(prev && prevSource !== (cur.scheduleSource || 'sheets'));
   let changes;
   if (!prev) {
     const days = populated(cur);
     const event = eventTitle(cur) || 'Race weekend';
     changes = [{ summary: `Run order published: ${event}`, details: days.map(d => `${d.date}: ${d.items.length} sessions`) }];
+  } else if (sourceChanged) {
+    // Switching Sheets ↔ SharePoint must not text the whole list about the baseline change.
+    changes = [];
+    console.log(`Schedule source changed ${prevSource} -> ${cur.scheduleSource}; baseline reset, no alert item.`);
   } else {
     changes = diffSnapshots(prev, cur);
   }
@@ -313,32 +430,67 @@ async function main() {
   // Newest run first; within a run, top-to-bottom sheet order.
   if (fresh.length) items = [...fresh, ...items].slice(0, MAX_ITEMS);
   // Only rewrite the snapshot when the schedule content changed, so CI commits stay quiet.
-  const sameContent = prev && JSON.stringify(prev.days) === JSON.stringify(cur.days);
+  const sameContent = prev && JSON.stringify(prev.days) === JSON.stringify(cur.days) &&
+    (prev.scheduleSource || 'sheets') === (cur.scheduleSource || 'sheets');
   if (!sameContent) writeAtomic(SNAPSHOT, JSON.stringify(cur, null, 2) + '\n');
   if (fresh.length) writeAtomic(ITEMS, JSON.stringify(items, null, 2) + '\n');
   if (fresh.length || !fs.existsSync(FEED_OUT)) writeAtomic(FEED_OUT, renderFeed(items, items[0]?.date || when));
-  // days.json carries no timestamp so it only changes (and commits) when the sheet's Day tabs change.
-  const daysJson = JSON.stringify({ sheetId: config.sheetId, tabs: cur.tabs }, null, 2) + '\n';
-  const daysChanged = !fs.existsSync(DAYS_OUT) || fs.readFileSync(DAYS_OUT, 'utf8') !== daysJson;
-  if (daysChanged) writeAtomic(DAYS_OUT, daysJson);
+  // days.json is the Google GID fast path. Leave it alone in SharePoint mode so a
+  // later switch back to Sheets still has numeric gids (the page falls through to names anyway).
+  let daysChanged = false;
+  if ((cur.scheduleSource || 'sheets') !== 'sharepoint') {
+    const daysJson = JSON.stringify({ sheetId: config.sheetId, tabs: cur.tabs }, null, 2) + '\n';
+    daysChanged = !fs.existsSync(DAYS_OUT) || fs.readFileSync(DAYS_OUT, 'utf8') !== daysJson;
+    if (daysChanged) writeAtomic(DAYS_OUT, daysJson);
+  }
+  let scheduleChanged = false;
+  const meta = JSON.stringify({
+    source: cur.scheduleSource === 'sharepoint' ? 'sharepoint' : 'sheets',
+    label: cur.scheduleSource === 'sharepoint' ? 'SharePoint' : 'Google Sheets',
+  }, null, 2) + '\n';
+  if (!fs.existsSync(SCHEDULE_META_OUT) || fs.readFileSync(SCHEDULE_META_OUT, 'utf8') !== meta) {
+    writeAtomic(SCHEDULE_META_OUT, meta);
+    scheduleChanged = true;
+  }
+  if (cur.scheduleSource === 'sharepoint') {
+    const pageDays = cur.days.map(d => ({
+      label: d.label, gid: d.gid, date: d.date, title: d.title, radio: d.radio,
+      items: d.items.map(it => ({
+        scheduled: it.scheduled || '', actual: it.actual || '', name: it.name, round: it.round || '', note: it.note || '',
+      })),
+    }));
+    const scheduleJson = JSON.stringify({ source: 'sharepoint', days: pageDays }, null, 2) + '\n';
+    if (!fs.existsSync(SCHEDULE_JSON_OUT) || fs.readFileSync(SCHEDULE_JSON_OUT, 'utf8') !== scheduleJson) {
+      writeAtomic(SCHEDULE_JSON_OUT, scheduleJson);
+      scheduleChanged = true;
+    }
+  } else if (fs.existsSync(SCHEDULE_JSON_OUT)) {
+    fs.unlinkSync(SCHEDULE_JSON_OUT);
+    scheduleChanged = true;
+  }
   console.log(fresh.length ? `${fresh.length} new item(s):\n` + fresh.map(i => '  - ' + i.title).join('\n') : 'No changes.');
   if (daysChanged) console.log('Day tabs changed; wrote ' + DAYS_OUT);
+  if (scheduleChanged) console.log('Schedule publish files changed (' + (cur.scheduleSource || 'sheets') + ').');
   // Machine-readable flag for CI: did the published files change?
-  if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${fresh.length || daysChanged ? 'true' : 'false'}\n`);
+  if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${fresh.length || daysChanged || scheduleChanged ? 'true' : 'false'}\n`);
   await notifyPhones(prev ? fresh : []);
 }
 
-(async () => {
-  let ok = false, error = null;
-  try {
-    await main();
-    ok = true;
-  } catch (e) {
-    error = e.message;
-    console.error('Feed not updated:', e.message);
-  } finally {
-    const r = writeLastRun(ok, error);
-    if (!ok) console.error(`::error title=Race Control feed failed::${error} (failure #${r.consecutiveFailures} in a row; last good run ${r.lastOkAt || 'unknown'})`);
-  }
-  process.exit(ok ? 0 : 1);
-})();
+if (require.main === module) {
+  (async () => {
+    let ok = false, error = null;
+    try {
+      await main();
+      ok = true;
+    } catch (e) {
+      error = e.message;
+      console.error('Feed not updated:', e.message);
+    } finally {
+      const r = writeLastRun(ok, error);
+      if (!ok) console.error(`::error title=Race Control feed failed::${error} (failure #${r.consecutiveFailures} in a row; last good run ${r.lastOkAt || 'unknown'})`);
+    }
+    process.exit(ok ? 0 : 1);
+  })();
+}
+
+module.exports = { parseDay, toDownloadUrl, snapshotFromXlsxBuffer, diffSnapshots };

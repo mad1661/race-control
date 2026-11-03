@@ -56,3 +56,9 @@ That copies the canonical file into the Wix paste paths **and** deploys Firebase
 
 The old GitHub→Firebase watch (`firebase-host/watch-sync.sh`) has been failing with 403 on `mad1661/race-control` since 2026-10-24 — prefer `publish-both.sh` from the shared folder.
 
+## Ops dashboard and schedule source
+
+`index.html` is still the only public page (Wix embed and Firebase must stay the same bytes). It reads Google Sheets unless `schedule-meta.json` says `sharepoint`, in which case it renders `schedule.json` from the feed job.
+
+Text-alert controls live on `sms-admin.html` (PIN stays in Apps Script). Paste and deploy steps: `PASTE-DEPLOY.md`.
+

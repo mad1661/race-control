@@ -1,0 +1,7 @@
+{
+  "source": "sheets",
+  "sheetId": "1D7r0i8yevR9bBOAEO9I34pqw5Iy8vqNzwSX0uDFbfr0",
+  "sharepointUrl": "",
+  "adminScriptUrl": "https://script.google.com/macros/s/AKfycbzljKOMIyV42j4gOnYC1R3B6O5BUTQ6qLQfGEbt-pNJnXcGnTdhaXqbe31LLcx9elxn/exec",
+  "note": "Default is Google Sheets. Leave sharepointUrl empty in git (the link is a secret-by-URL). The admin dashboard stores it in Apps Script. See PASTE-DEPLOY.md."
+}

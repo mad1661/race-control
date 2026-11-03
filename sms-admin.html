@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Race Control · Ops</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#0e1014;color:#f4f5f7;line-height:1.4}
+  main{max-width:480px;margin:0 auto;padding:22px 16px 48px}
+  h1{font-size:22px;margin:0;letter-spacing:-.03em}
+  .sub{color:#a7adb8;font-size:13px;margin:4px 0 16px}
+  .card{background:#171a20;border:1px solid #2a2f38;border-radius:16px;padding:16px;margin:0 0 12px}
+  .card h2{margin:0 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#b7bdc7}
+  .status{text-align:center;padding:18px 14px}
+  .big{font-size:42px;font-weight:800;letter-spacing:.04em;line-height:1}
+  .on .big{color:#3ddc84}.off .big{color:#ff5d5d}.unk .big{color:#9aa1ab}
+  .people{font-size:28px;font-weight:800;letter-spacing:-.03em;margin:8px 0 0}
+  .people span{display:block;font-size:13px;font-weight:600;color:#a7adb8;letter-spacing:0;margin-top:2px}
+  .meta{color:#a7adb8;font-size:13px;margin-top:8px;white-space:pre-line}
+  label{display:block;font-size:13px;color:#b7bdc7;margin:0 0 6px;font-weight:650}
+  input[type=password],input[type=tel],input[type=url]{width:100%;font-size:16px;padding:12px 12px;border-radius:12px;border:1px solid #343a44;background:#0e1014;color:#fff;margin:0 0 10px}
+  .row{display:flex;gap:8px}
+  button{font:inherit;cursor:pointer;border:0;border-radius:12px;color:#fff;font-weight:800}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .row button{flex:1;font-size:16px;padding:14px 8px}
+  #btnOn{background:#1f9d4f}#btnOff{background:#c62828}
+  .choice{flex:1;background:#232833;color:#e8eaee;border:1px solid #3a4150;padding:12px 8px;font-size:15px}
+  .choice[aria-pressed=true]{background:#f4f5f7;color:#12141a;border-color:#f4f5f7}
+  .hint{color:#9aa1ab;font-size:13px;margin:8px 0 0}
+  .money{font-size:22px;font-weight:800;letter-spacing:-.03em}
+  .money small{display:block;font-size:13px;font-weight:600;color:#a7adb8;margin-top:2px}
+  .preview{font-size:14px;background:#0e1014;border-radius:10px;padding:10px 12px;white-space:pre-wrap;color:#e8eaee;margin:8px 0 0}
+  .pending{border-color:#8a6a22}
+  .pending strong{color:#ffd36a}
+  #btnSend{width:100%;background:#c8102e;font-size:17px;padding:14px;margin-top:10px}
+  #btnTest{width:100%;background:#2458c5;font-size:16px;padding:14px}
+  #btnSource{width:100%;background:#2a313c;border:1px solid #4a5362;font-size:16px;padding:14px}
+  #msg{min-height:22px;margin-top:12px;font-size:15px;text-align:center}
+  .err{color:#ff9b9b}.ok{color:#8ee7b0}
+  .foot{color:#8b919c;font-size:12px;margin-top:18px}
+  .src label.radio{display:flex;align-items:center;gap:8px;margin:0 0 8px;color:#f4f5f7;font-size:15px;font-weight:700}
+  input[type=radio]{width:18px;height:18px;margin:0}
+</style>
+</head>
+<body>
+<main>
+  <h1>Race Control</h1>
+  <p class="sub">Text alerts, cost, and schedule source.</p>
+
+  <section id="status" class="card status unk" aria-live="polite">
+    <div class="big" id="state">…</div>
+    <div class="people" id="people"></div>
+    <div class="meta" id="meta">Checking…</div>
+  </section>
+
+  <section class="card" aria-label="Estimated cost">
+    <h2>Cost estimate</h2>
+    <div class="money" id="costBlast">—</div>
+    <p class="hint" id="costDetail"></p>
+  </section>
+
+  <section class="card">
+    <label for="pin">Admin PIN</label>
+    <input id="pin" type="password" inputmode="text" autocomplete="current-password" placeholder="PIN">
+    <div class="row">
+      <button id="btnOn" type="button">Turn on</button>
+      <button id="btnOff" type="button">Turn off</button>
+    </div>
+    <p class="hint">Off still tracks new changes and does not send them later. Turning off also clears a waiting manual send.</p>
+  </section>
+
+  <section class="card">
+    <h2>When a change is detected</h2>
+    <div class="row">
+      <button id="modeAuto" class="choice" type="button" aria-pressed="false">Automatic</button>
+      <button id="modeManual" class="choice" type="button" aria-pressed="false">Manual</button>
+    </div>
+    <p class="hint" id="modeHint">Automatic texts on the next check. Manual waits for Send update. Switching back to Automatic does not send the waiting change.</p>
+  </section>
+
+  <section class="card pending" id="pendingCard">
+    <h2>Schedule text</h2>
+    <p id="pendingState">Checking for a new change…</p>
+    <div class="preview" id="preview"></div>
+    <button id="btnSend" type="button" disabled>Send update</button>
+  </section>
+
+  <section class="card">
+    <h2>Text test</h2>
+    <label for="testPhone">One phone number</label>
+    <input id="testPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(555) 555-5555">
+    <button id="btnTest" type="button">Send test</button>
+    <p class="hint">Sends one test text to that number only. It does not text the list, and it ignores the on/off switch.</p>
+  </section>
+
+  <section class="card src">
+    <h2>Schedule source</h2>
+    <label class="radio"><input type="radio" name="src" id="srcSheets" value="sheets" checked> Google Sheets</label>
+    <label class="radio"><input type="radio" name="src" id="srcShare" value="sharepoint"> SharePoint Excel</label>
+    <label for="spUrl">SharePoint / Excel Online file link</label>
+    <input id="spUrl" type="url" inputmode="url" placeholder="https://….sharepoint.com/…" autocomplete="off">
+    <button id="btnSource" type="button">Save source</button>
+    <p class="hint" id="srcHint">Sheets is the default. SharePoint must be a workbook anyone with the link can view, with the same Day 1–N tabs and columns as the DRS sheet. The public page switches after the next feed run.</p>
+  </section>
+
+  <div id="msg" role="status"></div>
+  <p class="foot">Quo +1 860-847-8135. Cost is the published API rate of $0.01 per US/Canada segment, not a live balance. Sole Prop 10DLC caps still apply. The PIN and API key are not in this page.</p>
+</main>
+<script>
+(function () {
+  var api = '';
+  var last = null;
+  var $ = function (id) { return document.getElementById(id); };
+  function msg(t, cls) { var m = $('msg'); m.textContent = t || ''; m.className = cls || ''; }
+  function pin() { return $('pin').value.trim(); }
+  function money(n) {
+    if (typeof n !== 'number' || !isFinite(n)) return '—';
+    return '$' + n.toFixed(2);
+  }
+  function setBusy(b) {
+    ['btnOn', 'btnOff', 'modeAuto', 'modeManual', 'btnTest', 'btnSource'].forEach(function (id) {
+      $(id).disabled = b;
+    });
+    paintSend(last, b);
+  }
+  function paintSend(s, busy) {
+    var btn = $('btnSend');
+    if (!s || busy) { btn.disabled = true; return; }
+    var pending = s.mode === 'manual' && s.pending && s.pending.at && s.enabled && !s.sending;
+    btn.disabled = !pending;
+    if (s.sending) btn.textContent = 'Sending…';
+    else if (s.mode !== 'manual') btn.textContent = 'Automatic is on';
+    else if (!s.enabled) btn.textContent = 'Alerts are off';
+    else if (!s.pending) btn.textContent = 'Nothing new to send';
+    else btn.textContent = 'Send update';
+  }
+  function show(s) {
+    last = s;
+    var box = $('status');
+    if (!s || typeof s.enabled !== 'boolean') {
+      box.className = 'card status unk';
+      $('state').textContent = '?';
+      $('people').textContent = '';
+      $('meta').textContent = 'Status unavailable';
+      paintSend(null, false);
+      return;
+    }
+    box.className = 'card status ' + (s.enabled ? 'on' : 'off');
+    $('state').textContent = s.enabled ? 'ON' : 'OFF';
+    var n = s.phoneCount;
+    $('people').textContent = '';
+    if (typeof n === 'number') {
+      $('people').appendChild(document.createTextNode(String(n)));
+      var cap = document.createElement('span');
+      cap.textContent = n === 1 ? 'person on the text list' : 'people on the text list';
+      $('people').appendChild(cap);
+    } else {
+      var miss = document.createElement('span');
+      miss.textContent = 'List count unavailable';
+      $('people').appendChild(miss);
+    }
+    var parts = [];
+    parts.push((s.provider || 'none') + (s.from ? ' · ' + s.from : ''));
+    if (s.sending) parts.push('A send is in progress');
+    var L = s.lastSms;
+    if (L && typeof L.sent === 'number') {
+      parts.push('Last text: ' + L.sent + ' of ' + L.total + ' sent' +
+        (L.failed ? ', ' + L.failed + ' failed' : '') +
+        (L.optedOut ? ', ' + L.optedOut + ' opted out' : '') +
+        (L.at ? ' · ' + new Date(L.at).toLocaleString() : ''));
+    }
+    $('meta').textContent = parts.join('\n');
+    var cost = s.cost || {};
+    // Before the new script is pasted, smsStatus has phoneCount but no cost object.
+    // Use Quo's published $0.01/segment so the dashboard is still readable.
+    if (typeof cost.rateUsd !== 'number' && typeof s.phoneCount === 'number') {
+      var fallbackRate = 0.01;
+      var lastSeg = (s.lastSms && s.lastSms.segmentsEach) || 1;
+      cost = {
+        rateUsd: fallbackRate,
+        estimate: true,
+        activeNumbers: s.phoneCount,
+        segmentsPerAlert: 1,
+        estimatedBlastUsd: Math.round(s.phoneCount * fallbackRate * 100) / 100,
+        rateNote: 'Quo API local SMS is $0.01 per segment. Estimate only, not the live balance.',
+        lastBlast: (s.lastSms && typeof s.lastSms.sent === 'number') ? {
+          sent: s.lastSms.sent,
+          failed: s.lastSms.failed || 0,
+          segmentsEach: lastSeg,
+          estimatedUsd: Math.round(s.lastSms.sent * lastSeg * fallbackRate * 100) / 100
+        } : null
+      };
+    }
+    var blast = $('costBlast');
+    blast.textContent = '';
+    blast.appendChild(document.createTextNode(money(cost.estimatedBlastUsd) + ' per blast'));
+    var small = document.createElement('small');
+    var seg = cost.segmentsPerAlert || 1;
+    var who = typeof cost.activeNumbers === 'number' ? cost.activeNumbers : '—';
+    small.textContent = who + ' × ' + seg + ' segment × ' + money(cost.rateUsd) + ' estimate';
+    blast.appendChild(small);
+    var detail = [];
+    if (cost.lastBlast && typeof cost.lastBlast.estimatedUsd === 'number') {
+      detail.push('Last blast about ' + money(cost.lastBlast.estimatedUsd) + ' (' + cost.lastBlast.sent + ' sent × ' + cost.lastBlast.segmentsEach + '). Failed sends are not in that figure.');
+    } else detail.push('No blast cost yet.');
+    detail.push(cost.rateNote || 'Estimate only.');
+    $('costDetail').textContent = detail.join(' ');
+    $('preview').textContent = s.alertPreview || '';
+    var manual = s.mode === 'manual';
+    $('modeAuto').setAttribute('aria-pressed', manual ? 'false' : 'true');
+    $('modeManual').setAttribute('aria-pressed', manual ? 'true' : 'false');
+    var pend = $('pendingState');
+    if (manual && s.pending && s.pending.at) {
+      pend.textContent = 'A change is waiting' + (s.pending.title ? ': ' + s.pending.title : '') +
+        (s.pending.at ? ' · ' + new Date(s.pending.at).toLocaleString() : '') + '. The text itself does not list what changed.';
+    } else if (manual) pend.textContent = 'Nothing new. The next schedule change will wait here.';
+    else pend.textContent = 'Automatic is on. The next new change texts the list on the next check.';
+    var sch = s.schedule || {};
+    if (sch.source === 'sharepoint') $('srcShare').checked = true; else $('srcSheets').checked = true;
+    var bridge = [];
+    if (sch.source) bridge.push('Script is set to ' + (sch.source === 'sharepoint' ? 'SharePoint' : 'Google Sheets') + '.');
+    if (!sch.sharepointConfigured && sch.source === 'sharepoint') bridge.push('No workbook link saved yet.');
+    if (sch.contentsTokenSet) bridge.push('GitHub contents token is set.');
+    else if (sch.feedTokenSet) bridge.push('Feed token is set. The next feed run can read this.');
+    else bridge.push('Feed token is not set yet. Sheets stays the feed default until it is.');
+    $('srcHint').textContent = bridge.join(' ') + ' SharePoint must be a workbook anyone with the link can view, same Day tabs and columns as the DRS sheet. The public page follows the next feed run.';
+    paintSend(s, false);
+  }
+  function post(body) {
+    return fetch(api, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(body)
+    }).then(function (r) { return r.json(); });
+  }
+  function loadStatus() {
+    return fetch(api + (api.indexOf('?') === -1 ? '?' : '&') + 'action=smsStatus&t=' + Date.now())
+      .then(function (r) { return r.json(); })
+      .then(show)
+      .catch(function () { show(null); msg('Could not reach the alert script.', 'err'); });
+  }
+  function loadSource() {
+    if (!pin()) return;
+    post({ action: 'getScheduleSource', pin: pin() }).then(function (res) {
+      if (!res || !res.ok) return;
+      if (res.source === 'sharepoint') $('srcShare').checked = true; else $('srcSheets').checked = true;
+      if (res.sharepointUrl) $('spUrl').value = res.sharepointUrl;
+    }).catch(function () {});
+  }
+  function requirePin() {
+    if (pin()) return true;
+    msg('Enter the PIN first.', 'err');
+    $('pin').focus();
+    return false;
+  }
+  function toggle(enabled) {
+    if (!requirePin()) return;
+    setBusy(true); msg('Saving…');
+    post({ action: 'setSmsEnabled', enabled: enabled, pin: pin() })
+      .then(function (res) {
+        if (!res.ok) { msg(res.error || 'Failed.', 'err'); return; }
+        show(res);
+        try { sessionStorage.setItem('rcPin', pin()); } catch (e) {}
+        msg('Text alerts are now ' + (res.enabled ? 'ON' : 'OFF') + '.', 'ok');
+      })
+      .catch(function () { msg('Could not reach the alert script.', 'err'); })
+      .then(function () { setBusy(false); });
+  }
+  function setMode(mode) {
+    if (!requirePin()) return;
+    setBusy(true); msg('Saving…');
+    post({ action: 'setSmsMode', mode: mode, pin: pin() })
+      .then(function (res) {
+        if (!res.ok) { msg(res.error || 'Failed.', 'err'); return; }
+        show(res);
+        try { sessionStorage.setItem('rcPin', pin()); } catch (e) {}
+        msg(mode === 'manual' ? 'Manual. New changes wait for Send update.' : 'Automatic. A waiting change was not sent.', 'ok');
+      })
+      .catch(function () { msg('Could not reach the alert script.', 'err'); })
+      .then(function () { setBusy(false); });
+  }
+  function sendUpdate() {
+    if (!requirePin()) return;
+    setBusy(true); msg('Sending… a long list can take a few minutes and finishes on the next check if needed.');
+    post({ action: 'sendPending', pin: pin() })
+      .then(function (res) {
+        if (!res.ok) { msg(res.error || 'Failed.', 'err'); if (res.enabled !== undefined) show(res); return; }
+        show(res);
+        msg('Update sent to the active list.', 'ok');
+      })
+      .catch(function () { msg('Could not reach the alert script.', 'err'); })
+      .then(function () { setBusy(false); loadStatus(); });
+  }
+  function sendTest() {
+    if (!requirePin()) return;
+    var phone = $('testPhone').value.trim();
+    if (!phone) { msg('Enter one phone number.', 'err'); $('testPhone').focus(); return; }
+    setBusy(true); msg('Sending one test text…');
+    post({ action: 'sendTestSms', pin: pin(), phone: phone })
+      .then(function (res) {
+        if (!res.ok) { msg(res.error || 'Test failed.', 'err'); return; }
+        try { sessionStorage.setItem('rcPin', pin()); } catch (e) {}
+        msg('Test sent to ' + (res.toMasked || 'that number') + ' (' + (res.segments || 1) + ' segment). The list was not texted.', 'ok');
+      })
+      .catch(function () { msg('Could not reach the alert script.', 'err'); })
+      .then(function () { setBusy(false); });
+  }
+  function saveSource() {
+    if (!requirePin()) return;
+    var source = $('srcShare').checked ? 'sharepoint' : 'sheets';
+    setBusy(true); msg('Saving source…');
+    post({ action: 'setScheduleSource', pin: pin(), source: source, sharepointUrl: $('spUrl').value.trim() })
+      .then(function (res) {
+        if (!res.ok) { msg(res.error || 'Failed.', 'err'); return; }
+        show(res);
+        try { sessionStorage.setItem('rcPin', pin()); } catch (e) {}
+        msg(res.note || 'Source saved.', 'ok');
+      })
+      .catch(function () { msg('Could not reach the alert script.', 'err'); })
+      .then(function () { setBusy(false); });
+  }
+
+  $('btnOn').onclick = function () { toggle(true); };
+  $('btnOff').onclick = function () { toggle(false); };
+  $('modeAuto').onclick = function () { setMode('auto'); };
+  $('modeManual').onclick = function () { setMode('manual'); };
+  $('btnSend').onclick = sendUpdate;
+  $('btnTest').onclick = sendTest;
+  $('btnSource').onclick = saveSource;
+  $('pin').addEventListener('change', loadSource);
+  try { $('pin').value = sessionStorage.getItem('rcPin') || ''; } catch (e) {}
+
+  var override = new URLSearchParams(location.search).get('api');
+  var cfgUrl = '/sms-config.json?t=' + Date.now();
+  fetch(cfgUrl)
+    .then(function (r) { return r.json(); })
+    .catch(function () { return {}; })
+    .then(function (cfg) {
+      api = (override || cfg.adminScriptUrl || '').trim();
+      if (!/^https:\/\/script\.google(usercontent)?\.com\//.test(api)) {
+        show(typeof cfg.enabled === 'boolean' ? cfg : null);
+        $('meta').textContent = 'Switch not connected yet (Apps Script web app URL missing).';
+        setBusy(true);
+        return;
+      }
+      loadStatus().then(loadSource);
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "updatedAt": "2026-10-28T18:42:20Z",
+  "note": "Race Control schedule-change SMS master switch. Snapshot only: the live switch is Apps Script Script Property SMS_ENABLED. sms-admin.html reads and sets it through adminScriptUrl. This URL is the public web app, not a secret. QUO_API_KEY and SMS_ADMIN_PIN stay in Script Properties only.",
+  "provider": "quo",
+  "from": "+18608478135",
+  "adminScriptUrl": "https://script.google.com/macros/s/AKfycbzljKOMIyV42j4gOnYC1R3B6O5BUTQ6qLQfGEbt-pNJnXcGnTdhaXqbe31LLcx9elxn/exec"
+}
