@@ -10,8 +10,8 @@ Do these in order. Nothing here contains `QUO_API_KEY` or `SMS_ADMIN_PIN`.
 4. Leave the 5-minute `checkFeedAndAlert` trigger alone. Do not run `sendTestSmsToList`.
 5. Optional, once, in **Project Settings → Script properties** (not in git):
    - `QUO_SMS_COST_USD` — only if you want a rate other than `0.01` (Quo’s published API price for US/Canada SMS, per segment).
-   - `FEED_CONFIG_TOKEN` — any long random string. Add the **same** value as a GitHub Actions secret named `FEED_CONFIG_TOKEN` on `mad1661/race-control`. That is what lets the feed job follow the Sheets / SharePoint switch. The share link stays in the script, not in git.
-   - `GH_CONTENTS_TOKEN` — optional fine-grained PAT with **contents: write** on this repo. If set, saving the source on the dashboard also commits the mode to `rss/schedule-source.json`. It never writes the share link.
+   - `FEED_CONFIG_TOKEN` — any long random string. Add the **same** value as a GitHub Actions secret named `FEED_CONFIG_TOKEN` on `mad1661/race-control`. That is what lets the feed job read the Sheets / SharePoint switch and the share link from this script. The link stays in the script, not in git. The GitHub secret alone is not enough: `smsStatus` still reports `feedTokenSet: false` until this Script Property is saved. Until then the job uses `rss/schedule-source.json` plus secret `SHAREPOINT_URL`.
+   - `GH_CONTENTS_TOKEN` — optional fine-grained PAT with **contents: write** on this repo. If set, saving the source on the dashboard commits the mode to `rss/schedule-source.json` on `main`. It never writes the share link. GitHub answers 404 when that token cannot see the private repo, which looks the same as a missing file. The file has to be on `main` (this branch adds it) before an update can change it.
 6. Check: open `https://script.google.com/macros/s/…/exec?action=smsStatus` (the existing URL). You should see `mode`, `cost`, `schedule`, and `alertPreview`. `alertPreview` must be the generic schedule sentence, not a class name. No full phone numbers.
 
 ## 2. Firebase hosting — admin page (required for the dashboard UI)
@@ -57,8 +57,9 @@ GitHub Pages is updated by `.github/workflows/feed.yml` on push.
 
 ## SharePoint workbook
 
-- Share the `.xlsx` so **anyone with the link can view** (no Microsoft login). Graph is not used.
-- Paste the file link (`….sharepoint.com/:x:/…` or a OneDrive `1drv.ms` link), not a folder.
-- Same layout as the DRS sheet: tabs named `Day 1`, `Day 2`, … Column C scheduled time, D actual start, F class (`ELIMINATOR` header), G round, L note. A date like `Sunday, November 01, 2026` in column C above the header. Text-formatted times are the safest. Excel time/date cells are converted when the file is downloaded.
-- If the download is not an xlsx, the feed run fails and **does not publish a diff** (Sheets is not silently substituted).
-- The public page in SharePoint mode reads `schedule.json` from the feed job (about every 5–15 minutes), not a live 60-second refresh.
+- Share the `.xlsx` so **anyone with the link can view** (no Microsoft login). Graph is not used. The feed download follows redirects with a browser user-agent and a cookie jar (`?download=1`). A bare `fetch` without cookies gets HTTP 401 from SharePoint even when the link is public.
+- If Microsoft still returns 401 or 403, or an HTML sign-in page, the feed run fails with that reason and **does not publish** (Sheets is not silently substituted). Fix the sharing link; do not put the URL in git.
+- Paste the file link (`….sharepoint.com/:x:/…` or a OneDrive `1drv.ms` link), not a folder. Secret `SHAREPOINT_URL` is the link the GitHub Action downloads. `rss/schedule-source.json` on this branch is `source: sharepoint` with an empty link.
+- Same session columns as the DRS sheet: tabs named `Day 1`, `Day 2`, … Column C scheduled time, D actual start, F class (`ELIMINATOR` header), G round, L note (text only; raw turnaround numbers are ignored).
+- The Google Sheet puts a date like `Thursday, October 29, 2026` in column C above the header. The PC2 / DRS workbook does not. Its schedule date is the Excel serial (for example `46338`, Thursday, November 12, 2026) in another column, usually G, on the row above `ELIMINATOR`. The feed reads that serial. A `January 05, 1900` cell elsewhere is not the schedule date.
+- The public page in SharePoint mode reads `schedule.json` from the feed job (about every 5–15 minutes), not a live 60-second refresh. The feed workflow runs on `main`, so this branch has to be merged before that job can publish the workbook.

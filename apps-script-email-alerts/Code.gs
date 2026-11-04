@@ -1752,6 +1752,7 @@ function pushScheduleSourceMode_(source) {
   });
   var pcode = put.getResponseCode();
   if (pcode === 200 || pcode === 201) return { pushed: true, note: 'Saved. Pushed the mode to rss/schedule-source.json. The share link stays in Script Properties only.' };
+  if (pcode === 404) return { pushed: false, note: 'Saved on the script. GitHub returned HTTP 404. That usually means GH_CONTENTS_TOKEN cannot see mad1661/race-control (GitHub hides a private repo this way) or the token is not contents:write. rss/schedule-source.json has to be on main before an update; a missing file is created by this request. The share link was not written.' };
   return { pushed: false, note: 'Saved on the script. GitHub update failed (HTTP ' + pcode + ').' };
 }
 

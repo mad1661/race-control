@@ -2,7 +2,8 @@
 const assert = require('assert');
 const zlib = require('zlib');
 const { formatExcelNumber, readXlsxGrids } = require('../xlsx-grid');
-const { parseDay, toDownloadUrl, snapshotFromXlsxBuffer } = require('../generate');
+const http = require('http');
+const { parseDay, toDownloadUrl, snapshotFromXlsxBuffer, fetchBytesFollowingCookies, downloadXlsx } = require('../generate');
 
 function crc32(buf) {
   let c = ~0;
@@ -58,7 +59,8 @@ assert.strictEqual(formatExcelNumber(0.4375, 'time'), '10:30 AM');
 assert.strictEqual(formatExcelNumber(45962, 'date').includes('2025') || formatExcelNumber(45962, 'date').includes(','), true);
 
 const serial = (Date.UTC(2026, 10, 1) - Date.UTC(1899, 11, 30)) / 86400000;
-assert.strictEqual(formatExcelNumber(serial, 'date'), 'Sunday, November 01, 2026');
+assert.strictEqual(formatExcelNumber(serial, 'date'), 'Sunday, November 1, 2026');
+assert.strictEqual(formatExcelNumber(46338, 'date'), 'Thursday, November 12, 2026');
 
 const shared =
   '<?xml version="1.0" encoding="UTF-8"?>' +
@@ -131,4 +133,133 @@ assert.strictEqual(u.searchParams.get('e'), 'abc');
 assert.throws(() => toDownloadUrl('http://contoso.sharepoint.com/file.xlsx'), /https/);
 assert.throws(() => toDownloadUrl('https://example.com/file.xlsx'), /host/);
 
-console.log('sharepoint xlsx ok:', day.items.map(i => i.name).join(', '));
+// PC2 / DRS workbook: date serial in column G, not a weekday string in column C.
+// A 1900-formatted serial elsewhere must not win. Numeric junk in column L is not a note.
+const pc2Rows = [
+  ['', '', '', 'MOPAR', '', ''],
+  ['', '', '', '106.1 FM', '', 'NHRA Finals'],
+  ['', '', '', 'powered by Dodge', '', '', '46338', '', '', '', '', '', '', '', '', '', '', '', 'Friday, January 05, 1900'],
+  ['', '', '', 'Actual', 'Projected', 'ELIMINATOR', 'Q, TT', 'Number'],
+  ['', '', '', '', '', '', '', 'of cars'],
+  ['', 'TF Q-1', '8:00 AM', '', '', 'Top Fuel', 'Q-1', '16', '', '', '', '9.2592592592592587E-3'],
+  ['', 'FC Q-1', '8:30 AM', '8:32 AM', '', 'Funny Car', 'Q-1', '', '', '', '', 'Finals Eliminations on'],
+  ['', 'PS Q-1', '9:00 AM', '', '', 'Pro Stock', 'Q-1'],
+  ['', 'PM R-1', '9:30 AM', '', '', 'Pro Mod', 'R-1'],
+];
+const finals = parseDay(pc2Rows, 'Day 1', 'sharepoint');
+assert.strictEqual(finals.date, 'Thursday, November 12, 2026');
+assert.strictEqual(finals.title, 'NHRA Finals powered by Dodge');
+assert.strictEqual(finals.radio, '106.1 FM');
+assert.deepStrictEqual(finals.items.map(i => i.name), ['Top Fuel', 'Funny Car', 'Pro Stock', 'Pro Mod']);
+assert.strictEqual(finals.items[0].scheduled, '8:00 AM');
+assert.strictEqual(finals.items[0].round, 'Q-1');
+assert.strictEqual(finals.items[0].note, '');
+assert.strictEqual(finals.items[1].actual, '8:32 AM');
+assert.strictEqual(finals.items[1].note, 'Finals Eliminations on');
+
+// Sheets gviz still wins when column C already has the written date.
+const sheetRows = [
+  ['', '', 'Thursday, October 29, 2026', '', '', '', '46324'],
+  ['', '', 'PA Broadcast: 106.1 FM', '', '', 'MOPAR NHRA Las Vegas Nationals powered by Dodge'],
+  ['', '', 'Scheduled', '', '', 'ELIMINATOR', 'Q, TT'],
+  ['', '', '8:00 AM', '7:58 AM', '', 'Stock', 'Q-1', '', '', '', '', 'pit hold'],
+];
+const vegas = parseDay(sheetRows, 'Day 1', '907931825');
+assert.strictEqual(vegas.date, 'Thursday, October 29, 2026');
+assert.strictEqual(vegas.title, 'MOPAR NHRA Las Vegas Nationals powered by Dodge');
+assert.strictEqual(vegas.items[0].name, 'Stock');
+assert.strictEqual(vegas.items[0].note, 'pit hold');
+assert.strictEqual(vegas.items[0].actual, '7:58 AM');
+
+const pc2Sheet =
+  '<?xml version="1.0"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>' +
+  '<row r="2"><c r="D2" t="inlineStr"><is><t>106.1 FM</t></is></c><c r="F2" t="inlineStr"><is><t>NHRA Finals</t></is></c></row>' +
+  '<row r="3"><c r="D3" t="inlineStr"><is><t>powered by Dodge</t></is></c><c r="G3"><v>46338</v></c>' +
+  '<c r="S3" t="inlineStr"><is><t>Friday, January 05, 1900</t></is></c></row>' +
+  '<row r="4"><c r="F4" t="inlineStr"><is><t>ELIMINATOR</t></is></c></row>' +
+  '<row r="6"><c r="C6" t="inlineStr"><is><t>8:00 AM</t></is></c><c r="F6" t="inlineStr"><is><t>Top Fuel</t></is></c><c r="G6" t="inlineStr"><is><t>Q-1</t></is></c></row>' +
+  '<row r="7"><c r="C7" t="inlineStr"><is><t>8:30 AM</t></is></c><c r="F7" t="inlineStr"><is><t>Funny Car</t></is></c><c r="G7" t="inlineStr"><is><t>Q-1</t></is></c></row>' +
+  '</sheetData></worksheet>';
+const pc2Day2 =
+  '<?xml version="1.0"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>' +
+  '<row r="3"><c r="G3"><v>46339</v></c><c r="F3" t="inlineStr"><is><t>NHRA Finals</t></is></c></row>' +
+  '<row r="4"><c r="F4" t="inlineStr"><is><t>ELIMINATOR</t></is></c></row>' +
+  '<row r="6"><c r="C6" t="inlineStr"><is><t>10:00 AM</t></is></c><c r="F6" t="inlineStr"><is><t>Pro Stock</t></is></c><c r="G6" t="inlineStr"><is><t>R-1</t></is></c></row>' +
+  '</sheetData></worksheet>';
+const pc2Book =
+  '<?xml version="1.0"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">' +
+  '<sheets><sheet name="1 Pager" sheetId="1" r:id="rId1"/><sheet name="Day 1" sheetId="2" r:id="rId2"/><sheet name="Day 2" sheetId="3" r:id="rId3"/></sheets></workbook>';
+const pc2Rels =
+  '<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+  '<Relationship Id="rId1" Type="worksheet" Target="worksheets/sheet1.xml"/>' +
+  '<Relationship Id="rId2" Type="worksheet" Target="worksheets/sheet2.xml"/>' +
+  '<Relationship Id="rId3" Type="worksheet" Target="worksheets/sheet3.xml"/>' +
+  '</Relationships>';
+const pc2Buf = zip([
+  ['xl/workbook.xml', Buffer.from(pc2Book), 0],
+  ['xl/_rels/workbook.xml.rels', Buffer.from(pc2Rels), 0],
+  ['xl/worksheets/sheet1.xml', Buffer.from(notes), 0],
+  ['xl/worksheets/sheet2.xml', Buffer.from(pc2Sheet), 0],
+  ['xl/worksheets/sheet3.xml', Buffer.from(pc2Day2), 0],
+]);
+const pc2Snap = snapshotFromXlsxBuffer(pc2Buf);
+assert.strictEqual(pc2Snap.scheduleSource, 'sharepoint');
+assert.deepStrictEqual(pc2Snap.tabs.map(t => t[0]), ['Day 1', 'Day 2']);
+assert.strictEqual(pc2Snap.days[0].date, 'Thursday, November 12, 2026');
+assert.strictEqual(pc2Snap.days[1].date, 'Friday, November 13, 2026');
+assert.deepStrictEqual(pc2Snap.days[0].items.map(i => i.name), ['Top Fuel', 'Funny Car']);
+assert.strictEqual(pc2Snap.days[0].title, 'NHRA Finals powered by Dodge');
+assert.strictEqual(pc2Snap.days[1].items[0].name, 'Pro Stock');
+assert.strictEqual(pc2Snap.days[1].items[0].round, 'R-1');
+
+function listen(handler) {
+  return new Promise(resolve => {
+    const server = http.createServer(handler);
+    server.listen(0, '127.0.0.1', () => resolve(server));
+  });
+}
+(async () => {
+  let sawCookie = false;
+  let sawBrowser = false;
+  const server = await listen((req, res) => {
+    if (req.url.startsWith('/start')) {
+      sawBrowser = /Mozilla\/5\.0/.test(req.headers['user-agent'] || '');
+      res.writeHead(302, {
+        Location: '/file.xlsx',
+        'Set-Cookie': 'sp=guest; Path=/; HttpOnly',
+      });
+      res.end();
+      return;
+    }
+    sawCookie = /(?:^|;\s*)sp=guest(?:;|$)/.test(req.headers.cookie || '');
+    if (!sawCookie) {
+      res.writeHead(401, { 'Content-Type': 'text/html' });
+      res.end('<html>Sign in</html>');
+      return;
+    }
+    res.writeHead(200, { 'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+    res.end(Buffer.from([0x50, 0x4b, 0x03, 0x04, 0x00]));
+  });
+  const port = server.address().port;
+  try {
+    const got = await fetchBytesFollowingCookies('http://127.0.0.1:' + port + '/start?download=1');
+    assert.ok(sawBrowser, 'download should send a browser user-agent');
+    assert.ok(sawCookie, 'redirect should carry the Set-Cookie');
+    assert.strictEqual(got[0], 0x50);
+    assert.strictEqual(got[1], 0x4b);
+    await assert.rejects(
+      () => fetchBytesFollowingCookies('http://127.0.0.1:' + port + '/file.xlsx'),
+      /HTTP 401/
+    );
+    await assert.rejects(
+      () => downloadXlsx('https://example.com/nope.xlsx'),
+      /host/
+    );
+  } finally {
+    await new Promise(resolve => server.close(resolve));
+  }
+  console.log('sharepoint xlsx ok:', day.items.map(i => i.name).join(', '), '+', finals.items.map(i => i.name).join(', '));
+})().catch(err => {
+  console.error(err);
+  process.exit(1);
+});

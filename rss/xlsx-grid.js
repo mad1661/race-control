@@ -118,7 +118,8 @@ function formatExcelNumber(n, kind) {
     const d = new Date(ms);
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    const day = String(d.getUTCDate()).padStart(2, '0');
+    // Unpadded day matches en-US "November 12, 2026" (the public page's "today" key).
+    const day = String(d.getUTCDate());
     return weekdays[d.getUTCDay()] + ', ' + months[d.getUTCMonth()] + ' ' + day + ', ' + d.getUTCFullYear();
   }
   if (Number.isInteger(n)) return String(n);

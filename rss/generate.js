@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { readXlsxGrids } = require('./xlsx-grid');
+const { readXlsxGrids, formatExcelNumber } = require('./xlsx-grid');
 
 const args = process.argv.slice(2);
 const arg = (name, def) => { const i = args.indexOf(name); return i >= 0 && args[i + 1] ? args[i + 1] : def; };
@@ -39,22 +39,107 @@ const backoff = attempt => new Promise(r => setTimeout(r, 2000 * (attempt + 1)))
 const DEADLINE = Date.now() + 210000;
 const pastDeadline = () => Date.now() > DEADLINE;
 
-// ---------- parsing (mirrors parseDay() in index.html) ----------
+// ---------- parsing (mirrors parseDay() in index.html for the Google Sheet) ----------
+// The public Sheet writes a "Thursday, October 29, 2026" string in column C.
+// A DRS workbook (PC2 / the SharePoint xlsx) does not: the Excel date serial
+// sits near column G, on the row above ELIMINATOR. Times and classes stay put
+// (C scheduled, D actual, F class, G round, L note).
 const clean = v => String(v ?? '').trim();
 const datePattern = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), /;
+function excelSerialDate(raw) {
+  const s = clean(raw);
+  if (!/^\d+(\.\d+)?$/.test(s)) return '';
+  const n = Number(s);
+  if (!(n >= 20000 && n < 80000)) return '';
+  return formatExcelNumber(n, 'date');
+}
+function plausibleWrittenDate(raw) {
+  const s = clean(raw);
+  if (!datePattern.test(s)) return '';
+  const y = /(\d{4})\s*$/.exec(s);
+  if (!y) return s;
+  const year = Number(y[1]);
+  if (year < 2020 || year > 2100) return '';
+  return s;
+}
+function findScheduleDate(top) {
+  for (const r of top) {
+    const v = clean(r && r[2]);
+    if (datePattern.test(v)) return v;
+  }
+  let bestSerial = null;
+  let bestWritten = null;
+  for (const r of top) {
+    if (!r) continue;
+    for (let c = 0; c < r.length; c++) {
+      const serial = excelSerialDate(r[c]);
+      if (serial) {
+        const dist = Math.abs(c - 6);
+        if (!bestSerial || dist < bestSerial.dist) bestSerial = { text: serial, dist };
+      }
+      if (c === 2) continue;
+      const written = plausibleWrittenDate(r[c]);
+      if (written) {
+        const dist = Math.abs(c - 6);
+        if (!bestWritten || dist < bestWritten.dist) bestWritten = { text: written, dist };
+      }
+    }
+  }
+  if (bestSerial) return bestSerial.text;
+  if (bestWritten) return bestWritten.text;
+  return '';
+}
+function titleFromTop(top, radioRow) {
+  const fromPa = clean(radioRow && radioRow[5]);
+  if (fromPa) return fromPa;
+  let name = '';
+  for (const r of top) {
+    const v = clean(r && r[5]);
+    if (!v || /^ELIMINATOR$/i.test(v) || datePattern.test(v)) continue;
+    if (v.length > name.length) name = v;
+  }
+  let powered = '';
+  for (const r of top) {
+    for (const cell of r || []) {
+      const v = clean(cell);
+      if (/^powered by\b/i.test(v)) { powered = v; break; }
+    }
+    if (powered) break;
+  }
+  if (name && powered && !name.toLowerCase().includes('powered by')) name = `${name} ${powered}`;
+  return name || 'Race weekend';
+}
+function eventRadio(top, radioRow) {
+  const direct = clean(radioRow && radioRow[4]) || clean(radioRow && radioRow[2]).replace(/^PA Broadcast:\s*/i, '');
+  if (direct) return direct;
+  for (const r of top) {
+    for (const cell of r || []) {
+      const v = clean(cell);
+      if (/^\d+(\.\d+)?\s*FM$/i.test(v)) return v;
+    }
+  }
+  return '';
+}
+function cellNote(v) {
+  const s = clean(v);
+  if (!s || s === '#N/A' || /^12:00 AM$/i.test(s)) return '';
+  // DRS stores turnaround fractions in the comments column as raw numbers.
+  if (/^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/.test(s)) return '';
+  return s;
+}
 function parseDay(rows, label, gid) {
   const header = rows.findIndex(r => /^ELIMINATOR$/i.test(clean(r[5])));
   if (header < 0) throw new Error(`${label}: daily column layout has changed`);
   const top = rows.slice(0, header);
-  const date = clean((top.find(r => datePattern.test(clean(r[2]))) || [])[2]);
+  const date = findScheduleDate(top);
   const radioRow = top.find(r => /^PA Broadcast:/i.test(clean(r[2]))) || [];
-  const title = clean(radioRow[5]) || 'Race weekend';
-  const radio = clean(radioRow[4]) || clean(radioRow[2]).replace(/^PA Broadcast:\s*/i, '');
+  const title = titleFromTop(top, radioRow);
+  const radio = eventRadio(top, radioRow);
   const items = [];
   for (const r of rows.slice(header + 1)) {
     const name = clean(r[5]);
     if (!name || name.startsWith('#')) continue;
-    items.push({ scheduled: clean(r[2]), actual: clean(r[3]), name, round: clean(r[6]), note: clean(r[11]) });
+    items.push({ scheduled: clean(r[2]), actual: clean(r[3]), name, round: clean(r[6]), note: cellNote(r[11]) });
   }
   if (!date) throw new Error(`${label}: schedule date is missing`);
   return { label, gid, date, title, radio, items };
@@ -166,26 +251,124 @@ function snapshotFromXlsxBuffer(buf) {
   return { fetchedAt: new Date().toISOString(), days, tabs, scheduleSource: 'sharepoint' };
 }
 
+const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+const REDIRECT_HOST_SUFFIXES = ['sharepoint.com', 'sharepointonline.com', '1drv.ms', '1drv.com', 'onedrive.live.com', 'live.com', 'office.net', 'office.com', 'microsoft.com', 'microsoftonline.com', 'msocdn.com'];
+
+function hostMatches(hostname, suffix) {
+  const host = String(hostname || '').toLowerCase();
+  return host === suffix || host.endsWith('.' + suffix);
+}
+function redirectHostOk(hostname) {
+  return REDIRECT_HOST_SUFFIXES.some(s => hostMatches(hostname, s));
+}
+function parseSetCookie(raw, requestUrl) {
+  const parts = String(raw || '').split(';').map(s => s.trim()).filter(Boolean);
+  if (!parts.length) return null;
+  const eq = parts[0].indexOf('=');
+  if (eq <= 0) return null;
+  const name = parts[0].slice(0, eq).trim();
+  const value = parts[0].slice(eq + 1).trim();
+  if (!name) return null;
+  let domain = '';
+  let cookiePath = '/';
+  for (const attr of parts.slice(1)) {
+    const i = attr.indexOf('=');
+    const key = (i < 0 ? attr : attr.slice(0, i)).trim().toLowerCase();
+    const val = i < 0 ? '' : attr.slice(i + 1).trim();
+    if (key === 'domain' && val) domain = val.replace(/^\./, '').toLowerCase();
+    else if (key === 'path' && val) cookiePath = val;
+  }
+  if (!domain) {
+    try { domain = new URL(requestUrl).hostname.toLowerCase(); } catch (e) { return null; }
+  }
+  return { name, value, domain, path: cookiePath || '/' };
+}
+function absorbCookies(jar, res, requestUrl) {
+  const list = typeof res.headers.getSetCookie === 'function' ? res.headers.getSetCookie() : [];
+  for (const raw of list) {
+    const c = parseSetCookie(raw, requestUrl);
+    if (!c) continue;
+    const i = jar.findIndex(x => x.name === c.name && x.domain === c.domain && x.path === c.path);
+    if (i >= 0) jar[i] = c;
+    else jar.push(c);
+  }
+}
+function cookieHeader(jar, url) {
+  let u;
+  try { u = new URL(url); } catch (e) { return ''; }
+  const host = u.hostname.toLowerCase();
+  const pathName = u.pathname || '/';
+  const pairs = [];
+  for (const c of jar) {
+    if (!(host === c.domain || host.endsWith('.' + c.domain))) continue;
+    const p = c.path || '/';
+    if (pathName !== p && !pathName.startsWith(p.endsWith('/') ? p : p + '/')) continue;
+    pairs.push(c.name + '=' + c.value);
+  }
+  return pairs.join('; ');
+}
+function isZip(buf) {
+  return buf && buf.length >= 4 && buf[0] === 0x50 && buf[1] === 0x4b;
+}
+function fatalDownload(message) {
+  return /HTTP 401|HTTP 403|sign-in page|unexpected host|host is not|must be https|not an xlsx|left https|too many redirects|too large/.test(message);
+}
+
+// Anonymous SharePoint links 302 through a guest cookie. Node fetch follows the
+// redirect but drops Set-Cookie, and a non-browser User-Agent is answered 401.
+// Curl with a cookie jar and Mozilla/5.0 gets the xlsx. Graph is not used.
+async function fetchBytesFollowingCookies(startUrl) {
+  let url = String(startUrl);
+  const jar = [];
+  const originHost = new URL(url).hostname.toLowerCase();
+  for (let hop = 0; hop < 12; hop++) {
+    const headers = { 'user-agent': BROWSER_UA, accept: '*/*' };
+    const cookie = cookieHeader(jar, url);
+    if (cookie) headers.cookie = cookie;
+    const res = await fetch(url, { redirect: 'manual', signal: AbortSignal.timeout(30000), headers });
+    absorbCookies(jar, res, url);
+    if (res.status >= 300 && res.status < 400) {
+      const loc = res.headers.get('location');
+      await res.arrayBuffer().catch(() => {});
+      if (!loc) throw new Error('SharePoint redirect had no Location header');
+      const next = new URL(loc, url);
+      if (next.protocol !== 'https:' && next.protocol !== 'http:') throw new Error('SharePoint redirect was not http(s)');
+      const nextHost = next.hostname.toLowerCase();
+      const local = originHost === '127.0.0.1' || originHost === 'localhost';
+      if (next.protocol !== 'https:' && !local) throw new Error('SharePoint redirect left https');
+      if (nextHost !== originHost && !redirectHostOk(nextHost)) throw new Error('SharePoint download redirected to an unexpected host');
+      url = next.toString();
+      continue;
+    }
+    if (res.status === 401 || res.status === 403) {
+      throw new Error('SharePoint returned HTTP ' + res.status + '. Share the workbook so anyone with the link can view (no Microsoft sign-in). Graph auth is not used, and Sheets was not substituted.');
+    }
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length > 30 * 1024 * 1024) throw new Error('SharePoint workbook is too large');
+    return buf;
+  }
+  throw new Error('SharePoint download followed too many redirects');
+}
+
 async function downloadXlsx(rawUrl) {
   const url = toDownloadUrl(rawUrl);
   let lastError;
   for (let attempt = 0; attempt < FETCH_TRIES; attempt++) {
     try {
-      const res = await fetch(url, {
-        redirect: 'follow',
-        signal: AbortSignal.timeout(30000),
-        headers: { 'user-agent': 'race-control-rss/1.0', accept: '*/*' },
-      });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const buf = Buffer.from(await res.arrayBuffer());
-      if (buf.length < 4 || buf[0] !== 0x50 || buf[1] !== 0x4b) {
+      const buf = await fetchBytesFollowingCookies(url);
+      if (!isZip(buf)) {
+        const head = buf.slice(0, 400).toString('utf8').toLowerCase();
+        if (head.includes('<html') || head.includes('<!doctype')) {
+          throw new Error('SharePoint returned a sign-in page instead of the workbook. Share it so anyone with the link can view. Graph auth is not used.');
+        }
         throw new Error('link did not return an xlsx. Share the workbook so anyone with the link can view, and paste the file link (not a folder). Graph sign-in is not used.');
       }
       return buf;
     } catch (e) {
       lastError = e;
       console.warn(`SharePoint download attempt ${attempt + 1}/${FETCH_TRIES} failed (${e.message})`);
-      if (pastDeadline()) break;
+      if (fatalDownload(e.message) || pastDeadline()) break;
       if (attempt < FETCH_TRIES - 1) await backoff(attempt);
     }
   }
@@ -228,10 +411,19 @@ async function resolveScheduleSource() {
 }
 
 async function fetchSharePointSnapshot(src) {
-  if (!src.sharepointUrl) {
-    throw new Error('Schedule source is SharePoint but no workbook link is available. Save the link on the admin dashboard and set FEED_CONFIG_TOKEN (script property + GitHub secret), or set secret SHAREPOINT_URL. Sheets was not used as a fallback, so nothing was published.');
+  // SCHEDULE_XLSX is a local workbook for tests and one-off runs. It is not a secret store.
+  const local = (process.env.SCHEDULE_XLSX || '').trim();
+  let buf;
+  if (local) {
+    buf = fs.readFileSync(local);
+    console.log('SharePoint workbook from local file');
+  } else {
+    if (!src.sharepointUrl) {
+      throw new Error('Schedule source is SharePoint but no workbook link is available. Save the link on the admin dashboard and set FEED_CONFIG_TOKEN (script property + GitHub secret), or set secret SHAREPOINT_URL. Sheets was not used as a fallback, so nothing was published.');
+    }
+    buf = await downloadXlsx(src.sharepointUrl);
   }
-  const snap = snapshotFromXlsxBuffer(await downloadXlsx(src.sharepointUrl));
+  const snap = snapshotFromXlsxBuffer(buf);
   console.log('SharePoint Day tabs: ' + snap.tabs.map(([l]) => l).join(', '));
   return snap;
 }
@@ -493,4 +685,7 @@ if (require.main === module) {
   })();
 }
 
-module.exports = { parseDay, toDownloadUrl, snapshotFromXlsxBuffer, diffSnapshots };
+module.exports = {
+  parseDay, toDownloadUrl, snapshotFromXlsxBuffer, diffSnapshots,
+  fetchBytesFollowingCookies, downloadXlsx, findScheduleDate,
+};
