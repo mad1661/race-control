@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-6f010753644e16ae72af",
+    "date": "2026-11-05T20:48:12.833Z",
+    "title": "Run order updated for NHRA Finals",
+    "description": "<p>Run order updated for NHRA Finals</p><ul><li>Thursday, November 12, 2026: 20 sessions</li><li>Friday, November 13, 2026: 24 sessions</li><li>Saturday, November 14, 2026: 37 sessions</li><li>Sunday, November 15, 2026: 42 sessions</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-ab4352d9017df8e5f34b",
     "date": "2026-11-02T00:35:30.817Z",
     "title": "Sunday: Jr Dragster Exh removed from the run order",
@@ -292,11 +298,5 @@
     "date": "2026-10-31T02:46:45.132Z",
     "title": "Saturday: PRO STOCK Qualifying 4 moved from 3:30 PM to 2:30 PM",
     "description": "<p>Saturday: PRO STOCK Qualifying 4 moved from 3:30 PM to 2:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-dc381d4cafb6f820735b",
-    "date": "2026-10-31T01:02:21.385Z",
-    "title": "Friday: FUNNY CAR Qualifying 2 now scheduled for 5:30 PM",
-    "description": "<p>Friday: FUNNY CAR Qualifying 2 now scheduled for 5:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
