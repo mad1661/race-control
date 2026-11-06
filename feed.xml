@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 05 Nov 2026 20:48:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 23:21:07 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Run order updated for IN-N-OUT BURGER NHRA Finals</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Run order updated for IN-N-OUT BURGER NHRA Finals&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday, November 12, 2026: 20 sessions&lt;/li&gt;&lt;li&gt;Friday, November 13, 2026: 24 sessions&lt;/li&gt;&lt;li&gt;Saturday, November 14, 2026: 37 sessions&lt;/li&gt;&lt;li&gt;Sunday, November 15, 2026: 42 sessions&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-56b14bb289c95e09f391</guid>
+      <pubDate>Fri, 06 Nov 2026 23:21:07 GMT</pubDate>
+    </item>
     <item>
       <title>Run order updated for NHRA Finals</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -349,13 +356,6 @@
       <link>https://www.nhraracer.com/racecontrol</link>
       <description>&lt;p&gt;Saturday: TOP FUEL Qualifying 4 moved from 2:30 PM to 1:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-18e7328b63ed192079a6</guid>
-      <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: PRO STOCK Qualifying 4 moved from 3:30 PM to 2:30 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: PRO STOCK Qualifying 4 moved from 3:30 PM to 2:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-70e8008a62a15f1644ce</guid>
       <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
     </item>
   </channel>

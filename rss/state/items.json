@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-56b14bb289c95e09f391",
+    "date": "2026-11-06T23:21:07.670Z",
+    "title": "Run order updated for IN-N-OUT BURGER NHRA Finals",
+    "description": "<p>Run order updated for IN-N-OUT BURGER NHRA Finals</p><ul><li>Thursday, November 12, 2026: 20 sessions</li><li>Friday, November 13, 2026: 24 sessions</li><li>Saturday, November 14, 2026: 37 sessions</li><li>Sunday, November 15, 2026: 42 sessions</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-6f010753644e16ae72af",
     "date": "2026-11-05T20:48:12.833Z",
     "title": "Run order updated for NHRA Finals",
@@ -292,11 +298,5 @@
     "date": "2026-10-31T02:46:45.132Z",
     "title": "Saturday: TOP FUEL Qualifying 4 moved from 2:30 PM to 1:30 PM",
     "description": "<p>Saturday: TOP FUEL Qualifying 4 moved from 2:30 PM to 1:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-70e8008a62a15f1644ce",
-    "date": "2026-10-31T02:46:45.132Z",
-    "title": "Saturday: PRO STOCK Qualifying 4 moved from 3:30 PM to 2:30 PM",
-    "description": "<p>Saturday: PRO STOCK Qualifying 4 moved from 3:30 PM to 2:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

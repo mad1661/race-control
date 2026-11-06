@@ -1,129 +1,149 @@
 {
-  "fetchedAt": "2026-11-05T20:48:12.833Z",
+  "fetchedAt": "2026-11-06T23:21:07.670Z",
   "days": [
     {
       "label": "Day 1",
       "gid": "68015736",
       "date": "Thursday, November 12, 2026",
-      "title": "NHRA Finals",
-      "radio": "",
+      "title": "IN-N-OUT BURGER NHRA Finals",
+      "radio": "90.5 FM",
       "items": [
         {
           "scheduled": "8:00 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "9:00 AM",
+          "actual": "",
           "name": "Stock",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "TT-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Dragster",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Competition Eliminator",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Sportsman",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "TT-1",
           "note": ""
         },
         {
           "scheduled": "12:30 PM",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Stock",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "TT-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Dragster",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Competition Eliminator",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Sportsman",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "4:00 PM",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "TT-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Secure",
           "round": "",
           "note": ""
@@ -134,149 +154,173 @@
       "label": "Day 2",
       "gid": "1709607792",
       "date": "Friday, November 13, 2026",
-      "title": "NHRA Finals",
-      "radio": "",
+      "title": "IN-N-OUT BURGER NHRA Finals",
+      "radio": "90.5 FM",
       "items": [
         {
           "scheduled": "8:00 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "8:30 AM",
+          "actual": "",
           "name": "Stock",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Dragster",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Summit JDRL Shootout",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "12:00 PM",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Veteran's Day Ceremony",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "1:00 PM",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Legacy Nitro Funny Car",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "2:30 PM",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "3:30 PM",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Legacy Nitro Funny Car",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Summit JDRL Shootout",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Competition Eliminator",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Sportsman",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Secure",
           "round": "",
           "note": ""
@@ -292,222 +336,259 @@
       "items": [
         {
           "scheduled": "8:00 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "8:30 AM",
+          "actual": "",
           "name": "Stock",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Dragster",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Competition Eliminator",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Sportsman",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "LASD Racing",
           "round": "Exh",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Summit JDRL Shootout",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "11:30 AM",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "12:30 PM",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Legacy Nitro Funny Car",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Summit JDRL Shootout",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "2:00 PM",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "Q-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-4",
           "note": ""
         },
         {
           "scheduled": "3:00 PM",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "Q-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Legacy Nitro Funny Car",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Stock",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Dragster",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Competition Eliminator",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Sportsman",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Stock",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Secure",
           "round": "",
           "note": ""
@@ -518,257 +599,299 @@
       "label": "Day 4",
       "gid": "61512320",
       "date": "Sunday, November 15, 2026",
-      "title": "NHRA Finals",
-      "radio": "",
+      "title": "IN-N-OUT BURGER NHRA Finals",
+      "radio": "90.5 FM",
       "items": [
         {
           "scheduled": "9:30 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "9:45 AM",
+          "actual": "",
           "name": "Pre-Race Ceremonies",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "11:00 AM",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Legacy Nitro Funny Car",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Dragster",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Competition Eliminator",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Sportsman",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Stock",
           "round": "R-5",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "R-5",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "R-5",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "R-5",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "LASD Racing",
           "round": "Exh",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Summit JDRL Shootout",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Legacy Nitro Funny Car",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Stock",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Comp",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Stock",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Super Gas",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Dragster",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Competition Eliminator",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Top Sportsman",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Parade of Champions",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "PRO STOCK",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "Final",
           "note": ""
         },
         {
           "scheduled": "",
+          "actual": "",
           "name": "Secure",
           "round": "",
           "note": ""
@@ -779,7 +902,7 @@
       "label": "Day 5",
       "gid": "1999299548",
       "date": "Monday, November 16, 2026",
-      "title": "NHRA Finals",
+      "title": "IN-N-OUT BURGER NHRA Finals",
       "radio": "90.5 FM",
       "items": []
     },
@@ -787,7 +910,7 @@
       "label": "Day 6",
       "gid": "1167512363",
       "date": "Tuesday, November 17, 2026",
-      "title": "NHRA Finals",
+      "title": "IN-N-OUT BURGER NHRA Finals",
       "radio": "90.5 FM",
       "items": []
     }
@@ -817,5 +940,6 @@
       "Day 6",
       "1167512363"
     ]
-  ]
+  ],
+  "scheduleSource": "sheets"
 }
