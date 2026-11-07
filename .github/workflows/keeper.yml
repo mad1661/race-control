@@ -1,0 +1,53 @@
+name: Feed keeper
+
+# Replaces the box loops (kick-feed.sh + watch-sync.sh). Runs entirely on GitHub.
+# Race window (day before first race day through last race day, Eastern): dispatches
+# "Run order feed" every 3 minutes, looping ~5h45m per run; the hourly cron starts the
+# next one so there is always one alive (concurrency keeps it to one at a time).
+# Off days: a single dispatch per hourly run, then exit.
+on:
+  schedule:
+    - cron: "7 * * * *"
+    - cron: "37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: feed-keeper
+  cancel-in-progress: false
+
+jobs:
+  keep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - name: Dispatch loop
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          end=$(( $(date +%s) + 345*60 ))
+          race_window() {
+            gh api "repos/$REPO/contents/rss/state/snapshot.json" -H "Accept: application/vnd.github.raw" 2>/dev/null |
+            python3 -c '
+          import sys, json, datetime as dt
+          from zoneinfo import ZoneInfo
+          try: days = json.load(sys.stdin).get("days", [])
+          except Exception: print("race"); sys.exit()   # unreadable: fail safe = fast
+          ds = []
+          for d in days:
+              try: ds.append(dt.datetime.strptime(d["date"], "%A, %B %d, %Y").date())
+              except Exception: pass
+          today = dt.datetime.now(ZoneInfo("America/New_York")).date()
+          print("race" if ds and min(ds) - dt.timedelta(days=1) <= today <= max(ds) else "off")'
+          }
+          while :; do
+            mode=$(race_window)
+            if gh workflow run "Run order feed" --repo "$REPO"; then echo "$(date -u +%FT%TZ) $mode dispatched"; else echo "::warning::dispatch failed"; fi
+            [ "$mode" = race ] || exit 0
+            [ $(( $(date +%s) + 180 )) -lt $end ] || exit 0
+            sleep 180
+          done

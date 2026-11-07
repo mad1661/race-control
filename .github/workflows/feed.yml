@@ -58,6 +58,25 @@ jobs:
           for i in 1 2 3; do git pull --rebase --quiet && git push --quiet && exit 0; sleep 5; done
           echo "::warning::could not push last-run.json"
 
+  # Firebase (race-control-feed): patch only the feed data files. Runs every time and is a
+  # no-op when live already matches, so a missed deploy self-heals on the next run.
+  firebase:
+    needs: feed
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Patch-deploy feed files to Firebase Hosting
+        env:
+          FIREBASE_DEPLOY_SA: ${{ secrets.FIREBASE_DEPLOY_SA }}
+        run: node rss/firebase-patch.js .
+
   deploy:
     needs: feed
     if: needs.feed.outputs.changed == 'true' || github.event_name != 'schedule'
