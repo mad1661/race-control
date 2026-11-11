@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 06 Nov 2026 23:21:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 23:34:58 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>14 changes to the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;14 changes to the run order&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday: Top Dragster Round 1 added to the run order, after Super Gas Round 1&lt;/li&gt;&lt;li&gt;Thursday: Competition Eliminator Round 1 added to the run order, after Top Dragster Round 1&lt;/li&gt;&lt;li&gt;Thursday: Top Sportsman Round 1 added to the run order, after Competition Eliminator Round 1&lt;/li&gt;&lt;li&gt;Thursday: Stock Round 2 added to the run order, after Top Sportsman Round 1&lt;/li&gt;&lt;li&gt;Thursday: Super Comp Round 2 added to the run order, after Stock Round 2&lt;/li&gt;&lt;li&gt;Thursday: Super Stock Round 2 added to the run order, after Super Comp Round 2&lt;/li&gt;&lt;li&gt;Thursday: Super Gas Round 2 added to the run order, after Super Stock Round 2&lt;/li&gt;&lt;li&gt;Thursday: Stock Qualifying 1 moved from 9:00 AM to 8:30 AM&lt;/li&gt;&lt;li&gt;Thursday: Top Alcohol Dragster Qualifying 1 moved from 12:30 PM to 12:00 PM&lt;/li&gt;&lt;li&gt;Thursday: Stock changed from Qualifying 2 to Round 1&lt;/li&gt;&lt;li&gt;Thursday: Super Comp changed from Time Trial 2 to Round 1&lt;/li&gt;&lt;li&gt;Thursday: Top Alcohol Dragster Qualifying 2 moved from 4:00 PM to 3:15 PM&lt;/li&gt;&lt;li&gt;Thursday: Super Stock changed from Qualifying 2 to Round 1&lt;/li&gt;&lt;li&gt;Thursday: Super Gas changed from Time Trial 2 to Round 1&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-547b1b5941667200ce9d</guid>
+      <pubDate>Wed, 11 Nov 2026 23:34:58 GMT</pubDate>
+    </item>
     <item>
       <title>Run order updated for IN-N-OUT BURGER NHRA Finals</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -349,13 +356,6 @@
       <link>https://www.nhraracer.com/racecontrol</link>
       <description>&lt;p&gt;Saturday: PRO STOCK Qualifying 3 moved from 1:00 PM to 12:00 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-821b331baedfa4675d1d</guid>
-      <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: TOP FUEL Qualifying 4 moved from 2:30 PM to 1:30 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: TOP FUEL Qualifying 4 moved from 2:30 PM to 1:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-18e7328b63ed192079a6</guid>
       <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
     </item>
   </channel>

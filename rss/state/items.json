@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-547b1b5941667200ce9d",
+    "date": "2026-11-11T23:34:58.980Z",
+    "title": "14 changes to the run order",
+    "description": "<p>14 changes to the run order</p><ul><li>Thursday: Top Dragster Round 1 added to the run order, after Super Gas Round 1</li><li>Thursday: Competition Eliminator Round 1 added to the run order, after Top Dragster Round 1</li><li>Thursday: Top Sportsman Round 1 added to the run order, after Competition Eliminator Round 1</li><li>Thursday: Stock Round 2 added to the run order, after Top Sportsman Round 1</li><li>Thursday: Super Comp Round 2 added to the run order, after Stock Round 2</li><li>Thursday: Super Stock Round 2 added to the run order, after Super Comp Round 2</li><li>Thursday: Super Gas Round 2 added to the run order, after Super Stock Round 2</li><li>Thursday: Stock Qualifying 1 moved from 9:00 AM to 8:30 AM</li><li>Thursday: Top Alcohol Dragster Qualifying 1 moved from 12:30 PM to 12:00 PM</li><li>Thursday: Stock changed from Qualifying 2 to Round 1</li><li>Thursday: Super Comp changed from Time Trial 2 to Round 1</li><li>Thursday: Top Alcohol Dragster Qualifying 2 moved from 4:00 PM to 3:15 PM</li><li>Thursday: Super Stock changed from Qualifying 2 to Round 1</li><li>Thursday: Super Gas changed from Time Trial 2 to Round 1</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-56b14bb289c95e09f391",
     "date": "2026-11-06T23:21:07.670Z",
     "title": "Run order updated for IN-N-OUT BURGER NHRA Finals",
@@ -292,11 +298,5 @@
     "date": "2026-10-31T02:46:45.132Z",
     "title": "Saturday: PRO STOCK Qualifying 3 moved from 1:00 PM to 12:00 PM",
     "description": "<p>Saturday: PRO STOCK Qualifying 3 moved from 1:00 PM to 12:00 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-18e7328b63ed192079a6",
-    "date": "2026-10-31T02:46:45.132Z",
-    "title": "Saturday: TOP FUEL Qualifying 4 moved from 2:30 PM to 1:30 PM",
-    "description": "<p>Saturday: TOP FUEL Qualifying 4 moved from 2:30 PM to 1:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
