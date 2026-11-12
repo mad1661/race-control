@@ -28,13 +28,25 @@ jobs:
         with:
           node-version: 20
       - id: gen
+        env:
+          # The admin dashboard is the source of truth. These stay empty when unset.
+          # generate.js warns and stays on rss/schedule-source.json if the token or admin URL is missing.
+          # SCHEDULE_SOURCE, when set, forces a source and does not call Apps Script.
+          # The workbook link is never written to the repo.
+          FEED_CONFIG_TOKEN: ${{ secrets.FEED_CONFIG_TOKEN }}
+          SHAREPOINT_URL: ${{ secrets.SHAREPOINT_URL }}
+          SCHEDULE_SOURCE: ${{ vars.SCHEDULE_SOURCE }}
         run: node rss/generate.js
       - name: Commit feed and snapshot
         if: steps.gen.outputs.changed == 'true'
         run: |
           git config user.name "race-control-feed"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add feed.xml rss/state days.json
+          git add feed.xml rss/state days.json schedule-meta.json
+          # schedule.json exists only in SharePoint mode. Stage a deletion when Sheets removes it.
+          if [ -f schedule.json ] || git cat-file -e HEAD:schedule.json 2>/dev/null; then
+            git add -A -- schedule.json
+          fi
           git diff --cached --quiet || git commit -m "Run order feed update"
           git pull --rebase --quiet && git push
       # Run health: generate.js writes rss/state/last-run.json on EVERY exit (ok or not).
@@ -90,7 +102,7 @@ jobs:
         with:
           ref: main
       - name: Assemble site
-        run: mkdir _site && cp index.html feed.xml _site/ && { cp days.json _site/ 2>/dev/null || true; }
+        run: mkdir _site && cp index.html feed.xml _site/ && { cp days.json schedule-meta.json _site/ 2>/dev/null || true; } && { cp schedule.json _site/ 2>/dev/null || true; }
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

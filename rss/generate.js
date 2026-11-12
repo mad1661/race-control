@@ -190,12 +190,45 @@ async function downloadXlsx(rawUrl) {
       return buf;
     } catch (e) {
       lastError = e;
-      console.warn(`SharePoint download attempt ${attempt + 1}/${FETCH_TRIES} failed (${e.message})`);
+      console.warn(`SharePoint download attempt ${attempt + 1}/${FETCH_TRIES} failed (${redactSecrets(e.message)})`);
       if (pastDeadline()) break;
       if (attempt < FETCH_TRIES - 1) await backoff(attempt);
     }
   }
-  throw new Error('SharePoint workbook: ' + lastError.message);
+  throw new Error('SharePoint workbook: ' + redactSecrets(lastError.message));
+}
+
+// Strip workbook links and the feed token before anything is logged or committed.
+function redactSecrets(text) {
+  let s = String(text ?? '');
+  for (const key of ['FEED_CONFIG_TOKEN', 'SHAREPOINT_URL']) {
+    const value = (process.env[key] || '').trim();
+    if (value) s = s.split(value).join('[' + key + ']');
+  }
+  s = s.replace(/([?&]token=)[^&\s'"]+/gi, '$1[redacted]');
+  // Download URLs gain ?download=1, so they are not always identical to the secret.
+  s = s.replace(/https?:\/\/[^\s'"]+/gi, (url) => {
+    try {
+      const host = new URL(url).hostname.toLowerCase();
+      const share = host === 'sharepoint.com' || host.endsWith('.sharepoint.com') || host === '1drv.ms' ||
+        host === 'onedrive.live.com' || host.endsWith('.onedrive.live.com');
+      return share ? '[sharepoint-link]' : url;
+    } catch (e) { return url; }
+  });
+  return s;
+}
+
+function jobWarning(message) {
+  const text = redactSecrets(message).replace(/[\r\n]+/g, ' ');
+  console.warn(text);
+  console.log('::warning title=Admin schedule source unread::' + text);
+}
+
+function linkSourceLabel(from) {
+  if (from === 'secret') return 'SHAREPOINT_URL secret';
+  if (from === 'apps-script') return 'Apps Script';
+  if (from === 'file') return 'rss/schedule-source.json';
+  return 'none';
 }
 
 async function resolveScheduleSource() {
@@ -205,10 +238,13 @@ async function resolveScheduleSource() {
   const envUrl = (process.env.SHAREPOINT_URL || '').trim();
   let source = envSource || String(file.source || 'sheets').toLowerCase();
   let sharepointUrl = envUrl || String(file.sharepointUrl || '').trim();
+  let linkFrom = envUrl ? 'secret' : (sharepointUrl ? 'file' : 'none');
   const admin = (process.env.ADMIN_SCRIPT_URL || file.adminScriptUrl || '').trim();
   const token = (process.env.FEED_CONFIG_TOKEN || '').trim();
-  // Env SCHEDULE_SOURCE wins so an operator can force Sheets without Apps Script.
-  if (!envSource && token && admin) {
+  // Env SCHEDULE_SOURCE wins so an operator can force a source without Apps Script.
+  if (envSource) {
+    console.log('Schedule source from SCHEDULE_SOURCE env: ' + (envSource === 'sharepoint' ? 'sharepoint' : 'sheets') + ' (admin dashboard not consulted)');
+  } else if (token && admin) {
     try {
       const join = admin.includes('?') ? '&' : '?';
       const url = admin + join + 'action=scheduleSourceForFeed&token=' + encodeURIComponent(token);
@@ -220,23 +256,33 @@ async function resolveScheduleSource() {
       const j = JSON.parse(await res.text());
       if (res.ok && j && j.ok && (j.source === 'sheets' || j.source === 'sharepoint')) {
         source = j.source;
-        if (!envUrl && j.sharepointUrl) sharepointUrl = String(j.sharepointUrl).trim();
+        if (!envUrl && j.sharepointUrl) {
+          sharepointUrl = String(j.sharepointUrl).trim();
+          linkFrom = sharepointUrl ? 'apps-script' : linkFrom;
+        }
         console.log('Schedule source from Apps Script: ' + source);
       } else {
-        console.warn('Apps Script schedule source was not usable; using rss/schedule-source.json');
+        jobWarning('Apps Script schedule source was not usable (HTTP ' + res.status + '); using rss/schedule-source.json');
       }
     } catch (e) {
-      console.warn('Apps Script schedule source failed (' + e.message + '); using rss/schedule-source.json');
+      jobWarning('Apps Script schedule source failed (' + e.message + '); using rss/schedule-source.json');
     }
+  } else {
+    const missing = [];
+    if (!token) missing.push('FEED_CONFIG_TOKEN');
+    if (!admin) missing.push('admin script URL');
+    const fileSource = String(file.source || 'sheets').toLowerCase() === 'sharepoint' ? 'sharepoint' : 'sheets';
+    jobWarning('Cannot read the admin dashboard (' + missing.join(' and ') + ' missing). Using rss/schedule-source.json (' + fileSource + '). Pass FEED_CONFIG_TOKEN and the admin script URL into this job so the dashboard switch reaches the board.');
   }
   if (source !== 'sharepoint') source = 'sheets';
-  return { source, sharepointUrl };
+  return { source, sharepointUrl, linkFrom };
 }
 
 async function fetchSharePointSnapshot(src) {
   if (!src.sharepointUrl) {
     throw new Error('Schedule source is SharePoint but no workbook link is available. Save the link on the admin dashboard and set FEED_CONFIG_TOKEN (script property + GitHub secret), or set secret SHAREPOINT_URL. Sheets was not used as a fallback, so nothing was published.');
   }
+  console.log('SharePoint workbook link from ' + linkSourceLabel(src.linkFrom));
   const snap = snapshotFromXlsxBuffer(await downloadXlsx(src.sharepointUrl));
   console.log('SharePoint Day tabs: ' + snap.tabs.map(([l]) => l).join(', '));
   return snap;
@@ -407,7 +453,7 @@ function writeLastRun(ok, error) {
   const at = new Date().toISOString();
   const out = ok
     ? { ok: true, at, error: null, lastOkAt: at, consecutiveFailures: 0 }
-    : { ok: false, at, error: String(error || 'unknown error').slice(0, 500), lastOkAt: prev.lastOkAt || null,
+    : { ok: false, at, error: redactSecrets(String(error || 'unknown error')).slice(0, 500), lastOkAt: prev.lastOkAt || null,
         consecutiveFailures: (prev.consecutiveFailures || 0) + 1 };
   try { writeAtomic(LAST_RUN, JSON.stringify(out, null, 2) + '\n'); } catch (e) { console.error('could not write last-run.json:', e.message); }
   return out;
@@ -489,8 +535,8 @@ if (require.main === module) {
       await main();
       ok = true;
     } catch (e) {
-      error = e.message;
-      console.error('Feed not updated:', e.message);
+      error = redactSecrets(e.message);
+      console.error('Feed not updated:', error);
     } finally {
       const r = writeLastRun(ok, error);
       if (!ok) console.error(`::error title=Race Control feed failed::${error} (failure #${r.consecutiveFailures} in a row; last good run ${r.lastOkAt || 'unknown'})`);
@@ -499,4 +545,4 @@ if (require.main === module) {
   })();
 }
 
-module.exports = { parseDay, toDownloadUrl, snapshotFromXlsxBuffer, diffSnapshots };
+module.exports = { parseDay, toDownloadUrl, snapshotFromXlsxBuffer, diffSnapshots, resolveScheduleSource, fetchSharePointSnapshot, redactSecrets };

@@ -3,5 +3,5 @@
   "private": true,
   "description": "Builds feed.xml from the DRS run-order Google Sheet. No dependencies.",
   "engines": { "node": ">=18" },
-  "scripts": { "feed": "node generate.js" }
+  "scripts": { "feed": "node generate.js", "test": "node test/schedule-source.test.js" }
 }
