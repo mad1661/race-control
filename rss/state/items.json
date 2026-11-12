@@ -1,5 +1,41 @@
 [
   {
+    "guid": "race-control-e169aab07f07730d6566",
+    "date": "2026-11-12T20:56:15.318Z",
+    "title": "Friday: Competition Eliminator Round 2 removed from the run order",
+    "description": "<p>Friday: Competition Eliminator Round 2 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-1b26d022dae0ee9128cb",
+    "date": "2026-11-12T20:56:15.318Z",
+    "title": "Friday: Secure Round 1 added to the run order, after Summit JDRL Shootout Qualifying 2",
+    "description": "<p>Friday: Secure Round 1 added to the run order, after Summit JDRL Shootout Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-acf9d947020f4e100b76",
+    "date": "2026-11-12T20:56:15.318Z",
+    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 1 moved from 12:00 PM to 11:00 AM",
+    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 1 moved from 12:00 PM to 11:00 AM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-389de20826088ea2c7f1",
+    "date": "2026-11-12T20:56:15.318Z",
+    "title": "Friday: FUNNY CAR Qualifying 1 moved from 1:00 PM to 12:00 PM",
+    "description": "<p>Friday: FUNNY CAR Qualifying 1 moved from 1:00 PM to 12:00 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-185d578cd8ab6931bf5c",
+    "date": "2026-11-12T20:56:15.318Z",
+    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 2:30 PM to 1:30 PM",
+    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 2:30 PM to 1:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-9a0dc99eae28ebcf15e3",
+    "date": "2026-11-12T20:56:15.318Z",
+    "title": "Friday: FUNNY CAR Qualifying 2 moved from 3:30 PM to 2:30 PM",
+    "description": "<p>Friday: FUNNY CAR Qualifying 2 moved from 3:30 PM to 2:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-ae5da103b6e631ceb2c4",
     "date": "2026-11-12T18:51:39.705Z",
     "title": "Friday: Competition Eliminator Round 2 added to the run order, after Summit JDRL Shootout Qualifying 2",
@@ -262,41 +298,5 @@
     "date": "2026-10-31T17:31:56.683Z",
     "title": "Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2",
     "description": "<p>Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-d39552a7ffb1bb55a574",
-    "date": "2026-10-31T17:31:56.683Z",
-    "title": "Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Qualifying 2 to Exh",
-    "description": "<p>Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Qualifying 2 to Exh</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-5a629f5051524beb19ca",
-    "date": "2026-10-31T17:21:53.930Z",
-    "title": "Saturday: Legacy Nitro Funny Car changed from Qualifying 2 to Exh",
-    "description": "<p>Saturday: Legacy Nitro Funny Car changed from Qualifying 2 to Exh</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-09816dc6d3a9908e2ed6",
-    "date": "2026-10-31T17:21:53.930Z",
-    "title": "Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Exh to Qualifying 2",
-    "description": "<p>Saturday: Ford Racing Mustang Cobra Jet 2200 changed from Exh to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-9501d041274182043e1d",
-    "date": "2026-10-31T16:21:29.342Z",
-    "title": "Saturday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Alcohol Funny Car Qualifying 3",
-    "description": "<p>Saturday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Alcohol Funny Car Qualifying 3</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-6c8fd9fa21f3c4b3d7fe",
-    "date": "2026-10-31T16:21:29.342Z",
-    "title": "Saturday: Top Alcohol Dragster Round 2 added to the run order, after Super Gas Round 6",
-    "description": "<p>Saturday: Top Alcohol Dragster Round 2 added to the run order, after Super Gas Round 6</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-7ac63992c310b39deace",
-    "date": "2026-10-31T16:21:29.342Z",
-    "title": "Saturday: Top Alcohol Funny Car Round 2 added to the run order, after Top Alcohol Dragster Round 2",
-    "description": "<p>Saturday: Top Alcohol Funny Car Round 2 added to the run order, after Top Alcohol Dragster Round 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

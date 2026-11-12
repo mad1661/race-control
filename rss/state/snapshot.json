@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-11-12T18:51:39.705Z",
+  "fetchedAt": "2026-11-12T20:56:15.318Z",
   "days": [
     {
       "label": "Day 1",
       "gid": "68015736",
       "date": "Thursday, November 12, 2026",
       "title": "IN-N-OUT BURGER NHRA Finals",
-      "radio": "",
+      "radio": "90.5 FM",
       "items": [
         {
           "scheduled": "8:00 AM",
@@ -52,28 +52,28 @@
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "10:44 AM",
           "name": "Super Stock",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "11:15 AM",
           "name": "Super Gas",
           "round": "TT-1",
           "note": ""
         },
         {
           "scheduled": "12:00 PM",
-          "actual": "",
+          "actual": "11:46 AM",
           "name": "Top Alcohol Dragster",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "12:30 PM",
           "name": "Top Alcohol Funny Car",
           "round": "Q-1",
           "note": ""
@@ -203,12 +203,12 @@
       "label": "Day 2",
       "gid": "1709607792",
       "date": "Friday, November 13, 2026",
-      "title": "Race weekend",
-      "radio": "",
+      "title": "IN-N-OUT BURGER NHRA Finals",
+      "radio": "90.5 FM",
       "items": [
         {
           "scheduled": "8:00 AM",
-          "actual": "8:00 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
           "note": ""
@@ -284,7 +284,7 @@
           "note": ""
         },
         {
-          "scheduled": "12:00 PM",
+          "scheduled": "11:00 AM",
           "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-1",
@@ -305,7 +305,7 @@
           "note": ""
         },
         {
-          "scheduled": "1:00 PM",
+          "scheduled": "12:00 PM",
           "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-1",
@@ -319,7 +319,7 @@
           "note": ""
         },
         {
-          "scheduled": "2:30 PM",
+          "scheduled": "1:30 PM",
           "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-2",
@@ -333,7 +333,7 @@
           "note": ""
         },
         {
-          "scheduled": "3:30 PM",
+          "scheduled": "2:30 PM",
           "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-2",
@@ -363,8 +363,8 @@
         {
           "scheduled": "",
           "actual": "",
-          "name": "Competition Eliminator",
-          "round": "R-2",
+          "name": "Secure",
+          "round": "R-1",
           "note": ""
         },
         {
@@ -387,12 +387,12 @@
       "label": "Day 3",
       "gid": "207688806",
       "date": "Saturday, November 14, 2026",
-      "title": "Race weekend",
-      "radio": "",
+      "title": "IN-N-OUT BURGER NHRA Finals",
+      "radio": "90.5 FM",
       "items": [
         {
           "scheduled": "8:00 AM",
-          "actual": "8:00 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
           "note": ""
@@ -649,11 +649,11 @@
       "gid": "61512320",
       "date": "Sunday, November 15, 2026",
       "title": "IN-N-OUT BURGER NHRA Finals",
-      "radio": "",
+      "radio": "90.5 FM",
       "items": [
         {
           "scheduled": "9:30 AM",
-          "actual": "9:30 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
           "note": ""
@@ -667,7 +667,7 @@
         },
         {
           "scheduled": "11:00 AM",
-          "actual": "11:00 AM",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "R-1",
           "note": ""
@@ -709,7 +709,7 @@
         },
         {
           "scheduled": "",
-          "actual": "1:15 PM",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "R-2",
           "note": ""
@@ -800,7 +800,7 @@
         },
         {
           "scheduled": "",
-          "actual": "2:50 PM",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "R-3",
           "note": ""
@@ -912,7 +912,7 @@
         },
         {
           "scheduled": "",
-          "actual": "4:05 PM",
+          "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Final",
           "note": ""
@@ -926,7 +926,7 @@
         },
         {
           "scheduled": "",
-          "actual": "4:15 PM",
+          "actual": "",
           "name": "FUNNY CAR",
           "round": "Final",
           "note": ""
