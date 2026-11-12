@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T18:49:19.376Z",
+  "fetchedAt": "2026-11-12T18:51:39.705Z",
   "days": [
     {
       "label": "Day 1",
@@ -284,7 +284,7 @@
           "note": ""
         },
         {
-          "scheduled": "11:00 AM",
+          "scheduled": "12:00 PM",
           "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-1",
@@ -305,7 +305,7 @@
           "note": ""
         },
         {
-          "scheduled": "12:00 PM",
+          "scheduled": "1:00 PM",
           "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-1",
@@ -319,7 +319,7 @@
           "note": ""
         },
         {
-          "scheduled": "1:30 PM",
+          "scheduled": "2:30 PM",
           "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-2",
@@ -333,7 +333,7 @@
           "note": ""
         },
         {
-          "scheduled": "2:30 PM",
+          "scheduled": "3:30 PM",
           "actual": "",
           "name": "FUNNY CAR",
           "round": "Q-2",
@@ -363,8 +363,8 @@
         {
           "scheduled": "",
           "actual": "",
-          "name": "Secure",
-          "round": "R-1",
+          "name": "Competition Eliminator",
+          "round": "R-2",
           "note": ""
         },
         {
@@ -372,6 +372,13 @@
           "actual": "",
           "name": "Top Sportsman",
           "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Secure",
+          "round": "",
           "note": ""
         }
       ]

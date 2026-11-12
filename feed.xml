@@ -6,8 +6,50 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 12 Nov 2026 18:49:19 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 18:51:39 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: Competition Eliminator Round 2 added to the run order, after Summit JDRL Shootout Qualifying 2</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Competition Eliminator Round 2 added to the run order, after Summit JDRL Shootout Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-ae5da103b6e631ceb2c4</guid>
+      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 1 moved from 11:00 AM to 12:00 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 1 moved from 11:00 AM to 12:00 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-74b4e11f98d9b89c9d25</guid>
+      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: FUNNY CAR Qualifying 1 moved from 12:00 PM to 1:00 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 1 moved from 12:00 PM to 1:00 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-8e89606498b9e52d3f1a</guid>
+      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 1:30 PM to 2:30 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 1:30 PM to 2:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-82aa7b5e1e521d109188</guid>
+      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 3:30 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 3:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-d2f86f3622638237276a</guid>
+      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: Secure changed from Round 1 to no round</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Secure changed from Round 1 to no round&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-6e5491b384e86b4e6136</guid>
+      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
+    </item>
     <item>
       <title>15 changes to the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -315,48 +357,6 @@
       <description>&lt;p&gt;Saturday: Top Alcohol Funny Car Round 2 added to the run order, after Top Alcohol Dragster Round 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-7ac63992c310b39deace</guid>
       <pubDate>Sat, 31 Oct 2026 16:21:29 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Legacy Nitro Funny Car Qualifying 2 removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Legacy Nitro Funny Car Qualifying 2 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-0002bb3ce606649da98d</guid>
-      <pubDate>Sat, 31 Oct 2026 04:14:54 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: CJ E Mod Exh removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: CJ E Mod Exh removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-26a9d6fc5b9312e53518</guid>
-      <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: CJ E Mod Exh removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: CJ E Mod Exh removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-c2ca9601792e81430c1e</guid>
-      <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Alcohol Funny Car Qualifying 3</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: Ford Racing Mustang Cobra Jet 2200 Exh added to the run order, after Top Alcohol Funny Car Qualifying 3&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-f54148056c9520ea5288</guid>
-      <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: Summit ET Pre-Race moved from 8:00 AM to 7:45 AM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: Summit ET Pre-Race moved from 8:00 AM to 7:45 AM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-7e11ab9ea3119efd5a4f</guid>
-      <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: Legacy Nitro Funny Car changed from Round 1 to Qualifying 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: Legacy Nitro Funny Car changed from Round 1 to Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-b63f05a09f393d43132b</guid>
-      <pubDate>Sat, 31 Oct 2026 02:46:45 GMT</pubDate>
     </item>
   </channel>
 </rss>
