@@ -66,7 +66,48 @@ function parseDay(rows, label, gid) {
   return { label, gid, date, title, radio, items };
 }
 
+// RFC 4180 CSV -> rows of trimmed strings (handles quotes, doubled quotes, CRLF, blank cells).
+function parseCsv(text) {
+  const rows = []; let row = [], field = '', q = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (q) {
+      if (ch === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; }
+      else field += ch;
+    } else if (ch === '"') q = true;
+    else if (ch === ',') { row.push(field); field = ''; }
+    else if (ch === '\n' || ch === '\r') {
+      if (ch === '\r' && text[i + 1] === '\n') i++;
+      row.push(field); rows.push(row); row = []; field = '';
+    } else field += ch;
+  }
+  if (field !== '' || row.length) { row.push(field); rows.push(row); }
+  return rows.map(r => r.slice(0, 12).map(clean));
+}
+
+// Live read: Google's CSV export reflects edits immediately. The gviz endpoint can serve a
+// stale cached snapshot for hours (Nov 12 2026: new Actual times never reached Race Control),
+// so gviz is only a fallback when the export fails.
 async function fetchTab(gid) {
+  const csvUrl = `https://docs.google.com/spreadsheets/d/${config.sheetId}/export?format=csv&gid=${encodeURIComponent(gid)}`;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const res = await fetch(csvUrl, { redirect: 'follow', signal: AbortSignal.timeout(20000), headers: { 'user-agent': 'race-control-rss/1.0' } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const text = await res.text();
+      if (/^\s*</.test(text)) throw new Error('export returned HTML, not CSV');
+      return parseCsv(text);
+    } catch (e) {
+      console.warn(`tab ${gid}: CSV export attempt ${attempt + 1}/3 failed (${e.message})`);
+      if (pastDeadline()) break;
+      if (attempt < 2) await backoff(attempt);
+    }
+  }
+  console.warn(`tab ${gid}: falling back to gviz`);
+  return fetchTabGviz(gid);
+}
+
+async function fetchTabGviz(gid) {
   const params = new URLSearchParams({ gid, headers: '0', range: 'A1:L1000', tqx: 'out:json' });
   const url = `https://docs.google.com/spreadsheets/d/${config.sheetId}/gviz/tq?${params}`;
   let lastError;
