@@ -1,7 +1,7 @@
 {
-  "ok": false,
-  "at": "2026-11-12T17:40:17.248Z",
-  "error": "SharePoint workbook: HTTP 401",
-  "lastOkAt": "2026-11-11T23:34:58.984Z",
-  "consecutiveFailures": 1
+  "ok": true,
+  "at": "2026-11-12T17:45:45.047Z",
+  "error": null,
+  "lastOkAt": "2026-11-12T17:45:45.047Z",
+  "consecutiveFailures": 0
 }
