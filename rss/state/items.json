@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-eb37deaf55cd06312282",
+    "date": "2026-11-12T18:49:19.376Z",
+    "title": "15 changes to the run order",
+    "description": "<p>15 changes to the run order</p><ul><li>Friday: Competition Eliminator Round 1 removed from the run order</li><li>Friday: Top Sportsman Round 2 added to the run order, after Secure Round 1</li><li>Friday: Stock changed from Round 1 to Round 3</li><li>Friday: Super Comp changed from Round 1 to Round 3</li><li>Friday: Super Stock changed from Round 1 to Round 3</li><li>Friday: Super Gas changed from Round 1 to Round 3</li><li>Friday: Top Dragster changed from Round 1 to Round 2</li><li>Friday: Top Sportsman changed from Round 1 to Round 2</li><li>Friday: PRO STOCK MOTORCYCLE Qualifying 1 moved from 12:00 PM to 11:00 AM</li><li>Friday: FUNNY CAR Qualifying 1 moved from 1:00 PM to 12:00 PM</li><li>Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 2:30 PM to 1:30 PM</li><li>Friday: FUNNY CAR Qualifying 2 moved from 3:30 PM to 2:30 PM</li><li>Friday: Secure changed from no round to Round 1</li><li>Saturday: Competition Eliminator Round 3 removed from the run order</li><li>Sunday: Competition Eliminator changed from Round 4 to Round 3</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-c38a32b856dffb34ea28",
     "date": "2026-11-12T17:47:55.166Z",
     "title": "273 changes to the run order",
@@ -292,11 +298,5 @@
     "date": "2026-10-31T02:46:45.132Z",
     "title": "Saturday: Legacy Nitro Funny Car changed from Round 1 to Qualifying 2",
     "description": "<p>Saturday: Legacy Nitro Funny Car changed from Round 1 to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-f7eff716d35ca955cb6f",
-    "date": "2026-10-31T02:46:45.132Z",
-    "title": "Saturday: TOP FUEL Qualifying 3 moved from 12:00 PM to 11:00 AM",
-    "description": "<p>Saturday: TOP FUEL Qualifying 3 moved from 12:00 PM to 11:00 AM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
