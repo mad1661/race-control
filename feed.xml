@@ -6,8 +6,22 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 12 Nov 2026 20:56:15 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 16:09:41 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: Secure Round 1 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Secure Round 1 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-96bb5476e18e258e07ee</guid>
+      <pubDate>Fri, 13 Nov 2026 16:09:41 GMT</pubDate>
+    </item>
+    <item>
+      <title>Friday: Top Sportsman Round 2 removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: Top Sportsman Round 2 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-00fd35c87418272529ff</guid>
+      <pubDate>Fri, 13 Nov 2026 16:09:41 GMT</pubDate>
+    </item>
     <item>
       <title>Friday: Competition Eliminator Round 2 removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -343,20 +357,6 @@
       <description>&lt;p&gt;Saturday: Top Alcohol Dragster Round 1 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-d3ae5e3011000178be6b</guid>
       <pubDate>Sat, 31 Oct 2026 20:09:02 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: Top Alcohol Funny Car Round 1 removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: Top Alcohol Funny Car Round 1 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-89f09201827bb4cd36ea</guid>
-      <pubDate>Sat, 31 Oct 2026 20:09:02 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: Legacy Nitro Funny Car changed from Exh to Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-a5b4327495014c3880e0</guid>
-      <pubDate>Sat, 31 Oct 2026 17:31:56 GMT</pubDate>
     </item>
   </channel>
 </rss>

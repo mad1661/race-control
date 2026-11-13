@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T20:56:15.318Z",
+  "fetchedAt": "2026-11-13T16:09:41.596Z",
   "days": [
     {
       "label": "Day 1",
@@ -73,126 +73,126 @@
         },
         {
           "scheduled": "",
-          "actual": "12:30 PM",
+          "actual": "12:28 PM",
           "name": "Top Alcohol Funny Car",
           "round": "Q-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:06 PM",
           "name": "Top Dragster",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:25 PM",
           "name": "Competition Eliminator",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:37 PM",
           "name": "Top Sportsman",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:00 PM",
           "name": "Stock",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:26 PM",
           "name": "Super Comp",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "3:15 PM",
-          "actual": "",
+          "actual": "2:58 PM",
           "name": "Top Alcohol Dragster",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "3:37 PM",
           "name": "Top Alcohol Funny Car",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "3:49 PM",
           "name": "Super Stock",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "4:15 PM",
           "name": "Super Gas",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "4:50 PM",
           "name": "Top Dragster",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:18 PM",
           "name": "Competition Eliminator",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:34 PM",
           "name": "Top Sportsman",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "6:02 PM",
           "name": "Stock",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "6:16 PM",
           "name": "Super Comp",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "6:39 PM",
           "name": "Super Stock",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "6:52 PM",
           "name": "Super Gas",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "7:14 PM",
           "name": "Secure",
           "round": "",
           "note": ""
@@ -358,20 +358,6 @@
           "actual": "",
           "name": "Summit JDRL Shootout",
           "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Secure",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Top Sportsman",
-          "round": "R-2",
           "note": ""
         },
         {
