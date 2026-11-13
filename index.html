@@ -1,19 +1,186 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Race Control · Run Order</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Race Control · Run Order</title>
 <link rel="alternate" type="application/rss+xml" title="Race Control · Run Order changes" href="https://race-control-feed.web.app/feed.xml">
 <style>
-:root{--red:#f12738;--ink:#111318;--muted:#69717e;--line:#e6e8ed;--paper:#f3f4f6}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #5986ff;outline-offset:4px}button:disabled{cursor:wait;opacity:.65}[hidden]{display:none!important}svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.wrap{width:min(1180px,100% - 64px);margin:auto}.top{background:#0a0c12;color:white;border-bottom:0;padding:0;line-height:0;position:sticky;top:0;z-index:50;-webkit-backface-visibility:hidden;backface-visibility:hidden}.top .banner{display:block;width:100%;height:auto;max-height:none;object-fit:cover;object-position:center}.nav{display:none}.brand{display:flex;align-items:center;gap:13px}.mark{width:34px;height:35px;display:flex;gap:4px;transform:skew(-17deg)}.mark i{width:8px;background:var(--red)}.mark i:nth-child(2){height:25px;align-self:center}.mark i:nth-child(3){height:15px;align-self:center}.brand b{display:block;letter-spacing:.16em;font-size:14px}.brand small{display:block;font-size:9px;letter-spacing:.27em;color:#9298a3;margin-top:6px}.nav-note{font-size:11px;color:#b1b6c1;letter-spacing:.08em;display:flex;align-items:center;gap:8px}.dot{width:6px;height:6px;background:#bac0cd;border-radius:50%;display:inline-block}.hero{background:#111318;color:white;position:relative;overflow:hidden}.hero:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 90% 75%,#86212c50,transparent 53%),repeating-linear-gradient(112deg,transparent 0 69px,#ffffff03 70px 71px)}.hero:after{content:'';width:230px;height:400px;position:absolute;right:-85px;top:-110px;border:65px solid #ed273516;transform:rotate(28deg);pointer-events:none}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding:42px 0 48px;align-items:center}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;display:flex;align-items:center;gap:10px;color:#b7bdc8}.eyebrow:before{content:'';height:2px;width:22px;background:var(--red)}h1{font-size:clamp(34px,4.5vw,59px);letter-spacing:-.055em;line-height:.99;margin:21px 0 17px;font-weight:900}h1 span{color:#ff4654} #heroTitle span{display:block}.hero-copy{color:#aeb4c0;font-size:13px;line-height:1.7;max-width:410px;margin:0}.subscribe-area{justify-self:end;max-width:320px;width:100%}.subscribe-area p{font-size:12px;color:#aeb4c0;line-height:1.6;margin:13px 0 0}.cta{border:1px solid #ff6470;background:linear-gradient(120deg,#f72d41,#d60b26);color:white;min-height:59px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:13px;padding:14px 21px;font-weight:700;font-size:14px;text-decoration:none;position:relative;overflow:hidden;box-shadow:0 8px 30px #ef233c30;transition:transform .2s,box-shadow .2s}.cta:hover{transform:translateY(-2px);box-shadow:0 12px 35px #ef233c50}.cta:after{content:'';position:absolute;inset:-70% auto -70% -80px;width:45px;background:#ffffff25;transform:rotate(25deg);transition:left .55s}.cta:hover:after{left:120%}.cta .arrow{margin-left:auto}.subscribe-area .cta{width:100%}.meta{display:flex;gap:25px;margin-top:27px;color:#b6bdc8;font-size:11px}.meta span{display:flex;align-items:center;gap:8px}.meta svg{width:14px;height:14px;color:#f24655}.dashboard{padding:28px 0 23px}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:18px}.section-heading h2{font-size:19px;letter-spacing:-.04em;margin:0}.section-heading p{font-size:11px;color:var(--muted);margin:7px 0 0}.quiet-btn{border:1px solid #d9dce2;background:white;border-radius:7px;padding:9px 12px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:11px;text-decoration:none;white-space:nowrap;min-height:37px}.quiet-btn svg{width:15px;height:15px}.grid{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:20px}.board{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 4px 14px #11131804}.board-top{display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid var(--line);gap:12px}.tabs{display:flex;gap:24px}.tab{padding:19px 0 16px;border:0;background:none;font-weight:700;font-size:12px;color:#858b96;border-bottom:3px solid transparent}.tab[aria-pressed=true]{color:var(--ink);border-color:var(--red)}.source-badge{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);display:flex;align-items:center;gap:6px}.source-badge .dot{background:#a7adb7}.tools{padding:17px 22px 15px;display:flex;gap:12px;border-bottom:1px solid var(--line)}.search{display:flex;align-items:center;gap:9px;min-width:0;flex:1;background:#f5f6f8;border:1px solid #e9ebef;border-radius:7px;padding:9px 11px}.search svg{width:16px;height:16px;color:#9096a1}.search input{border:0;background:none;min-width:0;width:100%;font-size:12px;outline-offset:5px}.tools select{border:1px solid var(--line);background:#fff;border-radius:7px;padding:9px 7px;max-width:50%;font-size:11px;color:#383e49}.date-title{padding:17px 22px 11px;display:flex;justify-content:space-between;align-items:center;gap:10px}.date-title h3{margin:0;font-size:14px;letter-spacing:-.02em}.date-title span{font-size:10px;color:var(--muted);white-space:nowrap}.table-scroll{overflow:visible;height:auto;max-height:none}table{border-collapse:collapse;width:100%;text-align:left}thead{position:sticky;top:0;background:#f8f9fb;z-index:1}th{font-size:9px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:#888f9b;padding:11px 12px}th:first-child,td:first-child{padding-left:22px}th:last-child,td:last-child{padding-right:22px}td{border-top:1px solid #f0f1f4;padding:12px;font-size:12px}td.sequence{font-family:monospace;color:#9aa0ab;font-size:10px;width:45px}.session-name{font-weight:700;letter-spacing:-.015em}.note{display:block;margin-top:4px;font-size:10px;color:#828995;font-weight:400}.time{white-space:nowrap;font-size:11px;font-variant-numeric:tabular-nums}.round{padding:5px 7px;background:#f0f2f5;border-radius:4px;font-size:9px;letter-spacing:.035em;font-weight:700;white-space:nowrap}.round.final{background:#ffe8eb;color:#bd1730}tbody tr:hover{background:#fafbfc}.table-foot{padding:13px 22px;background:#fafbfc;border-top:1px solid var(--line);font-size:10px;color:#7d8490;line-height:1.6}.side{display:flex;flex-direction:column;gap:16px}.info{padding:22px;background:white;border:1px solid var(--line);border-radius:12px}.overline{font-size:9px;font-weight:700;letter-spacing:.13em;color:#7f8793;text-transform:uppercase}.info h3{font-size:18px;letter-spacing:-.04em;line-height:1.2;margin:11px 0 17px}.info p{font-size:11px;color:#7c8491;line-height:1.65;margin:0}.day-list{margin:0;padding:0;list-style:none}.day-list li{display:flex;justify-content:space-between;font-size:11px;padding:11px 0;border-top:1px solid #eceef2}.day-list span:last-child{color:#9198a3;font-variant-numeric:tabular-nums}.alert-card{background:#191c24;color:white;border-color:#242933;position:relative;overflow:hidden}.bell-tile{display:flex;align-items:center;justify-content:center;width:39px;height:39px;background:#ed293c1f;color:#ff5866;border:1px solid #f92c3d38;border-radius:10px;margin-bottom:21px}.alert-card h3{font-size:23px;margin-bottom:10px}.alert-card p{color:#a8afbd}.alert-card button{margin-top:20px;width:100%;background:white;color:#16191f;border:0;border-radius:7px;font-weight:700;font-size:11px;min-height:40px}.footer{display:flex;justify-content:space-between;gap:15px;margin-top:18px;color:#9198a3;font-size:9px;line-height:1.6}.footer a{text-decoration:none}.error{margin:0 0 16px;border:1px solid #e6cba3;border-radius:8px;background:#fff8eb;padding:12px 16px;font-size:12px;line-height:1.6;color:#775328}.empty{padding:50px 22px;text-align:center;color:#6f7784;font-size:13px}dialog{border:1px solid #ffffff25;border-radius:18px;padding:36px;background:#171a22;color:white;max-width:430px;width:calc(100% - 32px);box-shadow:0 30px 120px #0008}dialog::backdrop{background:#090b12b3;backdrop-filter:blur(6px)}dialog h2{font-size:29px;line-height:1.1;letter-spacing:-.05em;margin:22px 0 14px}dialog p{color:#adb4c2;font-size:13px;line-height:1.75}dialog .close{position:absolute;right:14px;top:14px;background:none;border:0;color:#aeb6c6;padding:8px}dialog .cta{margin-top:22px}dialog small{display:block;color:#8b93a3;font-size:10px;line-height:1.7;margin-top:16px}.reader-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}.reader-row a{flex:1;min-width:120px;text-align:center;border:1px solid #ffffff30;background:#0f1117;color:#e7eaf0;border-radius:7px;font-weight:700;font-size:11px;padding:11px 14px;text-decoration:none}.reader-row a:hover{border-color:#ff6470}.feed-box{display:flex;gap:8px;margin-top:20px}.feed-box input{flex:1;min-width:0;background:#0f1117;border:1px solid #ffffff25;border-radius:7px;color:#e7eaf0;padding:10px 11px;font-size:12px;font-family:monospace}.feed-box button{border:1px solid #ff6470;background:linear-gradient(120deg,#f72d41,#d60b26);color:white;border-radius:7px;font-weight:700;font-size:11px;padding:0 14px;min-height:40px;white-space:nowrap}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.spinning svg{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}@media(max-width:900px){.grid{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.day-list{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.hero-inner{gap:24px}.wrap{width:calc(100% - 40px)}.alert-card .bell-tile{display:none}.alert-card h3{margin-top:0}.alert-card button{margin-top:15px}}@media(max-width:560px){.top .banner{max-height:110px;object-fit:cover;object-position:left center}.wrap{width:calc(100% - 28px)}.nav{min-height:65px}.brand b{font-size:12px}.brand small{font-size:8px}.nav-note{display:none}.hero-inner{grid-template-columns:1fr;gap:26px;padding:30px 0}.eyebrow{font-size:8px;letter-spacing:.12em}h1{font-size:40px;margin:18px 0 14px}.hero-copy{font-size:12px}.subscribe-area{justify-self:stretch;max-width:none}.subscribe-area p{text-align:center;font-size:10px}.cta{min-height:53px}.meta{margin-top:19px;gap:17px;font-size:10px}.dashboard{padding-top:22px}.section-heading h2{font-size:17px}.board-top{padding:0 15px}.tabs{gap:19px}.source-badge{display:none}.tools{padding:14px 13px;flex-wrap:wrap}.tools select{width:100%;max-width:100%}.date-title{padding:15px 14px 12px}.date-title h3{font-size:12px}.date-title span{font-size:9px}th{font-size:8px;padding:10px 7px}td{padding:12px 7px;font-size:11px}th:first-child,td:first-child{padding-left:13px}th:last-child,td:last-child{padding-right:13px}.sequence{display:none}.time{font-size:10px}.round{font-size:8px;padding:4px}.note{font-size:9px}.table-foot{padding:12px 14px;font-size:9px}.side{grid-template-columns:1fr}.info:first-child{display:none}.alert-card{padding:20px}.alert-card h3{font-size:20px}.footer{font-size:8px}.quiet-btn{font-size:10px;padding:8px}.section-heading p{font-size:10px}}
+:root{--red:#f12738;--ink:#111318;--muted:#69717e;--line:#e6e8ed;--paper:#f3f4f6}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #5986ff;outline-offset:4px}button:disabled{cursor:wait;opacity:.65}[hidden]{display:none!important}svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.wrap{width:min(1180px,100% - 64px);margin:auto}.top{background:#0a0c12;color:white;border-bottom:0;padding:0;line-height:0;position:sticky;top:0;z-index:50;-webkit-backface-visibility:hidden;backface-visibility:hidden}.top .banner{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:cover;object-position:center}.nav{display:none}.brand{display:flex;align-items:center;gap:13px}.mark{width:34px;height:35px;display:flex;gap:4px;transform:skew(-17deg)}.mark i{width:8px;background:var(--red)}.mark i:nth-child(2){height:25px;align-self:center}.mark i:nth-child(3){height:15px;align-self:center}.brand b{display:block;letter-spacing:.16em;font-size:14px}.brand small{display:block;font-size:9px;letter-spacing:.27em;color:#9298a3;margin-top:6px}.nav-note{font-size:11px;color:#b1b6c1;letter-spacing:.08em;display:flex;align-items:center;gap:8px}.dot{width:6px;height:6px;background:#bac0cd;border-radius:50%;display:inline-block}.hero{background:#111318;color:white;position:relative;overflow:hidden}.hero:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 90% 75%,#86212c50,transparent 53%),repeating-linear-gradient(112deg,transparent 0 69px,#ffffff03 70px 71px)}.hero:after{content:'';width:230px;height:400px;position:absolute;right:-85px;top:-110px;border:65px solid #ed273516;transform:rotate(28deg);pointer-events:none}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding:42px 0 48px;align-items:center}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;display:flex;align-items:center;gap:10px;color:#b7bdc8}.eyebrow:before{content:'';height:2px;width:22px;background:var(--red)}h1{font-size:clamp(34px,4.5vw,59px);letter-spacing:-.055em;line-height:.99;margin:21px 0 17px;font-weight:900}h1 span{color:#ff4654} #heroTitle span{display:block}.hero-copy{color:#aeb4c0;font-size:13px;line-height:1.7;max-width:410px;margin:0}.subscribe-area{justify-self:end;max-width:320px;width:100%}.subscribe-area p{font-size:12px;color:#aeb4c0;line-height:1.6;margin:13px 0 0}.cta{border:1px solid #ff6470;background:linear-gradient(120deg,#f72d41,#d60b26);color:white;min-height:59px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:13px;padding:14px 21px;font-weight:700;font-size:14px;text-decoration:none;position:relative;overflow:hidden;box-shadow:0 8px 30px #ef233c30;transition:transform .2s,box-shadow .2s}.cta:hover{transform:translateY(-2px);box-shadow:0 12px 35px #ef233c50}.cta:after{content:'';position:absolute;inset:-70% auto -70% -80px;width:45px;background:#ffffff25;transform:rotate(25deg);transition:left .55s}.cta:hover:after{left:120%}.cta .arrow{margin-left:auto}.subscribe-area .cta{width:100%}.meta{display:flex;gap:25px;margin-top:27px;color:#b6bdc8;font-size:11px}.meta span{display:flex;align-items:center;gap:8px}.meta svg{width:14px;height:14px;color:#f24655}.dashboard{padding:28px 0 23px}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:18px}.section-heading h2{font-size:19px;letter-spacing:-.04em;margin:0}.section-heading p{font-size:11px;color:var(--muted);margin:7px 0 0}.quiet-btn{border:1px solid #d9dce2;background:white;border-radius:7px;padding:9px 12px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:11px;text-decoration:none;white-space:nowrap;min-height:37px}.quiet-btn svg{width:15px;height:15px}.grid{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:20px}.board{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 4px 14px #11131804}.board-top{display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid var(--line);gap:12px}.tabs{display:flex;gap:24px}.tab{padding:19px 0 16px;border:0;background:none;font-weight:700;font-size:12px;color:#858b96;border-bottom:3px solid transparent}.tab[aria-pressed=true]{color:var(--ink);border-color:var(--red)}.source-badge{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);display:flex;align-items:center;gap:6px}.source-badge .dot{background:#a7adb7}.tools{padding:17px 22px 15px;display:flex;gap:12px;border-bottom:1px solid var(--line)}.search{display:flex;align-items:center;gap:9px;min-width:0;flex:1;background:#f5f6f8;border:1px solid #e9ebef;border-radius:7px;padding:9px 11px}.search svg{width:16px;height:16px;color:#9096a1}.search input{border:0;background:none;min-width:0;width:100%;font-size:12px;outline-offset:5px}.tools select{border:1px solid var(--line);background:#fff;border-radius:7px;padding:9px 7px;max-width:50%;font-size:11px;color:#383e49}.date-title{padding:17px 22px 11px;display:flex;justify-content:space-between;align-items:center;gap:10px}.date-title h3{margin:0;font-size:14px;letter-spacing:-.02em}.date-title span{font-size:10px;color:var(--muted);white-space:nowrap}.table-scroll{overflow:visible;height:auto;max-height:none}table{border-collapse:collapse;width:100%;text-align:left}thead{position:sticky;top:0;background:#f8f9fb;z-index:1}th{font-size:9px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:#888f9b;padding:11px 12px}th:first-child,td:first-child{padding-left:22px}th:last-child,td:last-child{padding-right:22px}td{border-top:1px solid #f0f1f4;padding:12px;font-size:12px}td.sequence{font-family:monospace;color:#9aa0ab;font-size:10px;width:45px}.session-name{font-weight:700;letter-spacing:-.015em}.note{display:block;margin-top:4px;font-size:10px;color:#828995;font-weight:400}.time{white-space:nowrap;font-size:11px;font-variant-numeric:tabular-nums}.round{padding:5px 7px;background:#f0f2f5;border-radius:4px;font-size:9px;letter-spacing:.035em;font-weight:700;white-space:nowrap}.round.final{background:#ffe8eb;color:#bd1730}tbody tr:hover{background:#fafbfc}.table-foot{padding:13px 22px;background:#fafbfc;border-top:1px solid var(--line);font-size:10px;color:#7d8490;line-height:1.6}.side{display:flex;flex-direction:column;gap:16px}.info{padding:22px;background:white;border:1px solid var(--line);border-radius:12px}.overline{font-size:9px;font-weight:700;letter-spacing:.13em;color:#7f8793;text-transform:uppercase}.info h3{font-size:18px;letter-spacing:-.04em;line-height:1.2;margin:11px 0 17px}.info p{font-size:11px;color:#7c8491;line-height:1.65;margin:0}.day-list{margin:0;padding:0;list-style:none}.day-list li{display:flex;justify-content:space-between;font-size:11px;padding:11px 0;border-top:1px solid #eceef2}.day-list span:last-child{color:#9198a3;font-variant-numeric:tabular-nums}.alert-card{background:#191c24;color:white;border-color:#242933;position:relative;overflow:hidden}.bell-tile{display:flex;align-items:center;justify-content:center;width:39px;height:39px;background:#ed293c1f;color:#ff5866;border:1px solid #f92c3d38;border-radius:10px;margin-bottom:21px}.alert-card h3{font-size:23px;margin-bottom:10px}.alert-card p{color:#a8afbd}.alert-card button{margin-top:20px;width:100%;background:white;color:#16191f;border:0;border-radius:7px;font-weight:700;font-size:11px;min-height:40px}.footer{display:flex;justify-content:space-between;gap:15px;margin-top:18px;color:#9198a3;font-size:9px;line-height:1.6}.footer a{text-decoration:none}.error{margin:0 0 16px;border:1px solid #e6cba3;border-radius:8px;background:#fff8eb;padding:12px 16px;font-size:12px;line-height:1.6;color:#775328}.empty{padding:50px 22px;text-align:center;color:#6f7784;font-size:13px}dialog{border:1px solid #ffffff25;border-radius:18px;padding:36px;background:#171a22;color:white;max-width:430px;width:calc(100% - 32px);box-shadow:0 30px 120px #0008}dialog::backdrop{background:#090b12b3;backdrop-filter:blur(6px)}dialog h2{font-size:29px;line-height:1.1;letter-spacing:-.05em;margin:22px 0 14px}dialog p{color:#adb4c2;font-size:13px;line-height:1.75}dialog .close{position:absolute;right:14px;top:14px;background:none;border:0;color:#aeb6c6;padding:8px}dialog .cta{margin-top:22px}dialog small{display:block;color:#8b93a3;font-size:10px;line-height:1.7;margin-top:16px}.reader-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}.reader-row a{flex:1;min-width:120px;text-align:center;border:1px solid #ffffff30;background:#0f1117;color:#e7eaf0;border-radius:7px;font-weight:700;font-size:11px;padding:11px 14px;text-decoration:none}.reader-row a:hover{border-color:#ff6470}.feed-box{display:flex;gap:8px;margin-top:20px}.feed-box input{flex:1;min-width:0;background:#0f1117;border:1px solid #ffffff25;border-radius:7px;color:#e7eaf0;padding:10px 11px;font-size:12px;font-family:monospace}.feed-box button{border:1px solid #ff6470;background:linear-gradient(120deg,#f72d41,#d60b26);color:white;border-radius:7px;font-weight:700;font-size:11px;padding:0 14px;min-height:40px;white-space:nowrap}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.spinning svg{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}@media(max-width:900px){.grid{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.day-list{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.hero-inner{gap:24px}.wrap{width:calc(100% - 40px)}.alert-card .bell-tile{display:none}.alert-card h3{margin-top:0}.alert-card button{margin-top:15px}}@media(max-width:560px){.top .banner{width:100%;max-width:100%;height:auto;max-height:none;object-fit:cover;object-position:center}.wrap{width:calc(100% - 28px)}.nav{min-height:65px}.brand b{font-size:12px}.brand small{font-size:8px}.nav-note{display:none}.hero-inner{grid-template-columns:1fr;gap:26px;padding:30px 0}.eyebrow{font-size:8px;letter-spacing:.12em}h1{font-size:40px;margin:18px 0 14px}.hero-copy{font-size:12px}.subscribe-area{justify-self:stretch;max-width:none}.subscribe-area p{text-align:center;font-size:10px}.cta{min-height:53px}.meta{margin-top:19px;gap:17px;font-size:10px}.dashboard{padding-top:22px}.section-heading h2{font-size:17px}.board-top{padding:0 15px}.tabs{gap:19px}.source-badge{display:none}.tools{padding:14px 13px;flex-wrap:wrap}.tools select{width:100%;max-width:100%}.date-title{padding:15px 14px 12px}.date-title h3{font-size:12px}.date-title span{font-size:9px}th{font-size:8px;padding:10px 7px}td{padding:12px 7px;font-size:11px}th:first-child,td:first-child{padding-left:13px}th:last-child,td:last-child{padding-right:13px}.sequence{display:none}.time{font-size:10px}.round{font-size:8px;padding:4px}.note{font-size:9px}.table-foot{padding:12px 14px;font-size:9px}.side{grid-template-columns:1fr}.info:first-child{display:none}.alert-card{padding:20px}.alert-card h3{font-size:20px}.footer{font-size:8px}.quiet-btn{font-size:10px;padding:8px}.section-heading p{font-size:10px}}
 .email-cta{margin:14px 0 4px;width:100%;text-decoration:none;box-sizing:border-box}.rss-divider{display:block;margin:18px 0 8px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9198a3;text-align:center}
 /* Wix iframe scroll: avoid nested scroll / sticky iOS jank when embedded */
-html,body{height:auto!important;min-height:0;overflow:visible!important;overscroll-behavior-y:none;-webkit-overflow-scrolling:auto;touch-action:pan-y}
+html,body{height:auto!important;min-height:0;width:100%;max-width:100%;overflow-x:hidden!important;overflow-y:visible!important;overscroll-behavior-y:none;-webkit-overflow-scrolling:touch;touch-action:manipulation}
 html.dialog-open,html.dialog-open body{overflow:hidden!important;touch-action:none}
-html.framed thead{position:static}html.framed .top{display:none!important}
-/* Ended class: Actual is start time; Done badge when a later Actual start exists. Running = latest Actual (amber). */tr.done .done-badge{display:inline-block;margin-left:10px;padding:5px 11px;border-radius:999px;background:#d8f3e0;color:#0f6b32;border:1px solid #1a7a3a55;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;vertical-align:middle;white-space:nowrap;line-height:1.1;box-shadow:0 1px 2px #0f6b3214}tr.running{background:#fff4e5}tr.running td{box-shadow:inset 3px 0 0 #e67e00}tr.running .session-name{color:#9a4e00;font-weight:800}tr.running .round{background:#ffe2b8;color:#9a4e00}tbody tr.running:hover{background:#ffecc8}@media(max-width:560px){tr.done .done-badge{margin-left:8px;padding:4px 10px;font-size:11px}}.last-updated{margin:0;padding:12px 22px 0;font-size:11px;color:#505966;font-variant-numeric:tabular-nums}.last-updated b{color:var(--ink)}@media(max-width:560px){.last-updated{padding:10px 14px 0;font-size:10px}}dialog#subscribeDialog{position:fixed;inset:0;margin:auto;max-height:calc(100dvh - 32px);max-height:calc(100vh - 32px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}@supports(height:100dvh){dialog#subscribeDialog{max-height:calc(100dvh - 32px)}}dialog#subscribeDialog.framed{bottom:auto;margin:0 auto}html.dialog-open,html.dialog-open body{overflow:hidden}@media(max-width:560px){dialog#subscribeDialog{padding:28px 20px;width:calc(100% - 24px)}dialog#subscribeDialog h2{font-size:24px;margin:14px 0 10px}}/* compact hero + refresh button (Oct 27) */.hero:after{width:180px;height:300px;top:-90px;right:-80px;border-width:48px}.hero-inner{padding:30px 0 32px;gap:32px}h1{margin:14px 0 12px}.meta{margin-top:16px;gap:18px;flex-wrap:wrap}.meta span{white-space:nowrap}.subscribe-area p{margin-top:9px;line-height:1.5}.dashboard{padding-top:22px}.refresh-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;min-width:40px;padding:0 15px 0 12px;border-radius:999px;border:1px solid #f1273866;background:#fff1f2;color:#c8102e;font-weight:700;font-size:12px;letter-spacing:.02em;white-space:nowrap;flex-shrink:0;box-shadow:0 1px 2px #1113180d;transition:background .15s,border-color .15s,box-shadow .15s,transform .1s}.refresh-btn svg{width:17px;height:17px;stroke-width:2.2;transition:transform .45s ease}.refresh-btn:hover{background:#ffe2e5;border-color:var(--red);box-shadow:0 4px 14px #f1273826}.refresh-btn:hover svg{transform:rotate(120deg)}.refresh-btn:active{transform:scale(.95);background:#ffd6db}.refresh-btn:disabled{opacity:1;cursor:progress;background:#ffe2e5;border-color:var(--red)}.refresh-btn.spinning svg{animation:spin .8s linear infinite}@media(max-width:900px){.hero-inner{gap:18px}}@media(max-width:560px){.hero-inner{gap:10px;padding:12px 0 14px}.eyebrow{font-size:7px;gap:6px;letter-spacing:.1em}.eyebrow:before{width:12px;height:1px}h1{font-size:22px;line-height:1.05;letter-spacing:-.04em;margin:6px 0 6px}.hero-copy{font-size:11px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.meta{margin-top:8px;gap:12px;font-size:9px;flex-wrap:nowrap}.meta span{gap:5px}.meta svg{width:12px;height:12px}.subscribe-area .cta{min-height:36px;padding:8px 12px;font-size:12px;gap:8px;border-radius:8px;box-shadow:0 4px 16px #ef233c28}.subscribe-area .cta svg{width:15px;height:15px}.subscribe-area .cta .arrow{display:none}.subscribe-area p{margin-top:5px;font-size:9px;line-height:1.35}.dashboard{padding-top:14px}.section-heading{margin-bottom:12px}.refresh-btn{font-size:11px;padding:0 13px 0 11px;min-height:36px}}@media(max-width:360px){.refresh-btn{padding:0;width:40px}.refresh-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}}</style></head><body>
-<svg aria-hidden="true" style="display:none"><symbol id="bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="1320" height="244" rx="2"/><path d="M7 3v4m10-4v4M3 11h18"/></symbol><symbol id="radio" viewBox="0 0 24 24"><path d="M8 8a6 6 0 0 0 0 8m8-8a6 6 0 0 1 0 8M4 4a12 12 0 0 0 0 16M20 4a12 12 0 0 1 0 16"/><circle cx="12" cy="12" r="1"/></symbol></svg>
-<header class="top"><img class="banner" src="https://race-control-feed.web.app/race-control-header.jpg" width="1320" height="315" alt="NHRA Race Control — Event Operations &amp; Safety · Championship Drag Racing" decoding="async" fetchpriority="high"></header>
-<section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow" id="eventTitle">RACE WEEKEND</div><h1 id="heroTitle">Race weekend.<br><span>Run order.</span></h1><p class="hero-copy">Find your class. Follow the run order. Keep the entire race weekend in view.</p><div class="meta"><span><svg><use href="#calendar"/></svg><span id="dateRange">Race schedule</span></span><span><svg><use href="#radio"/></svg><span id="radioText">PA broadcast</span></span></div></div><div class="subscribe-area"><button class="cta" data-subscribe><svg><use href="#bell"/></svg>Get Schedule Change Alerts<svg class="arrow"><use href="#arrow"/></svg></button><p>Free email when the published run order changes.<br>Not for every race update — schedule changes only. No account required.</p></div></div></section>
-<main class="wrap dashboard"><div class="section-heading"><div><h2>Your weekend, at a glance.</h2><p id="syncText" role="status">Connecting to Google Sheets…</p></div><button id="refreshBtn" class="refresh-btn" type="button" aria-label="Refresh run order" title="Refresh run order"><svg aria-hidden="true"><use href="#refresh"/></svg><span class="refresh-label">Refresh</span></button></div><div id="error" class="error" role="alert" hidden></div><div class="grid"><section class="board" aria-label="Race schedule"><div class="board-top"><nav class="tabs" aria-label="Schedule views"><button class="tab" data-view="daily" aria-pressed="true">Daily run order</button><button class="tab" data-view="weekend" aria-pressed="false">Weekend</button></nav><span class="source-badge"><span class="dot"></span>Google Sheets</span></div><div id="customView"><p id="lastUpdated" class="last-updated" role="status">Last updated: loading…</p><div class="tools"><label class="search"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><span class="sr-only">Find a class or round</span><input id="search" type="search" placeholder="Find your class or round…" autocomplete="off"></label><label class="sr-only" for="daySelect">Choose a schedule day</label><select id="daySelect"></select></div><div class="date-title"><h3 id="scheduleDate">Loading run order…</h3><span id="count"></span></div><div class="table-scroll"><table><thead><tr><th class="sequence">No.</th><th>Class / session</th><th>Round</th><th>Scheduled</th></tr></thead><tbody id="rows"></tbody></table><div class="empty" id="empty">Fetching the published schedule…</div></div><div class="table-foot">All daily run orders are subject to change. Blank scheduled times follow the run order; they are not estimated start times.</div></div></section><aside class="side"><section class="info"><span class="overline">The race weekend</span><h3 id="asideTitle">Weekend schedule</h3><ul id="days" class="day-list"></ul></section><section class="info alert-card"><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Stay in the loop</span><h3>Plans change.<br>Stay a step ahead.</h3><p>We’ll email you when the published run order changes — not for every update on the page.</p><button data-subscribe>Get Schedule Change Alerts</button></section></aside></div><footer class="footer"><span>RACE CONTROL / RUN ORDER<br>Times are shown exactly as published by the event.</span><span>Refreshes every 60 seconds while open.<br>Google data refresh delays may apply.</span></footer></main>
-<dialog id="subscribeDialog" aria-labelledby="dialogTitle"><button class="close" aria-label="Close subscription dialog"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Schedule change alerts</span><h2 id="dialogTitle">Get Schedule Change Alerts</h2><p id="dialogCopy">Add your email to the list. We’ll email you when the published run order changes — not for every race update.</p><a class="cta email-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSeEzm-nNOzj_xVbs7oWIdQMRX8IaXrTdCzxZLDt8FjeX_E-qg/viewform" target="_blank" rel="noopener"><svg><use href="#bell"/></svg>Add my email<svg class="arrow"><use href="#arrow"/></svg></a><span class="rss-divider">Or follow with RSS</span><div class="feed-box"><label class="sr-only" for="feedUrl">RSS feed address</label><input id="feedUrl" type="text" readonly><button id="copyFeed" type="button">Copy link</button></div><div class="reader-row"><a href="https://www.inoreader.com/?add_feed=https%3A%2F%2Frace-control-feed.web.app%2Ffeed.xml" target="_blank" rel="noopener">Follow in Inoreader</a><a href="https://race-control-feed.web.app/feed.xml" target="_blank" rel="noopener">Open feed link</a></div><small id="copyStatus" role="status">Email is the easiest way: tap “Add my email” for schedule change alerts only. RSS is optional — copy the feed link into Inoreader or NetNewsWire.</small></dialog>
+html.framed thead{position:static}html.framed .top{display:none!important}html.framed,html.framed body{overflow-x:hidden!important;max-width:100%!important}html.framed .wrap{width:calc(100% - 28px)!important;max-width:100%}html.framed .hero:after{display:none}html.framed .meta{flex-wrap:wrap}
+/* Ended class: Actual is start time; Round complete badge when a later Actual start exists. Running = latest Actual (Running Now). Secure with Actual = Day complete. */tr.done .done-badge{display:inline-block;margin-left:10px;padding:5px 11px;border-radius:999px;background:#d8f3e0;color:#0f6b32;border:1px solid #1a7a3a55;font-size:11px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;vertical-align:middle;white-space:nowrap;line-height:1.1;box-shadow:0 1px 2px #0f6b3214}tr.running{background:linear-gradient(90deg,#ffe8eb 0%,#fff5f6 42%,#ffffff 100%)}tr.running td{box-shadow:none}tr.running .session-name{color:#c8102e;font-weight:900;letter-spacing:-.01em}tr.running .round{background:#ffd0d6;color:#9f1024}tr.running .time{color:#9f1024;font-weight:700}tbody tr.running:hover{background:linear-gradient(90deg,#ffdce1 0%,#fff0f2 50%,#ffffff 100%)}@media(max-width:560px){tr.done .done-badge{margin-left:8px;padding:4px 10px;font-size:11px}}.last-updated{margin:0;padding:12px 22px 0;font-size:11px;color:#505966;font-variant-numeric:tabular-nums}.last-updated b{color:var(--ink)}@media(max-width:560px){.last-updated{padding:10px 14px 0;font-size:10px}}dialog#subscribeDialog{position:fixed;inset:0;margin:auto;max-height:calc(100dvh - 32px);max-height:calc(100vh - 32px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}@supports(height:100dvh){dialog#subscribeDialog{max-height:calc(100dvh - 32px)}}dialog#subscribeDialog.framed{position:absolute!important;inset:auto!important;margin:0!important;transform:none!important;max-height:640px;max-width:min(430px,calc(100% - 24px));width:auto;z-index:10000}html.dialog-open,html.dialog-open body{overflow:hidden}@media(max-width:560px){dialog#subscribeDialog{padding:28px 20px;width:calc(100% - 24px)}dialog#subscribeDialog h2{font-size:24px;margin:14px 0 10px}}/* compact hero + refresh button (Oct 27) */.hero:after{width:180px;height:300px;top:-90px;right:-80px;border-width:48px}.hero-inner{padding:30px 0 32px;gap:32px}h1{margin:14px 0 12px}.meta{margin-top:16px;gap:18px;flex-wrap:wrap}.meta span{white-space:nowrap}.subscribe-area p{margin-top:9px;line-height:1.5}.dashboard{padding-top:22px}.refresh-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;min-width:40px;padding:0 15px 0 12px;border-radius:999px;border:1px solid #f1273866;background:#fff1f2;color:#c8102e;font-weight:700;font-size:12px;letter-spacing:.02em;white-space:nowrap;flex-shrink:0;box-shadow:0 1px 2px #1113180d;transition:background .15s,border-color .15s,box-shadow .15s,transform .1s}.refresh-btn svg{width:17px;height:17px;stroke-width:2.2;transition:transform .45s ease}.refresh-btn:hover{background:#ffe2e5;border-color:var(--red);box-shadow:0 4px 14px #f1273826}.refresh-btn:hover svg{transform:rotate(120deg)}.refresh-btn:active{transform:scale(.95);background:#ffd6db}.refresh-btn:disabled{opacity:1;cursor:progress;background:#ffe2e5;border-color:var(--red)}.refresh-btn.spinning svg{animation:spin .8s linear infinite}@media(max-width:900px){.hero-inner{gap:18px}}@media(max-width:560px){.hero-inner{gap:10px;padding:12px 0 14px}.eyebrow{font-size:7px;gap:6px;letter-spacing:.1em}.eyebrow:before{width:12px;height:1px}h1{font-size:22px;line-height:1.05;letter-spacing:-.04em;margin:6px 0 6px}.hero-copy{font-size:11px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.meta{margin-top:8px;gap:12px;font-size:9px;flex-wrap:nowrap}.meta span{gap:5px}.meta svg{width:12px;height:12px}.subscribe-area .cta{min-height:36px;padding:8px 12px;font-size:12px;gap:8px;border-radius:8px;box-shadow:0 4px 16px #ef233c28}.subscribe-area .cta svg{width:15px;height:15px}.subscribe-area .cta .arrow{display:none}.subscribe-area p{margin-top:5px;font-size:9px;line-height:1.35}.dashboard{padding-top:14px}.section-heading{margin-bottom:12px}.refresh-btn{font-size:11px;padding:0 13px 0 11px;min-height:36px}}@media(max-width:360px){.refresh-btn{padding:0;width:40px}.refresh-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}}.sms-form{margin-top:18px}.sms-label{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#c9ced8;margin-bottom:7px}#smsPhone{width:100%;background:#0f1117;border:1px solid #ffffff30;border-radius:8px;color:#fff;padding:13px 12px;font-size:16px}#smsPhone:focus{border-color:#ff6470}.sms-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}dialog p.sms-consent{white-space:pre-wrap;font-size:11px;line-height:1.6;color:#aeb5c3;margin:12px 0 0}dialog .sms-cta{width:100%;margin-top:14px;border:1px solid #ff6470;font-size:15px}dialog small.sms-status{margin-top:10px;font-size:12px;color:#d6dae2;min-height:1em}dialog small.sms-status.ok{color:#7ee2a0}dialog small.sms-status.err{color:#ff9aa3}
+.sms-inline{display:none;margin:14px 0 0;padding:22px 20px;background:#171a22;color:#fff;border:1px solid #ffffff25;border-radius:14px;box-shadow:0 16px 48px #0006;max-width:430px;width:100%}
+.sms-inline.open{display:block}
+.sms-inline .close{position:absolute;right:10px;top:10px;background:none;border:0;color:#aeb6c6;padding:8px}
+.sms-inline{position:relative}
+.sms-inline h2{font-size:24px;line-height:1.1;letter-spacing:-.04em;margin:14px 0 10px}
+.sms-inline p{color:#adb4c2;font-size:13px;line-height:1.65;margin:0}
+.sms-inline .sms-consent{white-space:pre-wrap;font-size:11px;line-height:1.6;color:#aeb5c3;margin:12px 0 0}
+.sms-inline .sms-cta{width:100%;margin-top:14px}
+.sms-inline .feed-box{display:flex;gap:8px;margin-top:16px}
+.sms-inline .feed-box input{flex:1;min-width:0;background:#0f1117;border:1px solid #ffffff25;border-radius:7px;color:#e7eaf0;padding:10px 11px;font-size:12px;font-family:monospace}
+.sms-inline .feed-box button{border:1px solid #ff6470;background:linear-gradient(120deg,#f72d41,#d60b26);color:white;border-radius:7px;font-weight:700;font-size:11px;padding:0 14px;min-height:40px}
+.sms-inline .reader-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.sms-inline .reader-row a{flex:1;min-width:120px;text-align:center;border:1px solid #ffffff30;background:#0f1117;color:#e7eaf0;border-radius:7px;font-weight:700;font-size:11px;padding:11px 14px;text-decoration:none}
+.sms-inline .rss-divider{display:block;margin-top:18px;font-size:11px;color:#8b93a3}
+.sms-inline small{display:block;color:#8b93a3;font-size:10px;line-height:1.7;margin-top:12px}
+html.framed .sms-inline{max-width:100%}
+</style>
+<style id="rc-polish">
+/* Sharper board. Same columns of meaning, with Status pulled out of the class name.
+   Round complete and Running still come from Actual start times. */
+.board{border-radius:16px;border-color:#dfe3ea;box-shadow:0 14px 36px #11131816}
+.board-top{background:#fbfcfd}
+.tab{letter-spacing:-.01em}
+.tab[aria-pressed=true]{font-weight:800}
+.date-title{padding:14px 16px 12px;background:#fff;border-bottom:3px solid var(--red);align-items:flex-end}
+.date-title h3{font-size:18px;font-weight:800;letter-spacing:-.04em;color:#12141a}
+.date-title #count{font-size:11px;font-weight:800;color:#12141a;background:#f4f5f7;border:1px solid #e1e4ea;border-radius:999px;padding:5px 9px}
+thead{background:#eef1f5}
+th{color:#2e3542;font-weight:800;font-size:10px}
+td{padding:11px 10px;border-top-color:#e6e9ee}
+.session-name{font-size:14px;font-weight:800;letter-spacing:-.02em;color:#141820}
+tr.done .session-name{color:#243040}
+tr.done .done-badge,.done-badge{margin:0;display:inline-block;padding:4px 8px;border-radius:999px;background:#e5f7ec;color:#085c2e;border:1px solid #0c6a36;font-size:10px;font-weight:800;letter-spacing:.04em;line-height:1.2;box-shadow:none}
+.run-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 10px 5px 8px;border-radius:3px;background:#111318;color:#fff;border:1px solid #ff4654;font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;line-height:1;white-space:nowrap;box-shadow:0 0 14px #f1273855,inset 0 -2px 0 #f12738}.run-badge:before{content:'';width:7px;height:7px;border-radius:50%;background:#ff4654;box-shadow:0 0 8px #ff4654;flex-shrink:0;animation:rc-live-pulse 1.15s ease-out infinite}@keyframes rc-live-pulse{0%{box-shadow:0 0 0 0 #ff465488}70%{box-shadow:0 0 0 7px #ff465400}100%{box-shadow:0 0 0 0 #ff465400}}
+.status-cell{width:1%;white-space:nowrap;vertical-align:middle}
+.status-empty{color:#8b939e;font-weight:700}
+.source-badge{font-weight:800;color:#2e3542}
+.source-badge .dot{background:#1f9d4f;width:7px;height:7px}
+.source-badge.is-sharepoint .dot{background:#2563eb}
+tbody tr:hover{background:#f6f8fb}
+@media(max-width:560px){
+  .date-title{padding:12px 12px 11px}
+  .date-title h3{font-size:16px}
+  .date-title #count{font-size:10px;padding:4px 8px}
+  th{padding:8px 6px}
+  td{padding:10px 6px}
+  .session-name{font-size:13px}
+  tr.done .done-badge,.run-badge{font-size:10px;padding:4px 7px}
+  th:first-child,td:first-child{padding-left:12px}
+  th:last-child,td:last-child{padding-right:12px}
+}
+</style>
+<style id="rc-mobile-times">
+/* Narrow phone and the Wix iframe: fit Class, Status, Round, and the full
+   Scheduled time inside the board. The page itself does not grow sideways.
+   The No. column stays in the table (width 0) so column widths do not shift. */
+@media (max-width: 680px) {
+  .board, .table-scroll { max-width: 100%; }
+  .table-scroll { display:block; width:100%; max-width:100%; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; touch-action:pan-x pan-y; }
+  .table-scroll table { table-layout: fixed; width: 100%; }
+  col.c-no { width: 0; }
+  col.c-status { width: 64px; }
+  col.c-round { width: 44px; }
+  col.c-time { width: 78px; }
+  th.sequence, td.sequence {
+    display: table-cell !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    overflow: hidden !important;
+  }
+  .table-scroll th, .table-scroll td { padding: 8px 3px; }
+  .table-scroll th:nth-child(2), .table-scroll td:nth-child(2) { padding-left: 8px; }
+  .table-scroll th:last-child, .table-scroll td.time { padding-left: 2px; padding-right: 4px; }
+  .table-scroll th { font-size: 8px; letter-spacing: .02em; line-height: 1.15; }
+  .table-scroll th:last-child {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 9px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .session-name { font-size: 13px; line-height: 1.25; overflow-wrap: break-word; }
+  .note { overflow-wrap: break-word; }
+  th.status-col, td.status-cell {
+    width: 64px;
+    white-space: normal;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  tr.done .done-badge, .done-badge, .run-badge {
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+    padding: 3px 3px;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: 1.15;
+  }
+  .round { font-size: 8px; letter-spacing: 0; padding: 2px 3px; }
+  td.time { font-size: 12px; letter-spacing: 0; white-space: nowrap; }
+}
+</style>
+<style id="rc-day-hero">
+/* Phone day row: the bold date is the day picker. One date, one line.
+   The native select stays on top of that row so the same choices open. */
+.date-title{container-type:inline-size;align-items:center;flex-wrap:nowrap;gap:8px;max-width:100%}
+.day-picker{position:relative;flex:1 1 auto;min-width:0}
+.date-title #scheduleDate{display:flex;align-items:center;gap:8px;min-width:0;margin:0;color:#12141a;font-size:17px;font-weight:800;letter-spacing:-.03em;line-height:1.15}
+.date-title .day-short,.date-title .day-full{color:#12141a;font-size:inherit;font-weight:800;letter-spacing:-.03em;white-space:nowrap;min-width:0}
+.date-title .day-full{display:none}
+.date-title .day-chip{flex:none;color:#f12738;background:#fff1f2;border:1px solid #ffc3c8;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;letter-spacing:.08em;line-height:1.15;text-transform:uppercase}
+.date-title .day-chip:empty{display:none}
+.date-title .day-chevron{width:16px;height:16px;flex:none;color:#5c6573;stroke:currentColor;fill:none;stroke-width:2.4}
+.day-picker select{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;border:0;opacity:0;cursor:pointer;background:transparent;font-size:16px;z-index:2;appearance:none;-webkit-appearance:none}
+.day-picker.is-static .day-chevron,.day-picker.is-static select{display:none}
+.day-picker:focus-within #scheduleDate{outline:3px solid #5986ff;outline-offset:3px;border-radius:8px}
+.date-title #count{flex:none;white-space:nowrap}
+@container (min-width: 560px){
+  .date-title .day-short{display:none}
+  .date-title .day-full{display:inline}
+}
+@container (max-width: 340px){
+  .date-title{gap:6px}
+  .date-title #scheduleDate{font-size:15px;gap:6px}
+  .date-title .day-chip{font-size:9px;letter-spacing:.06em;padding:2px 5px}
+  .date-title .day-chevron{width:14px;height:14px}
+  .date-title #count{font-size:9px;padding:3px 6px}
+}
+@media (max-width:560px){
+  .top{position:relative;top:auto;overflow:hidden;z-index:1}
+  .top,.top .banner,img,svg,video,.wrap,.grid,.board,.hero,.hero-inner,.dashboard,.section-heading,.subscribe-area,.cta,.meta,.date-title,.board-top{max-width:100%;min-width:0}
+  .top .banner{display:block;width:100%;max-width:100%;height:auto;max-height:none;aspect-ratio:1320/244;object-fit:cover;object-position:center}
+  .table-scroll{max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y}
+  .table-scroll table{width:100%;max-width:100%}
+  .hero-copy{display:block;overflow:visible;-webkit-line-clamp:unset;-webkit-box-orient:unset;max-height:none}
+  .meta{flex-wrap:wrap;row-gap:4px}
+  .hero-inner{padding-top:14px}
+  .date-title{padding:12px 12px 11px;align-items:center}
+  .subscribe-area .cta{min-width:0}
+  .section-heading h2,.last-updated,.session-name,.note{overflow-wrap:break-word}
+  th.status-col,td.status-cell{overflow:visible}
+  .round{white-space:normal;text-align:center;max-width:100%;box-sizing:border-box}
+  tr.done .done-badge,.done-badge,.run-badge{white-space:normal;overflow:visible;max-width:100%;text-overflow:clip}
+}
+@media (max-width:430px){
+  .wrap{width:calc(100% - 24px)}
+  col.c-status{width:68px}
+  col.c-round{width:42px}
+  col.c-time{width:74px}
+  th.status-col,td.status-cell{width:68px}
+  td.time{font-size:11px}
+  .table-scroll th{font-size:8px;letter-spacing:0}
+  .section-heading{align-items:flex-start}
+  .section-heading h2{font-size:18px;line-height:1.15;min-width:0}
+}
+</style>
+
+</head><body>
+<svg aria-hidden="true" style="display:none"><symbol id="bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18"/></symbol><symbol id="radio" viewBox="0 0 24 24"><path d="M8 8a6 6 0 0 0 0 8m8-8a6 6 0 0 1 0 8M4 4a12 12 0 0 0 0 16M20 4a12 12 0 0 1 0 16"/><circle cx="12" cy="12" r="1"/></symbol></svg>
+<header class="top"><img class="banner" src="https://race-control-feed.web.app/race-control-header.jpg" width="1320" height="244" alt="NHRA Race Control — Event Operations &amp; Safety · Championship Drag Racing" decoding="async" fetchpriority="high"></header>
+<section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow" id="eventTitle">RACE WEEKEND</div><h1 id="heroTitle">Race weekend.<br><span>Run order.</span></h1><p class="hero-copy">Find your class. Follow the run order. Keep the entire race weekend in view.</p><div class="meta"><span><svg><use href="#calendar"/></svg><span id="dateRange">Race schedule</span></span><span><svg><use href="#radio"/></svg><span id="radioText">PA broadcast</span></span></div></div><div class="subscribe-area"><button class="cta" data-subscribe><svg><use href="#bell"/></svg>Get Text Alerts<svg class="arrow"><use href="#arrow"/></svg></button><p>Get text (SMS) alerts from NHRA / Race Control at the number you provide.<br>Full consent terms appear before you tap Submit. Reply STOP to unsubscribe.</p></div></div></section>
+<main class="wrap dashboard"><div class="section-heading"><div><h2>Your weekend, at a glance.</h2><p id="syncText" role="status">Connecting to the schedule…</p></div><button id="refreshBtn" class="refresh-btn" type="button" aria-label="Refresh run order" title="Refresh run order"><svg aria-hidden="true"><use href="#refresh"/></svg><span class="refresh-label">Refresh</span></button></div><div id="error" class="error" role="alert" hidden></div><div class="grid"><section class="board" aria-label="Race schedule"><div class="board-top"><nav class="tabs" aria-label="Schedule views"><button class="tab" data-view="daily" aria-pressed="true">Daily run order</button><button class="tab" data-view="weekend" aria-pressed="false">Weekend</button></nav><span class="source-badge" id="sourceBadge"><span class="dot"></span><span id="sourceBadgeText">Google Sheets</span></span></div><div id="customView"><p id="lastUpdated" class="last-updated" role="status">Last updated: loading…</p><div class="date-title"><div class="day-picker is-static" id="dayPicker"><h3 class="day-heading" id="scheduleDate"><span class="day-chip" id="dayChip"></span>Loading run order…<svg class="day-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></h3><label class="sr-only" for="daySelect">Choose a schedule day</label><select id="daySelect"></select></div><span id="count"></span></div><div class="table-scroll"><table><colgroup><col class="c-no"><col class="c-class"><col class="c-status"><col class="c-round"><col class="c-time"></colgroup><thead><tr><th class="sequence">No.</th><th>Class / session</th><th class="status-col">Status</th><th>Round</th><th>Scheduled</th></tr></thead><tbody id="rows"></tbody></table><div class="empty" id="empty">Fetching the published schedule…</div></div><div class="table-foot">All daily run orders are subject to change. Blank scheduled times follow the run order; they are not estimated start times.</div></div></section><aside class="side"><section class="info"><span class="overline">The race weekend</span><h3 id="asideTitle">Weekend schedule</h3><ul id="days" class="day-list"></ul></section><section class="info alert-card"><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Stay in the loop</span><h3>Plans change.<br>Stay a step ahead.</h3><p>Get text alerts from NHRA / Race Control on your mobile. Full consent terms appear before you tap Submit.</p><button data-subscribe>Get Text Alerts</button></section></aside></div><footer class="footer"><span>RACE CONTROL / RUN ORDER<br>Times are shown exactly as published by the event.</span><span id="refreshNote">Refreshes every 60 seconds while open.<br>Google data refresh delays may apply.</span></footer></main>
+<dialog id="subscribeDialog" aria-labelledby="dialogTitle"><button class="close" aria-label="Close subscription dialog"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Text alerts</span><h2 id="dialogTitle">Get Text Alerts</h2><p id="dialogCopy">Add your mobile number to get text (SMS) alerts from NHRA / Race Control at the number you provide. Please review the full consent below before tapping Submit. Reply STOP to unsubscribe. Msg &amp; data rates may apply.</p><form id="smsForm" class="sms-form" novalidate><label for="smsPhone" class="sms-label">Mobile phone number</label><input id="smsPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(555) 555-5555" maxlength="20" required><input type="text" name="website" id="smsWebsite" tabindex="-1" autocomplete="off" aria-hidden="true" class="sms-hp"><p id="smsConsent" class="sms-consent">By clicking “Submit” below, you consent to receiving automated promotional and personalized marketing text messages from NHRA at the phone number provided above. You agree to the NHRA’s Communications Program Terms and Conditions.   Consent is not a condition of purchase. Reply HELP for help or STOP to end messages. Message frequency varies. Carrier and data rates may apply.</p><button id="smsSubmit" class="cta sms-cta" type="submit">Submit</button><small id="smsStatus" class="sms-status" role="status" aria-live="polite"></small></form><span class="rss-divider">Or follow with RSS</span><div class="feed-box"><label class="sr-only" for="feedUrl">RSS feed address</label><input id="feedUrl" type="text" readonly><button id="copyFeed" type="button">Copy link</button></div><div class="reader-row"><a href="https://www.inoreader.com/?add_feed=https%3A%2F%2Frace-control-feed.web.app%2Ffeed.xml" target="_blank" rel="noopener">Follow in Inoreader</a><a href="https://race-control-feed.web.app/feed.xml" target="_blank" rel="noopener">Open feed link</a></div><small id="copyStatus" role="status">Text alerts are the easiest way: enter your mobile number above and tap Submit. RSS is optional — copy the feed link into Inoreader or NetNewsWire.</small></dialog>
 <script>
 // Public spreadsheet read through the gviz feed. No keys or secrets live in this page.
 const SHEET_BASE='https://docs.google.com/spreadsheets/d/1D7r0i8yevR9bBOAEO9I34pqw5Iy8vqNzwSX0uDFbfr0/';
@@ -36,6 +203,24 @@ function actualMinutes(v){
   return h*60+min;
 }
 function fmtET(d){return d.toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' ET';}
+function isSecureName(name){return /^secure$/i.test(clean(name));}
+/* Mark Round complete / Running Now from Actual starts. Secure with Actual = Day complete (no Running Now). */
+function markItemStatus(items){
+  let latest=-1, latestIdx=-1;
+  items.forEach((it,i)=>{it.actualMin=actualMinutes(it.actual); it.done=false; it.running=false; it.dayComplete=false;
+    if(it.actualMin!=null&&it.actualMin>=latest){latest=it.actualMin; latestIdx=i;}});
+  const secureIdx=items.findIndex(it=>isSecureName(it.name)&&it.actualMin!=null);
+  if(secureIdx>=0){
+    items[secureIdx].dayComplete=true;
+    items[secureIdx].done=true;
+    items.forEach((it,i)=>{if(i!==secureIdx&&it.actualMin!=null)it.done=true;});
+    return;
+  }
+  if(latestIdx>=0){
+    items[latestIdx].running=true;
+    items.forEach(it=>{if(it.actualMin!=null&&it.actualMin<latest)it.done=true;});
+  }
+}
 const datePattern=/^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), /;
 function parseDay(rows,label,gid){
   const header=rows.findIndex(r=>/^ELIMINATOR$/i.test(clean(r[5])));
@@ -48,15 +233,9 @@ function parseDay(rows,label,gid){
   const items=[];
   for(const r of rows.slice(header+1)){const name=clean(r[5]);if(!name||name.startsWith('#'))continue;
     items.push({scheduled:clean(r[2]),actual:clean(r[3]),name,round:clean(r[6]),note:clean(r[11])});}
-  // Actual = that class's start time. Latest Actual start = running now.
-  // Any class with an earlier Actual start has ended → strike. No Actual → leave alone (jump-ahead safe).
-  let latest=-1, latestIdx=-1;
-  items.forEach((it,i)=>{it.actualMin=actualMinutes(it.actual); it.done=false; it.running=false;
-    if(it.actualMin!=null&&it.actualMin>=latest){latest=it.actualMin; latestIdx=i;}});
-  if(latestIdx>=0){
-    items[latestIdx].running=true;
-    items.forEach(it=>{if(it.actualMin!=null&&it.actualMin<latest)it.done=true;});
-  }
+  // Actual = class start. Latest Actual = Running Now; earlier = Round complete.
+  // Secure with Actual = Day complete (track closed for the day).
+  markItemStatus(items);
   if(!date)throw new Error('Schedule date is missing');
   return {date,title,radio,items,label,gid};
 }
@@ -100,20 +279,45 @@ async function discoverTabsByName(){
 }
 const el=id=>document.getElementById(id);
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
-let data=null,view='daily',busy=false,selected={daily:0,weekend:0};
+let data=null,view=(function(){const s=(function(){try{const v=localStorage.getItem('rcSelectedView');return v==='weekend'||v==='daily'?v:'';}catch(e){return '';}})();return s||'daily';})(),busy=false,selected={daily:0,weekend:0};
 function groups(){return data?data.daily:[];}
 function updateDays(){const list=groups();el('daySelect').hidden=view==='weekend';el('daySelect').replaceChildren();list.forEach((d,i)=>{const option=node('option',d.label+' · '+d.date);option.value=i;option.selected=i===selected.daily;el('daySelect').append(option);});el('daySelect').disabled=!list.length;}
+
+function shortScheduleDate(date){
+  const wd={Sunday:'Sun',Monday:'Mon',Tuesday:'Tue',Wednesday:'Wed',Thursday:'Thu',Friday:'Fri',Saturday:'Sat'};
+  const mo={January:'Jan',February:'Feb',March:'Mar',April:'Apr',May:'May',June:'Jun',July:'Jul',August:'Aug',September:'Sep',October:'Oct',November:'Nov',December:'Dec'};
+  const m=String(date||'').match(/^(\w+),\s+(\w+)\s+(\d{1,2}),\s+(\d{4})$/);
+  if(!m) return String(date||'');
+  return (wd[m[1]]||m[1].slice(0,3))+', '+(mo[m[2]]||m[2].slice(0,3))+' '+Number(m[3]);
+}
+function paintScheduleHeading(day){
+  const head=el('scheduleDate'), picker=el('dayPicker');
+  let chip=el('dayChip');
+  if(!head) return;
+  if(!chip){chip=node('span','','day-chip');chip.id='dayChip';}
+  let chev=head.querySelector('.day-chevron');
+  if(!chev){chev=document.createElementNS('http://www.w3.org/2000/svg','svg');chev.setAttribute('class','day-chevron');chev.setAttribute('viewBox','0 0 24 24');chev.setAttribute('aria-hidden','true');const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d','m6 9 6 6 6-6');chev.append(p);}
+  if(view!=='daily'||!day){
+    if(picker) picker.classList.add('is-static');
+    chip.textContent='';
+    head.textContent=view==='daily'?'Loading run order…':'Full weekend run order';
+    return;
+  }
+  if(picker) picker.classList.remove('is-static');
+  const num=String(day.label||'').match(/\d+/);
+  chip.textContent=num?'DAY '+num[0]:'';
+  head.replaceChildren(chip, node('span', shortScheduleDate(day.date), 'day-short'), node('span', day.date, 'day-full'), chev);
+}
 function render(){
   if(!data)return;const list=groups();const day=list[selected.daily]||list[0];
   const scoped=view==='daily'?[day]:list;
-  const query=el('search').value.trim().toLowerCase();
   const total=scoped.reduce((n,d)=>n+(d?.items.length||0),0);let count=0;
-  el('scheduleDate').textContent=view==='daily'?day.date:'Full weekend run order';el('rows').replaceChildren();
-  for(const group of scoped){const filtered=group.items.map((row,i)=>({...row,sequence:i+1})).filter(row=>(row.name+' '+row.round).toLowerCase().includes(query));count+=filtered.length;
-    if(view==='weekend'&&filtered.length){const tr=node('tr');const heading=node('th',group.date);heading.colSpan=4;heading.scope='rowgroup';heading.style.cssText='background:#f5f6f8;padding:14px 22px;color:#505966';tr.append(heading);el('rows').append(tr);}
-    filtered.forEach(row=>{const tr=node('tr',undefined,row.done?'done':(row.running?'running':undefined));if(row.done)tr.title='Finished';if(row.running)tr.title='Running now';tr.append(node('td',String(row.sequence).padStart(2,'0'),'sequence'));const name=node('td');name.append(node('span',row.name,'session-name'));if(row.note)name.append(node('span',row.note,'note'));if(row.done){name.append(node('span','Done','done-badge'));name.append(node('span',' (finished)','sr-only'));}if(row.running)name.append(node('span',' (running now)','sr-only'));tr.append(name);const round=node('td');round.append(node('span',row.round||'—','round'+(/final/i.test(row.round)?' final':'')));tr.append(round,node('td',row.scheduled||'—','time'));el('rows').append(tr);});
+  paintScheduleHeading(day);el('rows').replaceChildren();
+  for(const group of scoped){const filtered=group.items.map((row,i)=>({...row,sequence:i+1}));count+=filtered.length;
+    if(view==='weekend'&&filtered.length){const tr=node('tr');const heading=node('th',group.date);heading.colSpan=5;heading.scope='rowgroup';heading.style.cssText='background:#f3f5f8;padding:12px 16px;color:#243040;font-weight:800';tr.append(heading);el('rows').append(tr);}
+    filtered.forEach(row=>{const tr=node('tr',undefined,row.done?'done':(row.running?'running':undefined));if(row.dayComplete)tr.title='Day complete';else if(row.done)tr.title='Round complete';if(row.running)tr.title='Running now';tr.append(node('td',String(row.sequence).padStart(2,'0'),'sequence'));const name=node('td');name.append(node('span',row.name,'session-name'));if(row.note)name.append(node('span',row.note,'note'));tr.append(name);const status=node('td',undefined,'status-cell');if(row.dayComplete){status.append(node('span','Day complete','done-badge'));status.append(node('span',' (day complete)','sr-only'));}else if(row.done){status.append(node('span','Round complete','done-badge'));status.append(node('span',' (round complete)','sr-only'));}else if(row.running){status.append(node('span','Running Now','run-badge'));status.append(node('span',' (running now)','sr-only'));}else{status.append(node('span','—','status-empty'));status.append(node('span',' Not started','sr-only'));}tr.append(status);const round=node('td');round.append(node('span',row.round||'—','round'+(/final/i.test(row.round)?' final':'')));tr.append(round,node('td',row.scheduled||'—','time'));el('rows').append(tr);});
   }
-  el('count').textContent=count+' of '+total+' sessions';el('empty').hidden=count>0;el('empty').textContent=total?'No matching sessions. Try a different class or round.':'This tab has no scheduled sessions.';
+  el('count').textContent=count+' of '+total+' sessions';el('empty').hidden=count>0;el('empty').textContent='This tab has no scheduled sessions.';
   const event=data.daily[0];el('eventTitle').textContent='RACE WEEKEND / RUN ORDER';
   const words=event.title.split(' '),last=words.pop();el('heroTitle').replaceChildren(document.createTextNode(words.join(' ')+' '),node('span',last));
   el('radioText').textContent=event.radio||'PA broadcast';el('dateRange').textContent=day.date.replace(/^\w+, /,'');
@@ -121,51 +325,145 @@ function render(){
 }
 async function loadTabsFromDaysJson(){try{const res=await fetch(DAYS_URL,{cache:'no-store',signal:AbortSignal.timeout?AbortSignal.timeout(5000):undefined});if(!res.ok)return null;const j=await res.json();
   const tabs=(j&&Array.isArray(j.tabs)?j.tabs:[]).filter(t=>Array.isArray(t)&&/^Day \d+$/.test(t[0])&&/^\d+$/.test(String(t[1])));return tabs.length?tabs:null;}catch(e){return null;}}
+const SCHEDULE_META_URL=FEED_URL.replace(/feed\.xml$/,'schedule-meta.json');
+const SCHEDULE_JSON_URL=FEED_URL.replace(/feed\.xml$/,'schedule.json');
+let scheduleSource='sheets';
+function sourceLabel(src){return src==='sharepoint'?'SharePoint':'Google Sheets';}
+function setSourceChrome(src){
+  scheduleSource=src==='sharepoint'?'sharepoint':'sheets';
+  const text=el('sourceBadgeText'); if(text) text.textContent=sourceLabel(scheduleSource);
+  const badge=el('sourceBadge'); if(badge) badge.classList.toggle('is-sharepoint',scheduleSource==='sharepoint');
+  const note=el('refreshNote');
+  if(note) note.innerHTML=scheduleSource==='sharepoint'
+    ? 'SharePoint mode: this board updates when the feed job publishes a new snapshot.<br>Usually within a few minutes of a workbook save.'
+    : 'Refreshes every 60 seconds while open.<br>Google data refresh delays may apply.';
+}
+async function fetchJsonFirst(urls){
+  let last=null;
+  for(const u of urls){
+    try{
+      const res=await fetch(u,{cache:'no-store',signal:AbortSignal.timeout?AbortSignal.timeout(8000):undefined});
+      if(!res.ok){last=new Error('HTTP '+res.status); continue;}
+      return await res.json();
+    }catch(e){last=e;}
+  }
+  if(last) throw last;
+  return null;
+}
+async function loadScheduleMeta(){
+  try{
+    const j=await fetchJsonFirst([SCHEDULE_META_URL,'schedule-meta.json']);
+    if(j&&(j.source==='sharepoint'||j.source==='sheets')) return j;
+  }catch(e){}
+  return {source:'sheets',label:'Google Sheets'};
+}
+function daysFromScheduleJson(j){
+  const days=Array.isArray(j&&j.days)?j.days:[];
+  return days.map(d=>{
+    const items=(d.items||[]).map(it=>({scheduled:clean(it.scheduled),actual:clean(it.actual),name:clean(it.name),round:clean(it.round),note:clean(it.note)})).filter(it=>it.name&&!it.name.startsWith('#'));
+    markItemStatus(items);
+    return {date:clean(d.date),title:clean(d.title)||'Race weekend',radio:clean(d.radio),items,label:d.label||'',gid:d.gid||'sharepoint'};
+  }).filter(d=>d.date);
+}
+const DAY_STORE_KEY='rcSelectedDayDate';
+const VIEW_STORE_KEY='rcSelectedView';
+function readStoredDayDate(){try{return localStorage.getItem(DAY_STORE_KEY)||'';}catch(e){return '';}}
+function writeStoredDayDate(date){try{if(date)localStorage.setItem(DAY_STORE_KEY,date);else localStorage.removeItem(DAY_STORE_KEY);}catch(e){}}
+function readStoredView(){try{const v=localStorage.getItem(VIEW_STORE_KEY);return v==='weekend'||v==='daily'?v:'';}catch(e){return '';}}
+function writeStoredView(v){try{if(v==='weekend'||v==='daily')localStorage.setItem(VIEW_STORE_KEY,v);}catch(e){}}
+function applyViewChrome(){document.querySelectorAll('[data-view]').forEach(t=>t.setAttribute('aria-pressed',String(t.dataset.view===view)));}
+function todayScheduleLabel(){return new Date().toLocaleDateString('en-US',{timeZone:'America/New_York',weekday:'long',month:'long',day:'numeric',year:'numeric'});}
+function pickDefaultDayIndex(daily){
+  if(!daily.length)return 0;
+  const saved=readStoredDayDate();
+  if(saved){const i=daily.findIndex(d=>d.date===saved);if(i>=0)return i;}
+  const today=todayScheduleLabel();
+  const exact=daily.findIndex(d=>d.date===today);if(exact>=0)return exact;
+  const now=Date.now();let best=0,bestAbs=Infinity;
+  daily.forEach((d,i)=>{const t=Date.parse(d.date);if(!Number.isFinite(t))return;const abs=Math.abs(t-now);if(abs<bestAbs){bestAbs=abs;best=i;}});
+  return best;
+}
+function finishLoad(allDays, via){
+  const populated=allDays.filter(d=>d.items.length);const daily=populated.length?populated:allDays;
+  const previousKey=data?.daily[selected.daily]?.date;const firstLoad=!data;data={daily};
+  if(!firstLoad){const match=daily.findIndex(d=>d.date===previousKey);selected.daily=match>=0?match:pickDefaultDayIndex(daily);}
+  else{selected.daily=pickDefaultDayIndex(daily);}
+  const keep=daily[selected.daily]?.date;if(keep)writeStoredDayDate(keep);
+  updateDays();render();
+  el('syncText').textContent='Fetched '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+' · From '+sourceLabel(scheduleSource);
+  el('error').hidden=true;
+  const lu=el('lastUpdated');
+  lu.replaceChildren(document.createTextNode('Last updated: '),node('b',fmtET(new Date())),document.createTextNode(via==='sharepoint'?' · feed snapshot':' · page refresh of sheet data'));
+}
 async function refresh(){if(busy)return;busy=true;el('refreshBtn').disabled=true;el('refreshBtn').classList.add('spinning');
   try{
-    // Robust path: always resolve Day tabs by sheet NAME so a DRS re-upload (new GIDs) cannot blank the page.
-    // days.json GIDs are tried first only as a speed hint; any miss falls through to name discovery.
-    let allDays=null;
-    const hinted=await loadTabsFromDaysJson();
-    if(hinted){
-      try{
-        const responses=await Promise.all(hinted.map(t=>googleFeed(t[1])));
-        if(responses.every(tabLooksValid)){
-          allDays=hinted.map((t,i)=>parseDay(responses[i],t[0],t[1]));
-          DAILY_TABS=hinted;
-        }
-      }catch(e){allDays=null;}
+    const meta=await loadScheduleMeta();
+    setSourceChrome(meta.source);
+    if(scheduleSource==='sharepoint'){
+      const snap=await fetchJsonFirst([SCHEDULE_JSON_URL,'schedule.json']);
+      const allDays=daysFromScheduleJson(snap);
+      if(!allDays.length) throw new Error('SharePoint snapshot has no days');
+      finishLoad(allDays,'sharepoint');
+    }else{
+      // Robust path: always resolve Day tabs by sheet NAME so a DRS re-upload (new GIDs) cannot blank the page.
+      // days.json GIDs are tried first only as a speed hint; any miss falls through to name discovery.
+      let allDays=null;
+      const hinted=await loadTabsFromDaysJson();
+      if(hinted){
+        try{
+          const responses=await Promise.all(hinted.map(t=>googleFeed(t[1])));
+          if(responses.every(tabLooksValid)){
+            allDays=hinted.map((t,i)=>parseDay(responses[i],t[0],t[1]));
+            DAILY_TABS=hinted;
+          }
+        }catch(e){allDays=null;}
+      }
+      if(!allDays){
+        const found=await discoverTabsByName();
+        if(!found.length)throw new Error('No Day tabs found by name');
+        allDays=found.map(([label,gid,rows])=>parseDay(rows,label,gid));
+        DAILY_TABS=found.map(([label,gid])=>[label,gid]);
+      }
+      finishLoad(allDays,'sheets');
     }
-    if(!allDays){
-      const found=await discoverTabsByName();
-      if(!found.length)throw new Error('No Day tabs found by name');
-      allDays=found.map(([label,gid,rows])=>parseDay(rows,label,gid));
-      DAILY_TABS=found.map(([label,gid])=>[label,gid]);
-    }
-    const populated=allDays.filter(d=>d.items.length);const daily=populated.length?populated:allDays;
-    const previousKey=data?.daily[selected.daily]?.date;const firstLoad=!data;data={daily};
-    if(!firstLoad){const match=daily.findIndex(d=>d.date===previousKey);selected.daily=match>=0?match:0;}
-    if(firstLoad){const today=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});const found=daily.findIndex(d=>d.date===today);selected.daily=found>=0?found:0;}
-    updateDays();render();el('syncText').textContent='Fetched '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+' · From Google Sheets';el('error').hidden=true;
-    const lu=el('lastUpdated');lu.replaceChildren(document.createTextNode('Last updated: '),node('b',fmtET(new Date())),document.createTextNode(' · page refresh of sheet data'));
-  }catch(error){el('syncText').textContent=data?'Refresh failed · Showing the last fetched data':'Google Sheets feed unavailable';el('error').textContent='The run order could not refresh. '+(data?'Previously fetched data remains visible. ':'')+'It will try again automatically, or use Refresh.';el('error').hidden=false;if(!data){el('empty').textContent='The schedule is temporarily unavailable. Try Refresh in a moment.';el('scheduleDate').textContent='Schedule unavailable';}}
+  }catch(error){el('syncText').textContent=data?'Refresh failed · Showing the last fetched data':sourceLabel(scheduleSource)+' feed unavailable';el('error').textContent='The run order could not refresh. '+(data?'Previously fetched data remains visible. ':'')+'It will try again automatically, or use Refresh.';el('error').hidden=false;if(!data){el('empty').textContent='The schedule is temporarily unavailable. Try Refresh in a moment.';el('scheduleDate').textContent='Schedule unavailable';const _chip=el('dayChip');if(_chip)_chip.textContent='';const _picker=el('dayPicker');if(_picker)_picker.classList.add('is-static');}}
   finally{busy=false;el('refreshBtn').disabled=false;el('refreshBtn').classList.remove('spinning');}
 }
-document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(t=>t.setAttribute('aria-pressed',String(t===b)));updateDays();render();}));
-el('search').addEventListener('input',render);el('daySelect').addEventListener('change',()=>{selected.daily=Number(el('daySelect').value);render();});el('refreshBtn').addEventListener('click',refresh);
-function openDialog(b){dialog.classList.remove('framed');dialog.style.top='';dialog.showModal();document.documentElement.classList.add('dialog-open');let framed=false;try{framed=window.self!==window.top}catch(e){framed=true}const vh=window.innerHeight;if(framed&&b&&vh>(screen.height||vh)*1.3){const r=b.getBoundingClientRect(),h=dialog.offsetHeight;let t=Math.max(12,r.top-40);t=Math.min(t,Math.max(12,vh-h-12));dialog.classList.add('framed');dialog.style.top=t+'px';}}const dialog=el('subscribeDialog');let opener=null;el('feedUrl').value=FEED_URL;const copyHint=el('copyStatus').textContent;
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;writeStoredView(view);applyViewChrome();updateDays();render();}));
+applyViewChrome();
+el('daySelect').addEventListener('change',()=>{selected.daily=Number(el('daySelect').value);const d=groups()[selected.daily];if(d)writeStoredDayDate(d.date);render();});el('refreshBtn').addEventListener('click',refresh);
+function isFramed(){try{return window.self!==window.top}catch(e){return true}}
+function closeInline(){const pan=document.getElementById('smsInline');if(!pan)return;pan.classList.remove('open');pan.hidden=true;document.documentElement.classList.remove('dialog-open');const d=document.getElementById('subscribeDialog');if(!d)return;['dialogCopy','smsForm'].forEach(id=>{const n=document.getElementById(id);if(n)d.insertBefore(n,d.querySelector('.rss-divider')||d.querySelector('.feed-box')||null)});const body=pan.querySelector('[data-inline-body]');if(!body)return;Array.from(body.children).forEach(n=>d.appendChild(n));}
+function openInline(b){document.documentElement.classList.remove('dialog-open');let pan=document.getElementById('smsInline');if(!pan){pan=document.createElement('div');pan.id='smsInline';pan.className='sms-inline';pan.innerHTML='<button type="button" class="close" aria-label="Close text alerts"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="bell-tile"><svg><use href="#bell"/></svg></div><span class="overline" style="color:#ff6472">Text alerts</span><h2>Get Text Alerts</h2><div data-inline-body></div>';document.body.appendChild(pan);pan.querySelector('.close').addEventListener('click',()=>{closeInline();})}
+const host=b&&(b.closest('.subscribe-area')||b.closest('.alert-card')||b.parentElement)||document.body;if(pan.parentElement!==host)host.appendChild(pan);
+const body=pan.querySelector('[data-inline-body]');const d=document.getElementById('subscribeDialog');
+/* Move live form + copy + rss into inline so one form/handlers stay wired */['dialogCopy','smsForm'].forEach(id=>{const n=document.getElementById(id);if(n)body.appendChild(n)});const div=d&&d.querySelector('.rss-divider');const fb=d&&d.querySelector('.feed-box');const rr=d&&d.querySelector('.reader-row');const cs=document.getElementById('copyStatus');if(div)body.appendChild(div);if(fb)body.appendChild(fb);if(rr)body.appendChild(rr);if(cs)body.appendChild(cs);
+pan.hidden=false;pan.classList.add('open');try{pan.scrollIntoView({block:'nearest',inline:'nearest'})}catch(e){}const ph=document.getElementById('smsPhone');if(ph)try{ph.focus()}catch(e){}}
+function openDialog(b){dialog.classList.remove('framed');dialog.style.top=dialog.style.left=dialog.style.right=dialog.style.bottom=dialog.style.margin=dialog.style.marginLeft=dialog.style.transform=dialog.style.position=dialog.style.maxHeight=dialog.style.width=dialog.style.maxWidth=dialog.style.inset='';if(isFramed()){try{if(dialog.open)dialog.close()}catch(e){}openInline(b);return}closeInline();document.documentElement.classList.add('dialog-open');dialog.showModal();}
+const dialog=el('subscribeDialog');let opener=null;el('feedUrl').value=FEED_URL;const copyHint=el('copyStatus').textContent;
 el('feedUrl').addEventListener('focus',e=>e.target.select());
 el('copyFeed').addEventListener('click',async()=>{let ok=false;try{await navigator.clipboard.writeText(FEED_URL);ok=true;}catch(e){el('feedUrl').select();try{ok=document.execCommand('copy');}catch(e2){}}el('copyFeed').textContent=ok?'Copied':'Copy link';el('copyStatus').textContent=ok?'Link copied. Paste it into your RSS reader to subscribe.':'Select the link above and copy it.';setTimeout(()=>{el('copyFeed').textContent='Copy link';el('copyStatus').textContent=copyHint;},4000);});
 document.querySelectorAll('[data-subscribe]').forEach(b=>b.addEventListener('click',()=>{opener=b;openDialog(b);}));
-dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});dialog.addEventListener('close',()=>{document.documentElement.classList.remove('dialog-open');opener?.focus();});
+dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});dialog.addEventListener('close',()=>{document.documentElement.classList.remove('dialog-open');dialog.classList.remove('framed');dialog.style.top=dialog.style.left=dialog.style.right=dialog.style.bottom=dialog.style.margin=dialog.style.transform=dialog.style.position=dialog.style.maxHeight=dialog.style.width=dialog.style.inset='';if(opener)opener.focus();});
 
 /* Tell Wix/parent our content height so the iframe can grow and the PAGE scrolls (not a nested iframe scroll). */
 (function(){
   var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}
   if(framed)document.documentElement.classList.add('framed');
   function contentHeight(){
-    var b=document.body,d=document.documentElement;
-    return Math.ceil(Math.max(b?b.scrollHeight:0,b?b.offsetHeight:0,d.scrollHeight,d.offsetHeight));
+    /* Do NOT use documentElement.scrollHeight — in a tall iframe it equals the
+       viewport and can never shrink, so Wix Velo stays stuck at the old height. */
+    var b=document.body;
+    if(!b)return 0;
+    var bottom=0;
+    var kids=b.children;
+    for(var i=0;i<kids.length;i++){
+      var r=kids[i].getBoundingClientRect();
+      var top=r.top+(window.pageYOffset||document.documentElement.scrollTop||0);
+      bottom=Math.max(bottom, top+r.height);
+    }
+    var bodyH=Math.max(b.scrollHeight||0, b.offsetHeight||0, b.getBoundingClientRect().height||0);
+    return Math.ceil(Math.max(bottom, bodyH));
   }
   function postHeight(){
     if(!framed)return;
@@ -184,4 +482,28 @@ dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dial
 })();
 
 refresh();setInterval(()=>{if(!document.hidden)refresh();},60000);
+
+/* SMS signup -> private Firestore (project race-control-feed). Phones are never readable from the web. */
+(function(){const f=document.getElementById('smsForm');if(!f)return;
+const SIGNUP_FN_URL='';/* set to 'https://race-control-feed.web.app/api/signupSms' once Cloud Functions (Blaze) are live */
+const FS='https://firestore.googleapis.com/v1/projects/race-control-feed/databases/(default)/documents';
+const CONSENT_VERSION='2026-10-28-nhra-marketing-v1';
+const st=document.getElementById('smsStatus'),btn=document.getElementById('smsSubmit'),inp=document.getElementById('smsPhone');
+function norm(r){let d=String(r||'').replace(/\D/g,'');if(d.length===10)d='1'+d;return /^1[2-9]\d{2}[2-9]\d{6}$/.test(d)?'+'+d:''}
+function say(m,c){st.textContent=m;st.className='sms-status '+(c||'')}
+let page='';try{page=(document.referrer||location.href).slice(0,300)}catch(e){}
+f.addEventListener('submit',async e=>{e.preventDefault();
+if(document.getElementById('smsWebsite').value){say("Thanks! You are signed up.","ok");return}
+const phone=norm(inp.value);if(!phone){say('Enter a valid 10-digit US mobile number.','err');inp.focus();return}
+const consentText=document.getElementById('smsConsent').textContent;
+btn.disabled=true;say('Submitting…');
+try{let ok=false,r;
+if(SIGNUP_FN_URL){r=await fetch(SIGNUP_FN_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({phone,consent:true,source:'race-control-web',page})});ok=r.ok}
+else{const name='projects/race-control-feed/databases/(default)/documents/smsSubscribers/'+phone;
+r=await fetch(FS+':commit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({writes:[{update:{name,fields:{phone:{stringValue:phone},status:{stringValue:'active'},source:{stringValue:'race-control-web'},consentText:{stringValue:consentText},consentVersion:{stringValue:CONSENT_VERSION},consentPage:{stringValue:page},consentUserAgent:{stringValue:(navigator.userAgent||'').slice(0,300)}}},currentDocument:{exists:false},updateTransforms:[{fieldPath:'createdAt',setToServerValue:'REQUEST_TIME'},{fieldPath:'consentAt',setToServerValue:'REQUEST_TIME'}]}]})});
+ok=r.ok||r.status===409;/* 409 = number already signed up */}
+if(ok){say("Thanks! You are signed up for Race Control texts.","ok");inp.value=''}
+else say("Sorry, that did not go through. Please try again.","err")}
+catch(err){say('Network problem. Please try again.','err')}
+finally{btn.disabled=false}});})();
 </script></body></html>
