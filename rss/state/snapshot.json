@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T17:07:36.097Z",
+  "fetchedAt": "2026-11-14T17:50:00.011Z",
   "days": [
     {
       "label": "Day 1",
@@ -350,16 +350,9 @@
       "items": [
         {
           "scheduled": "8:00 AM",
-          "actual": "8:00 AM",
+          "actual": "",
           "name": "Start Engines",
           "round": "",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "Q-3",
           "note": ""
         },
         {
@@ -372,27 +365,13 @@
         {
           "scheduled": "",
           "actual": "",
-          "name": "Top Alcohol Funny Car",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "LASD Racing",
-          "round": "Exh",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
           "name": "Summit JDRL Shootout",
-          "round": "R-1",
+          "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "11:30 AM",
-          "actual": "",
+          "actual": "11:30 AM",
           "name": "TOP FUEL",
           "round": "Q-2",
           "note": ""
@@ -421,8 +400,15 @@
         {
           "scheduled": "",
           "actual": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
           "name": "Summit JDRL Shootout",
-          "round": "R-2",
+          "round": "R-1",
           "note": ""
         },
         {
@@ -456,6 +442,13 @@
         {
           "scheduled": "",
           "actual": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
           "name": "Top Alcohol Dragster",
           "round": "R-2",
           "note": ""
@@ -465,13 +458,6 @@
           "actual": "",
           "name": "Top Alcohol Funny Car",
           "round": "R-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "R-1",
           "note": ""
         },
         {
@@ -528,6 +514,13 @@
           "actual": "",
           "name": "Super Gas",
           "round": "R-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "R-1",
           "note": ""
         },
         {

@@ -1,5 +1,23 @@
 [
   {
+    "guid": "race-control-3837dcb0b7498b209852",
+    "date": "2026-11-14T17:50:00.011Z",
+    "title": "Saturday: LASD Racing Exh removed from the run order",
+    "description": "<p>Saturday: LASD Racing Exh removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-c275b1003d2ade8e11dd",
+    "date": "2026-11-14T17:50:00.011Z",
+    "title": "Saturday: Legacy Nitro Funny Car changed from Qualifying 3 to Qualifying 2",
+    "description": "<p>Saturday: Legacy Nitro Funny Car changed from Qualifying 3 to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-102eb176f98f24527dfa",
+    "date": "2026-11-14T17:50:00.011Z",
+    "title": "Saturday: Summit JDRL Shootout changed from Round 2 to Qualifying 2",
+    "description": "<p>Saturday: Summit JDRL Shootout changed from Round 2 to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-dcc1d5f61e2264edb6fd",
     "date": "2026-11-14T17:07:36.097Z",
     "title": "Saturday: TOP FUEL changed from Qualifying 4 to Qualifying 2",
@@ -280,23 +298,5 @@
     "date": "2026-11-02T00:35:30.817Z",
     "title": "Sunday: Jr Dragster Exh removed from the run order",
     "description": "<p>Sunday: Jr Dragster Exh removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-90eb3df8dccb0d04662f",
-    "date": "2026-11-02T00:35:30.817Z",
-    "title": "Sunday: Parade of Champions removed from the run order",
-    "description": "<p>Sunday: Parade of Champions removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-48fd7163c11389b5be80",
-    "date": "2026-11-02T00:35:30.817Z",
-    "title": "Sunday: Legacy Nitro Funny Car Final removed from the run order",
-    "description": "<p>Sunday: Legacy Nitro Funny Car Final removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-a96b7dfb680d13467a23",
-    "date": "2026-11-02T00:35:30.817Z",
-    "title": "Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1",
-    "description": "<p>Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
