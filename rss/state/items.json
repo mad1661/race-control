@@ -1,5 +1,17 @@
 [
   {
+    "guid": "race-control-12f14d404f4a3ceefcf9",
+    "date": "2026-11-14T00:01:00.571Z",
+    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 1:30 PM); it follows the run order",
+    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 1:30 PM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-4a1e5ae841d103e83bae",
+    "date": "2026-11-14T00:01:00.571Z",
+    "title": "Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 4:45 PM",
+    "description": "<p>Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 4:45 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-96bb5476e18e258e07ee",
     "date": "2026-11-13T16:09:41.596Z",
     "title": "Friday: Secure Round 1 removed from the run order",
@@ -286,17 +298,5 @@
     "date": "2026-10-31T20:09:02.706Z",
     "title": "Saturday: Pro Mod Qualifying 4 removed from the run order",
     "description": "<p>Saturday: Pro Mod Qualifying 4 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-fee92a04c0f04cb6a3ff",
-    "date": "2026-10-31T20:09:02.706Z",
-    "title": "Saturday: Legacy Nitro Funny Car Qualifying 3 removed from the run order",
-    "description": "<p>Saturday: Legacy Nitro Funny Car Qualifying 3 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-d3ae5e3011000178be6b",
-    "date": "2026-10-31T20:09:02.706Z",
-    "title": "Saturday: Top Alcohol Dragster Round 1 removed from the run order",
-    "description": "<p>Saturday: Top Alcohol Dragster Round 1 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
