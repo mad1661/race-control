@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T17:50:00.011Z",
+  "fetchedAt": "2026-11-14T19:14:54.772Z",
   "days": [
     {
       "label": "Day 1",
@@ -350,14 +350,14 @@
       "items": [
         {
           "scheduled": "8:00 AM",
-          "actual": "",
+          "actual": "8:00 AM",
           "name": "Start Engines",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "10:50 AM",
           "name": "Top Alcohol Dragster",
           "round": "R-1",
           "note": ""
@@ -371,7 +371,7 @@
         },
         {
           "scheduled": "11:30 AM",
-          "actual": "11:30 AM",
+          "actual": "",
           "name": "TOP FUEL",
           "round": "Q-2",
           "note": ""
@@ -499,7 +499,7 @@
           "scheduled": "",
           "actual": "",
           "name": "Summit JDRL Shootout",
-          "round": "Q-2",
+          "round": "R-1",
           "note": ""
         },
         {

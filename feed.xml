@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 14 Nov 2026 17:50:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 19:14:54 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Saturday: Summit JDRL Shootout changed from Qualifying 2 to Round 1</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Summit JDRL Shootout changed from Qualifying 2 to Round 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-93f3dc05ce8d76e85604</guid>
+      <pubDate>Sat, 14 Nov 2026 19:14:54 GMT</pubDate>
+    </item>
     <item>
       <title>Saturday: LASD Racing Exh removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -350,13 +357,6 @@
       <description>&lt;p&gt;Run order updated for NHRA Finals&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Thursday, November 12, 2026: 20 sessions&lt;/li&gt;&lt;li&gt;Friday, November 13, 2026: 24 sessions&lt;/li&gt;&lt;li&gt;Saturday, November 14, 2026: 37 sessions&lt;/li&gt;&lt;li&gt;Sunday, November 15, 2026: 42 sessions&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-6f010753644e16ae72af</guid>
       <pubDate>Thu, 05 Nov 2026 20:48:12 GMT</pubDate>
-    </item>
-    <item>
-      <title>Sunday: Jr Dragster Exh removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Sunday: Jr Dragster Exh removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-ab4352d9017df8e5f34b</guid>
-      <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
     </item>
   </channel>
 </rss>
