@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T01:10:47.075Z",
+  "fetchedAt": "2026-11-14T17:07:36.097Z",
   "days": [
     {
       "label": "Day 1",
@@ -356,7 +356,126 @@
           "note": ""
         },
         {
-          "scheduled": "8:45 AM",
+          "scheduled": "",
+          "actual": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Top Alcohol Dragster",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "LASD Racing",
+          "round": "Exh",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Summit JDRL Shootout",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "11:30 AM",
+          "actual": "",
+          "name": "TOP FUEL",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "FUNNY CAR",
+          "round": "Q-2",
+          "note": ""
+        },
+        {
+          "scheduled": "12:30 PM",
+          "actual": "",
+          "name": "PRO STOCK",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Summit JDRL Shootout",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "2:00 PM",
+          "actual": "",
+          "name": "TOP FUEL",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "FUNNY CAR",
+          "round": "Q-3",
+          "note": ""
+        },
+        {
+          "scheduled": "3:00 PM",
+          "actual": "",
+          "name": "PRO STOCK",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "PRO STOCK MOTORCYCLE",
+          "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Top Alcohol Dragster",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Top Alcohol Funny Car",
+          "round": "R-2",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Legacy Nitro Funny Car",
+          "round": "R-1",
+          "note": ""
+        },
+        {
+          "scheduled": "",
           "actual": "",
           "name": "Stock",
           "round": "R-4",
@@ -409,125 +528,6 @@
           "actual": "",
           "name": "Super Gas",
           "round": "R-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Top Alcohol Dragster",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Top Alcohol Funny Car",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "LASD Racing",
-          "round": "Exh",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Summit JDRL Shootout",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "11:30 AM",
-          "actual": "",
-          "name": "TOP FUEL",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "FUNNY CAR",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "12:30 PM",
-          "actual": "",
-          "name": "PRO STOCK",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-3",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Summit JDRL Shootout",
-          "round": "R-2",
-          "note": ""
-        },
-        {
-          "scheduled": "2:00 PM",
-          "actual": "",
-          "name": "TOP FUEL",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "FUNNY CAR",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "3:00 PM",
-          "actual": "",
-          "name": "PRO STOCK",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "PRO STOCK MOTORCYCLE",
-          "round": "Q-4",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Top Alcohol Dragster",
-          "round": "R-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Top Alcohol Funny Car",
-          "round": "R-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "R-1",
           "note": ""
         },
         {

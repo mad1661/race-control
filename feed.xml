@@ -6,8 +6,43 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 14 Nov 2026 01:10:47 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 17:07:36 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Saturday: TOP FUEL changed from Qualifying 4 to Qualifying 2</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: TOP FUEL changed from Qualifying 4 to Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-dcc1d5f61e2264edb6fd</guid>
+      <pubDate>Sat, 14 Nov 2026 17:07:36 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: TOP FUEL Qualifying 2 moved from 2:00 PM to 11:30 AM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: TOP FUEL Qualifying 2 moved from 2:00 PM to 11:30 AM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-8b4332a8c29d0c58d207</guid>
+      <pubDate>Sat, 14 Nov 2026 17:07:36 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: FUNNY CAR changed from Qualifying 4 to Qualifying 2</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: FUNNY CAR changed from Qualifying 4 to Qualifying 2&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-4a6d976a9aebf5c2d896</guid>
+      <pubDate>Sat, 14 Nov 2026 17:07:36 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: TOP FUEL Qualifying 3 moved from 11:30 AM to 2:00 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: TOP FUEL Qualifying 3 moved from 11:30 AM to 2:00 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-467e341448c02768f43a</guid>
+      <pubDate>Sat, 14 Nov 2026 17:07:36 GMT</pubDate>
+    </item>
+    <item>
+      <title>Saturday: Stock Round 4 no longer has a set time (was 8:45 AM); it follows the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Saturday: Stock Round 4 no longer has a set time (was 8:45 AM); it follows the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-0e9e83f40b048fecbac5</guid>
+      <pubDate>Sat, 14 Nov 2026 17:07:36 GMT</pubDate>
+    </item>
     <item>
       <title>Friday: FUNNY CAR Qualifying 2 removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -322,41 +357,6 @@
       <description>&lt;p&gt;Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-a96b7dfb680d13467a23</guid>
       <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-1fe4dd6648349bf326d0</guid>
-      <pubDate>Mon, 02 Nov 2026 00:35:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-647f34052f23bb497faf</guid>
-      <pubDate>Sun, 01 Nov 2026 22:54:33 GMT</pubDate>
-    </item>
-    <item>
-      <title>Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-2b108c3340a108ffe77e</guid>
-      <pubDate>Sun, 01 Nov 2026 19:59:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>Sunday: Summit ET Finals Final removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Sunday: Summit ET Finals Final removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-9dc8cb8232e1addde958</guid>
-      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>Sunday: Parade of Champions removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Sunday: Parade of Champions removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-091b1ac93c180004bce6</guid>
-      <pubDate>Sun, 01 Nov 2026 19:44:30 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,35 @@
 [
   {
+    "guid": "race-control-dcc1d5f61e2264edb6fd",
+    "date": "2026-11-14T17:07:36.097Z",
+    "title": "Saturday: TOP FUEL changed from Qualifying 4 to Qualifying 2",
+    "description": "<p>Saturday: TOP FUEL changed from Qualifying 4 to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-8b4332a8c29d0c58d207",
+    "date": "2026-11-14T17:07:36.097Z",
+    "title": "Saturday: TOP FUEL Qualifying 2 moved from 2:00 PM to 11:30 AM",
+    "description": "<p>Saturday: TOP FUEL Qualifying 2 moved from 2:00 PM to 11:30 AM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-4a6d976a9aebf5c2d896",
+    "date": "2026-11-14T17:07:36.097Z",
+    "title": "Saturday: FUNNY CAR changed from Qualifying 4 to Qualifying 2",
+    "description": "<p>Saturday: FUNNY CAR changed from Qualifying 4 to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-467e341448c02768f43a",
+    "date": "2026-11-14T17:07:36.097Z",
+    "title": "Saturday: TOP FUEL Qualifying 3 moved from 11:30 AM to 2:00 PM",
+    "description": "<p>Saturday: TOP FUEL Qualifying 3 moved from 11:30 AM to 2:00 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-0e9e83f40b048fecbac5",
+    "date": "2026-11-14T17:07:36.097Z",
+    "title": "Saturday: Stock Round 4 no longer has a set time (was 8:45 AM); it follows the run order",
+    "description": "<p>Saturday: Stock Round 4 no longer has a set time (was 8:45 AM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-2a41a889d051bda66a5b",
     "date": "2026-11-14T01:10:47.075Z",
     "title": "Friday: FUNNY CAR Qualifying 2 removed from the run order",
@@ -268,35 +298,5 @@
     "date": "2026-11-02T00:35:30.817Z",
     "title": "Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1",
     "description": "<p>Sunday: Legacy Nitro Funny Car changed from Round 3 to Round 1</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-1fe4dd6648349bf326d0",
-    "date": "2026-11-02T00:35:30.817Z",
-    "title": "Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM",
-    "description": "<p>Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:40 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-647f34052f23bb497faf",
-    "date": "2026-11-01T22:54:33.637Z",
-    "title": "Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM",
-    "description": "<p>Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-2b108c3340a108ffe77e",
-    "date": "2026-11-01T19:59:37.847Z",
-    "title": "Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM",
-    "description": "<p>Sunday: TOP FUEL Round 2 now scheduled for 1:15 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-9dc8cb8232e1addde958",
-    "date": "2026-11-01T19:44:30.286Z",
-    "title": "Sunday: Summit ET Finals Final removed from the run order",
-    "description": "<p>Sunday: Summit ET Finals Final removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-091b1ac93c180004bce6",
-    "date": "2026-11-01T19:44:30.286Z",
-    "title": "Sunday: Parade of Champions removed from the run order",
-    "description": "<p>Sunday: Parade of Champions removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]
