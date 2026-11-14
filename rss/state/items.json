@@ -1,5 +1,53 @@
 [
   {
+    "guid": "race-control-2a41a889d051bda66a5b",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Friday: FUNNY CAR Qualifying 2 removed from the run order",
+    "description": "<p>Friday: FUNNY CAR Qualifying 2 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-7d75581b5253724a9429",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Friday: TOP FUEL Qualifying 2 removed from the run order",
+    "description": "<p>Friday: TOP FUEL Qualifying 2 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-af41f073b3fa06a4309c",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Friday: Legacy Nitro Funny Car Qualifying 2 removed from the run order",
+    "description": "<p>Friday: Legacy Nitro Funny Car Qualifying 2 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-349526fb176163f9ed1a",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Friday: Summit JDRL Shootout Qualifying 2 removed from the run order",
+    "description": "<p>Friday: Summit JDRL Shootout Qualifying 2 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-da33633ba81eaee61d92",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Friday: Secure changed from no round to Qualifying 2",
+    "description": "<p>Friday: Secure changed from no round to Qualifying 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-1730cf333a727ffaa010",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Friday: Secure Qualifying 2 now scheduled for 4:45 PM",
+    "description": "<p>Friday: Secure Qualifying 2 now scheduled for 4:45 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-7995ba234f42aa00de94",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Saturday: Summit JDRL Shootout Qualifying 2 added to the run order, after Top Sportsman Round 3",
+    "description": "<p>Saturday: Summit JDRL Shootout Qualifying 2 added to the run order, after Top Sportsman Round 3</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-4cf1e4b9418158eedb12",
+    "date": "2026-11-14T01:10:47.075Z",
+    "title": "Saturday: Stock Round 4 moved from 8:30 AM to 8:45 AM",
+    "description": "<p>Saturday: Stock Round 4 moved from 8:30 AM to 8:45 AM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-d7f76f313345c9069a2f",
     "date": "2026-11-14T01:07:45.486Z",
     "title": "Saturday: Stock Round 2 removed from the run order",
@@ -250,53 +298,5 @@
     "date": "2026-11-01T19:44:30.286Z",
     "title": "Sunday: Parade of Champions removed from the run order",
     "description": "<p>Sunday: Parade of Champions removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-fe0574d5bf7a5882af1d",
-    "date": "2026-11-01T19:44:30.286Z",
-    "title": "Sunday: Summit Sportsman ET Final added to the run order, after Pro Mod Final",
-    "description": "<p>Sunday: Summit Sportsman ET Final added to the run order, after Pro Mod Final</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-d59a18aed38bf6324796",
-    "date": "2026-11-01T19:44:30.286Z",
-    "title": "Sunday: Summit ET Motorcycle Final added to the run order, after Summit Sportsman ET Final",
-    "description": "<p>Sunday: Summit ET Motorcycle Final added to the run order, after Summit Sportsman ET Final</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-907361ec9591e2792ebe",
-    "date": "2026-11-01T19:44:30.286Z",
-    "title": "Sunday: Summit Super Pro ET Final added to the run order, after Summit ET Motorcycle Final",
-    "description": "<p>Sunday: Summit Super Pro ET Final added to the run order, after Summit ET Motorcycle Final</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-568884b671c93f33aabb",
-    "date": "2026-11-01T19:44:30.286Z",
-    "title": "Sunday: Summit Pro ET Final added to the run order, after Summit Super Pro ET Final",
-    "description": "<p>Sunday: Summit Pro ET Final added to the run order, after Summit Super Pro ET Final</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-d0b9957886f3c93ab623",
-    "date": "2026-11-01T19:44:30.286Z",
-    "title": "Sunday: Legacy Nitro Funny Car changed from Round 2 to Round 3",
-    "description": "<p>Sunday: Legacy Nitro Funny Car changed from Round 2 to Round 3</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-12d15a8ac4c91549097e",
-    "date": "2026-11-01T19:02:06.913Z",
-    "title": "Sunday: Pro Mod Round 2 added to the run order, after PRO STOCK MOTORCYCLE Round 2",
-    "description": "<p>Sunday: Pro Mod Round 2 added to the run order, after PRO STOCK MOTORCYCLE Round 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-50c0916fd523edb0449f",
-    "date": "2026-11-01T18:57:04.084Z",
-    "title": "Sunday: Pro Mod Round 2 removed from the run order",
-    "description": "<p>Sunday: Pro Mod Round 2 removed from the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-ac067e8f1e6274696638",
-    "date": "2026-11-01T18:57:04.084Z",
-    "title": "Sunday: Pro Mod Round 1 no longer has a set time (was 9:45 AM); it follows the run order",
-    "description": "<p>Sunday: Pro Mod Round 1 no longer has a set time (was 9:45 AM); it follows the run order</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

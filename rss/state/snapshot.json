@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T01:07:45.486Z",
+  "fetchedAt": "2026-11-14T01:10:47.075Z",
   "days": [
     {
       "label": "Day 1",
@@ -335,36 +335,8 @@
         {
           "scheduled": "4:45 PM",
           "actual": "4:47 PM",
-          "name": "FUNNY CAR",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "TOP FUEL",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Legacy Nitro Funny Car",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Summit JDRL Shootout",
-          "round": "Q-2",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
           "name": "Secure",
-          "round": "",
+          "round": "Q-2",
           "note": ""
         }
       ]
@@ -378,13 +350,13 @@
       "items": [
         {
           "scheduled": "8:00 AM",
-          "actual": "",
+          "actual": "8:00 AM",
           "name": "Start Engines",
           "round": "",
           "note": ""
         },
         {
-          "scheduled": "8:30 AM",
+          "scheduled": "8:45 AM",
           "actual": "",
           "name": "Stock",
           "round": "R-4",
@@ -416,6 +388,13 @@
           "actual": "",
           "name": "Top Sportsman",
           "round": "R-3",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Summit JDRL Shootout",
+          "round": "Q-2",
           "note": ""
         },
         {
