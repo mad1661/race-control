@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T00:01:00.571Z",
+  "fetchedAt": "2026-11-14T00:04:01.333Z",
   "days": [
     {
       "label": "Day 1",
@@ -319,7 +319,7 @@
           "note": ""
         },
         {
-          "scheduled": "",
+          "scheduled": "4:10 PM",
           "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-2",

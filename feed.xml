@@ -6,8 +6,15 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 14 Nov 2026 00:01:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 00:04:01 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 2 now scheduled for 4:10 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 2 now scheduled for 4:10 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-10be15b27f92d8a10390</guid>
+      <pubDate>Sat, 14 Nov 2026 00:04:01 GMT</pubDate>
+    </item>
     <item>
       <title>Friday: PRO STOCK MOTORCYCLE Qualifying 2 no longer has a set time (was 1:30 PM); it follows the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -350,13 +357,6 @@
       <description>&lt;p&gt;Saturday: Legacy Nitro Funny Car Qualifying 3 added to the run order, after Top Alcohol Funny Car Round 1&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-358aa118c6f18a2eeea4</guid>
       <pubDate>Sat, 31 Oct 2026 20:43:46 GMT</pubDate>
-    </item>
-    <item>
-      <title>Saturday: Pro Mod Qualifying 4 removed from the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Saturday: Pro Mod Qualifying 4 removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-284cf585a00c816984e9</guid>
-      <pubDate>Sat, 31 Oct 2026 20:09:02 GMT</pubDate>
     </item>
   </channel>
 </rss>
