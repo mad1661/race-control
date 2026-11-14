@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T19:14:54.772Z",
+  "fetchedAt": "2026-11-14T21:40:29.483Z",
   "days": [
     {
       "label": "Day 1",
@@ -364,35 +364,35 @@
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "11:19 AM",
           "name": "Summit JDRL Shootout",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "11:30 AM",
-          "actual": "",
+          "actual": "11:31 AM",
           "name": "TOP FUEL",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "11:57 AM",
           "name": "FUNNY CAR",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "12:30 PM",
-          "actual": "",
+          "actual": "12:53 PM",
           "name": "PRO STOCK",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:18 PM",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-3",
           "note": ""
@@ -401,13 +401,6 @@
           "scheduled": "",
           "actual": "",
           "name": "Top Alcohol Funny Car",
-          "round": "R-1",
-          "note": ""
-        },
-        {
-          "scheduled": "",
-          "actual": "",
-          "name": "Summit JDRL Shootout",
           "round": "R-1",
           "note": ""
         },
@@ -437,6 +430,13 @@
           "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-4",
+          "note": ""
+        },
+        {
+          "scheduled": "",
+          "actual": "",
+          "name": "Summit JDRL Shootout",
+          "round": "R-1",
           "note": ""
         },
         {
@@ -499,7 +499,7 @@
           "scheduled": "",
           "actual": "",
           "name": "Summit JDRL Shootout",
-          "round": "R-1",
+          "round": "Q-2",
           "note": ""
         },
         {
