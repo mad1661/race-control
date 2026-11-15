@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T00:30:37.850Z",
+  "fetchedAt": "2026-11-15T20:35:42.245Z",
   "days": [
     {
       "label": "Day 1",
@@ -441,91 +441,91 @@
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "4:38 PM",
           "name": "Legacy Nitro Funny Car",
           "round": "Q-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "4:55 PM",
           "name": "Top Alcohol Dragster",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:10 PM",
           "name": "Top Alcohol Funny Car",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:19 PM",
           "name": "Stock",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:23 PM",
           "name": "Super Comp",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:28 PM",
           "name": "Top Dragster",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:34 PM",
           "name": "Competition Eliminator",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:43 PM",
           "name": "Top Sportsman",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:49 PM",
           "name": "Summit JDRL Shootout",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "5:56 PM",
           "name": "Super Stock",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "6:00 PM",
           "name": "Super Gas",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "6:38 PM",
           "name": "Legacy Nitro Funny Car",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "7:00 PM",
           "name": "Secure",
           "round": "",
           "note": ""
@@ -541,35 +541,35 @@
       "items": [
         {
           "scheduled": "9:30 AM",
-          "actual": "",
+          "actual": "9:30 AM",
           "name": "Start Engines",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "9:45 AM",
-          "actual": "",
+          "actual": "9:45 AM",
           "name": "Pre-Race Ceremonies",
           "round": "",
           "note": ""
         },
         {
           "scheduled": "11:00 AM",
-          "actual": "",
+          "actual": "11:03 AM",
           "name": "TOP FUEL",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "11:38 AM",
           "name": "FUNNY CAR",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "12:13 PM",
           "name": "PRO STOCK",
           "round": "R-1",
           "note": ""
@@ -596,7 +596,7 @@
           "note": ""
         },
         {
-          "scheduled": "",
+          "scheduled": "1:25 PM",
           "actual": "",
           "name": "TOP FUEL",
           "round": "R-2",
