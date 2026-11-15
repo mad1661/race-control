@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T20:35:42.245Z",
+  "fetchedAt": "2026-11-15T22:01:55.319Z",
   "days": [
     {
       "label": "Day 1",
@@ -576,42 +576,42 @@
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "12:38 PM",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "12:56 PM",
           "name": "Top Alcohol Funny Car",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:00 PM",
           "name": "Top Alcohol Dragster",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "1:25 PM",
-          "actual": "",
+          "actual": "1:22 PM",
           "name": "TOP FUEL",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:39 PM",
           "name": "FUNNY CAR",
           "round": "R-2",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:54 PM",
           "name": "PRO STOCK",
           "round": "R-2",
           "note": ""
@@ -687,7 +687,7 @@
           "note": ""
         },
         {
-          "scheduled": "",
+          "scheduled": "3:05 PM",
           "actual": "",
           "name": "TOP FUEL",
           "round": "R-3",
