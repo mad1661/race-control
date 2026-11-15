@@ -1,5 +1,11 @@
 [
   {
+    "guid": "race-control-cd998480c716e20195c1",
+    "date": "2026-11-15T00:30:37.850Z",
+    "title": "Saturday: Summit JDRL Shootout changed from Qualifying 2 to Round 2",
+    "description": "<p>Saturday: Summit JDRL Shootout changed from Qualifying 2 to Round 2</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-1813de2d546eab603f47",
     "date": "2026-11-14T21:40:29.483Z",
     "title": "Saturday: Summit JDRL Shootout changed from Round 1 to Qualifying 2",
@@ -292,11 +298,5 @@
     "date": "2026-11-11T23:34:58.980Z",
     "title": "14 changes to the run order",
     "description": "<p>14 changes to the run order</p><ul><li>Thursday: Top Dragster Round 1 added to the run order, after Super Gas Round 1</li><li>Thursday: Competition Eliminator Round 1 added to the run order, after Top Dragster Round 1</li><li>Thursday: Top Sportsman Round 1 added to the run order, after Competition Eliminator Round 1</li><li>Thursday: Stock Round 2 added to the run order, after Top Sportsman Round 1</li><li>Thursday: Super Comp Round 2 added to the run order, after Stock Round 2</li><li>Thursday: Super Stock Round 2 added to the run order, after Super Comp Round 2</li><li>Thursday: Super Gas Round 2 added to the run order, after Super Stock Round 2</li><li>Thursday: Stock Qualifying 1 moved from 9:00 AM to 8:30 AM</li><li>Thursday: Top Alcohol Dragster Qualifying 1 moved from 12:30 PM to 12:00 PM</li><li>Thursday: Stock changed from Qualifying 2 to Round 1</li><li>Thursday: Super Comp changed from Time Trial 2 to Round 1</li><li>Thursday: Top Alcohol Dragster Qualifying 2 moved from 4:00 PM to 3:15 PM</li><li>Thursday: Super Stock changed from Qualifying 2 to Round 1</li><li>Thursday: Super Gas changed from Time Trial 2 to Round 1</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-56b14bb289c95e09f391",
-    "date": "2026-11-06T23:21:07.670Z",
-    "title": "Run order updated for IN-N-OUT BURGER NHRA Finals",
-    "description": "<p>Run order updated for IN-N-OUT BURGER NHRA Finals</p><ul><li>Thursday, November 12, 2026: 20 sessions</li><li>Friday, November 13, 2026: 24 sessions</li><li>Saturday, November 14, 2026: 37 sessions</li><li>Sunday, November 15, 2026: 42 sessions</li></ul><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

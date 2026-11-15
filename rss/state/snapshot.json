@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T21:40:29.483Z",
+  "fetchedAt": "2026-11-15T00:30:37.850Z",
   "days": [
     {
       "label": "Day 1",
@@ -399,42 +399,42 @@
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "1:35 PM",
           "name": "Top Alcohol Funny Car",
           "round": "R-1",
           "note": ""
         },
         {
           "scheduled": "2:00 PM",
-          "actual": "",
+          "actual": "2:10 PM",
           "name": "TOP FUEL",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:35 PM",
           "name": "FUNNY CAR",
           "round": "Q-3",
           "note": ""
         },
         {
           "scheduled": "3:00 PM",
-          "actual": "",
+          "actual": "3:48 PM",
           "name": "PRO STOCK",
           "round": "Q-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "4:08 PM",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Q-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "4:20 PM",
           "name": "Summit JDRL Shootout",
           "round": "R-1",
           "note": ""
@@ -499,7 +499,7 @@
           "scheduled": "",
           "actual": "",
           "name": "Summit JDRL Shootout",
-          "round": "Q-2",
+          "round": "R-2",
           "note": ""
         },
         {
