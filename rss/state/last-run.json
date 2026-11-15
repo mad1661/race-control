@@ -1,7 +1,7 @@
 {
-  "ok": true,
-  "at": "2026-11-15T23:24:45.142Z",
-  "error": null,
+  "ok": false,
+  "at": "2026-11-15T23:44:53.997Z",
+  "error": "tab 1167512363: The operation was aborted due to timeout after 5 tries",
   "lastOkAt": "2026-11-15T23:24:45.142Z",
-  "consecutiveFailures": 0
+  "consecutiveFailures": 1
 }
