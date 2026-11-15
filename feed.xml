@@ -6,8 +6,22 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 15 Nov 2026 22:01:55 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 22:24:38 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Sunday: Super Gas Final removed from the run order</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Super Gas Final removed from the run order&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-4990299cf1317c2ae869</guid>
+      <pubDate>Sun, 15 Nov 2026 22:24:38 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: Super Stock Final added to the run order, after Top Sportsman Final</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: Super Stock Final added to the run order, after Top Sportsman Final&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-733b38c09dd94c75c811</guid>
+      <pubDate>Sun, 15 Nov 2026 22:24:38 GMT</pubDate>
+    </item>
     <item>
       <title>Sunday: TOP FUEL Round 3 now scheduled for 3:05 PM</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -343,20 +357,6 @@
       <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 3:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-d2f86f3622638237276a</guid>
       <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: Secure changed from Round 1 to no round</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: Secure changed from Round 1 to no round&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-6e5491b384e86b4e6136</guid>
-      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
-    </item>
-    <item>
-      <title>15 changes to the run order</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;15 changes to the run order&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Friday: Competition Eliminator Round 1 removed from the run order&lt;/li&gt;&lt;li&gt;Friday: Top Sportsman Round 2 added to the run order, after Secure Round 1&lt;/li&gt;&lt;li&gt;Friday: Stock changed from Round 1 to Round 3&lt;/li&gt;&lt;li&gt;Friday: Super Comp changed from Round 1 to Round 3&lt;/li&gt;&lt;li&gt;Friday: Super Stock changed from Round 1 to Round 3&lt;/li&gt;&lt;li&gt;Friday: Super Gas changed from Round 1 to Round 3&lt;/li&gt;&lt;li&gt;Friday: Top Dragster changed from Round 1 to Round 2&lt;/li&gt;&lt;li&gt;Friday: Top Sportsman changed from Round 1 to Round 2&lt;/li&gt;&lt;li&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 1 moved from 12:00 PM to 11:00 AM&lt;/li&gt;&lt;li&gt;Friday: FUNNY CAR Qualifying 1 moved from 1:00 PM to 12:00 PM&lt;/li&gt;&lt;li&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 2:30 PM to 1:30 PM&lt;/li&gt;&lt;li&gt;Friday: FUNNY CAR Qualifying 2 moved from 3:30 PM to 2:30 PM&lt;/li&gt;&lt;li&gt;Friday: Secure changed from no round to Round 1&lt;/li&gt;&lt;li&gt;Saturday: Competition Eliminator Round 3 removed from the run order&lt;/li&gt;&lt;li&gt;Sunday: Competition Eliminator changed from Round 4 to Round 3&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-eb37deaf55cd06312282</guid>
-      <pubDate>Thu, 12 Nov 2026 18:49:19 GMT</pubDate>
     </item>
   </channel>
 </rss>
