@@ -1,5 +1,17 @@
 [
   {
+    "guid": "race-control-6cc3c93d5ad2459360d1",
+    "date": "2026-11-15T23:24:45.136Z",
+    "title": "Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:20 PM",
+    "description": "<p>Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:20 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
+    "guid": "race-control-00e49bd89fe3f4566b69",
+    "date": "2026-11-15T23:24:45.136Z",
+    "title": "Sunday: FUNNY CAR Final now scheduled for 4:30 PM",
+    "description": "<p>Sunday: FUNNY CAR Final now scheduled for 4:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
+  },
+  {
     "guid": "race-control-4990299cf1317c2ae869",
     "date": "2026-11-15T22:24:38.274Z",
     "title": "Sunday: Super Gas Final removed from the run order",
@@ -286,17 +298,5 @@
     "date": "2026-11-12T18:51:39.705Z",
     "title": "Friday: FUNNY CAR Qualifying 1 moved from 12:00 PM to 1:00 PM",
     "description": "<p>Friday: FUNNY CAR Qualifying 1 moved from 12:00 PM to 1:00 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-82aa7b5e1e521d109188",
-    "date": "2026-11-12T18:51:39.705Z",
-    "title": "Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 1:30 PM to 2:30 PM",
-    "description": "<p>Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 1:30 PM to 2:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
-  },
-  {
-    "guid": "race-control-d2f86f3622638237276a",
-    "date": "2026-11-12T18:51:39.705Z",
-    "title": "Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 3:30 PM",
-    "description": "<p>Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 3:30 PM</p><p>All run orders are subject to change. Times are shown exactly as published by the event.</p>"
   }
 ]

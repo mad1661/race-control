@@ -6,8 +6,22 @@
     <description>Changes to the race weekend run order: sessions added or removed, scheduled times, rounds and notes.</description>
     <language>en-us</language>
     <atom:link href="https://race-control-feed.web.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 15 Nov 2026 22:24:38 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 23:24:45 GMT</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+      <title>Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:20 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: PRO STOCK MOTORCYCLE Final now scheduled for 4:20 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-6cc3c93d5ad2459360d1</guid>
+      <pubDate>Sun, 15 Nov 2026 23:24:45 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sunday: FUNNY CAR Final now scheduled for 4:30 PM</title>
+      <link>https://www.nhraracer.com/racecontrol</link>
+      <description>&lt;p&gt;Sunday: FUNNY CAR Final now scheduled for 4:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
+      <guid isPermaLink="false">race-control-00e49bd89fe3f4566b69</guid>
+      <pubDate>Sun, 15 Nov 2026 23:24:45 GMT</pubDate>
+    </item>
     <item>
       <title>Sunday: Super Gas Final removed from the run order</title>
       <link>https://www.nhraracer.com/racecontrol</link>
@@ -342,20 +356,6 @@
       <link>https://www.nhraracer.com/racecontrol</link>
       <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 1 moved from 12:00 PM to 1:00 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
       <guid isPermaLink="false">race-control-8e89606498b9e52d3f1a</guid>
-      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 1:30 PM to 2:30 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: PRO STOCK MOTORCYCLE Qualifying 2 moved from 1:30 PM to 2:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-82aa7b5e1e521d109188</guid>
-      <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
-    </item>
-    <item>
-      <title>Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 3:30 PM</title>
-      <link>https://www.nhraracer.com/racecontrol</link>
-      <description>&lt;p&gt;Friday: FUNNY CAR Qualifying 2 moved from 2:30 PM to 3:30 PM&lt;/p&gt;&lt;p&gt;All run orders are subject to change. Times are shown exactly as published by the event.&lt;/p&gt;</description>
-      <guid isPermaLink="false">race-control-d2f86f3622638237276a</guid>
       <pubDate>Thu, 12 Nov 2026 18:51:39 GMT</pubDate>
     </item>
   </channel>

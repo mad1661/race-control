@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T22:24:38.274Z",
+  "fetchedAt": "2026-11-15T23:24:45.136Z",
   "days": [
     {
       "label": "Day 1",
@@ -625,7 +625,7 @@
         },
         {
           "scheduled": "",
-          "actual": "2:16 PM",
+          "actual": "2:14 PM",
           "name": "Legacy Nitro Funny Car",
           "round": "R-2",
           "note": ""
@@ -639,63 +639,63 @@
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:26 PM",
           "name": "Top Dragster",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:36 PM",
           "name": "Competition Eliminator",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:29 PM",
           "name": "Top Sportsman",
           "round": "R-4",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:32 PM",
           "name": "Super Comp",
           "round": "R-5",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:34 PM",
           "name": "Super Gas",
           "round": "R-5",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:41 PM",
           "name": "Super Stock",
           "round": "R-5",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "2:43 PM",
           "name": "LASD Racing",
           "round": "Exh",
           "note": ""
         },
         {
           "scheduled": "3:05 PM",
-          "actual": "",
+          "actual": "3:05 PM",
           "name": "TOP FUEL",
           "round": "R-3",
           "note": ""
         },
         {
           "scheduled": "",
-          "actual": "",
+          "actual": "3:11 PM",
           "name": "FUNNY CAR",
           "round": "R-3",
           "note": ""
@@ -799,7 +799,7 @@
           "note": ""
         },
         {
-          "scheduled": "",
+          "scheduled": "4:20 PM",
           "actual": "",
           "name": "PRO STOCK MOTORCYCLE",
           "round": "Final",
@@ -813,7 +813,7 @@
           "note": ""
         },
         {
-          "scheduled": "",
+          "scheduled": "4:30 PM",
           "actual": "",
           "name": "FUNNY CAR",
           "round": "Final",
