@@ -1,7 +1,7 @@
 {
   "ok": false,
-  "at": "2026-11-15T17:22:03.421Z",
-  "error": "tab 68015736: HTTP 429 after 5 tries",
+  "at": "2026-11-15T17:27:36.156Z",
+  "error": "tab 1167512363: The operation was aborted due to timeout after 5 tries",
   "lastOkAt": "2026-11-15T00:30:37.854Z",
-  "consecutiveFailures": 1
+  "consecutiveFailures": 2
 }
