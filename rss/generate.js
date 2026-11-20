@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { readXlsxGrids } = require('./xlsx-grid');
+const { readXlsxGrids, formatExcelNumber } = require('./xlsx-grid');
 
 const args = process.argv.slice(2);
 const arg = (name, def) => { const i = args.indexOf(name); return i >= 0 && args[i + 1] ? args[i + 1] : def; };
@@ -39,28 +39,106 @@ const backoff = attempt => new Promise(r => setTimeout(r, 2000 * (attempt + 1)))
 const DEADLINE = Date.now() + 210000;
 const pastDeadline = () => Date.now() > DEADLINE;
 
-// ---------- parsing (mirrors parseDay() in index.html) ----------
+// ---------- parsing (mirrors parseDay() in index.html for the Google Sheet) ----------
+// The public Sheet writes a "Thursday, November 12, 2026" string in column C.
+// A DRS workbook does not: the Excel date serial sits near column G, above
+// ELIMINATOR. A styled serial of 5 becomes "Thursday, January 04, 1900" and
+// must not win over the real serial (46338 is Thursday, November 12, 2026).
 const clean = v => String(v ?? '').trim();
 const datePattern = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), /;
+function excelSerialDate(raw) {
+  const s = clean(raw);
+  if (!/^\d+(\.\d+)?$/.test(s)) return '';
+  const n = Number(s);
+  if (!(n >= 20000 && n < 80000)) return '';
+  return formatExcelNumber(n, 'date');
+}
+function plausibleWrittenDate(raw) {
+  const s = clean(raw);
+  if (!datePattern.test(s)) return '';
+  const y = /(\d{4})\s*$/.exec(s);
+  if (!y) return s;
+  const year = Number(y[1]);
+  if (year < 2020 || year > 2100) return '';
+  return s;
+}
+function findScheduleDate(top) {
+  for (const r of top) {
+    const v = plausibleWrittenDate(r && r[2]);
+    if (v) return v;
+  }
+  let bestSerial = null;
+  let bestWritten = null;
+  for (const r of top) {
+    if (!r) continue;
+    for (let c = 0; c < r.length; c++) {
+      const serial = excelSerialDate(r[c]);
+      if (serial) {
+        const dist = Math.abs(c - 6);
+        if (!bestSerial || dist < bestSerial.dist) bestSerial = { text: serial, dist };
+      }
+      const written = plausibleWrittenDate(r[c]);
+      if (written) {
+        const dist = Math.abs(c - 6);
+        if (!bestWritten || dist < bestWritten.dist) bestWritten = { text: written, dist };
+      }
+    }
+  }
+  if (bestSerial) return bestSerial.text;
+  if (bestWritten) return bestWritten.text;
+  return '';
+}
+function titleFromTop(top, radioRow) {
+  const fromPa = clean(radioRow && radioRow[5]);
+  if (fromPa) return fromPa;
+  let name = '';
+  for (const r of top) {
+    const v = clean(r && r[5]);
+    if (!v || /^ELIMINATOR$/i.test(v) || datePattern.test(v)) continue;
+    if (v.length > name.length) name = v;
+  }
+  let powered = '';
+  for (const r of top) {
+    for (const cell of r || []) {
+      const v = clean(cell);
+      if (/^powered by\b/i.test(v)) { powered = v; break; }
+    }
+    if (powered) break;
+  }
+  if (name && powered && !name.toLowerCase().includes('powered by')) name = name + ' ' + powered;
+  return name || 'Race weekend';
+}
+function eventRadio(top, radioRow) {
+  const direct = clean(radioRow && radioRow[4]) || clean(radioRow && radioRow[2]).replace(/^PA Broadcast:\s*/i, '');
+  if (direct) return direct;
+  for (const r of top) {
+    for (const cell of r || []) {
+      const v = clean(cell);
+      if (/^\d+(\.\d+)?\s*FM$/i.test(v)) return v;
+    }
+  }
+  return '';
+}
+function cellNote(v) {
+  const s = clean(v);
+  if (!s || s === '#N/A' || /^12:00 AM$/i.test(s)) return '';
+  // DRS stores turnaround fractions in the comments column as raw numbers.
+  if (/^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/.test(s)) return '';
+  return s;
+}
 function parseDay(rows, label, gid) {
   const header = rows.findIndex(r => /^ELIMINATOR$/i.test(clean(r[5])));
   if (header < 0) throw new Error(`${label}: daily column layout has changed`);
   const top = rows.slice(0, header);
-  let date = '';
-  for (const r of top) {
-    for (const cell of r) {
-      if (datePattern.test(clean(cell))) { date = clean(cell); break; }
-    }
-    if (date) break;
-  }
+  const date = findScheduleDate(top);
   const radioRow = top.find(r => /^PA Broadcast:/i.test(clean(r[2]))) || [];
-  const title = clean(radioRow[5]) || 'Race weekend';
-  const radio = clean(radioRow[4]) || clean(radioRow[2]).replace(/^PA Broadcast:\s*/i, '');
+  const title = titleFromTop(top, radioRow);
+  const radio = eventRadio(top, radioRow);
   const items = [];
   for (const r of rows.slice(header + 1)) {
     const name = clean(r[5]);
     if (!name || name.startsWith('#')) continue;
-    items.push({ scheduled: clean(r[2]), actual: clean(r[3]), name, round: clean(r[6]), note: clean(r[11]) });
+    items.push({ scheduled: clean(r[2]), actual: clean(r[3]), name, round: clean(r[6]), note: cellNote(r[11]) });
   }
   if (!date) throw new Error(`${label}: schedule date is missing`);
   return { label, gid, date, title, radio, items };
@@ -600,6 +678,15 @@ function writeLastRun(ok, error) {
   return out;
 }
 
+function datesUnusable(snap) {
+  const days = populated(snap);
+  return days.length > 0 && days.every(d => {
+    const y = /(\d{4})\s*$/.exec(String(d.date || ''));
+    const year = y ? Number(y[1]) : 0;
+    return year < 2020 || year > 2100;
+  });
+}
+
 async function main() {
   const cur = await fetchSnapshot(); // throws (and changes nothing) if any tab fails
   const prev = fs.existsSync(SNAPSHOT) ? JSON.parse(fs.readFileSync(SNAPSHOT, 'utf8')) : null;
@@ -612,10 +699,13 @@ async function main() {
     const days = populated(cur);
     const event = eventTitle(cur) || 'Race weekend';
     changes = [{ summary: `Run order published: ${event}`, details: days.map(d => `${d.date}: ${d.items.length} sessions`) }];
-  } else if (sourceChanged) {
-    // Switching Sheets ↔ SharePoint must not text the whole list about the baseline change.
+  } else if (sourceChanged || datesUnusable(prev)) {
+    // Switching Sheets ↔ SharePoint, or replacing the Excel-epoch dates from the
+    // first SharePoint publish, must not text the list about the baseline change.
     changes = [];
-    console.log(`Schedule source changed ${prevSource} -> ${cur.scheduleSource}; baseline reset, no alert item.`);
+    console.log(sourceChanged
+      ? `Schedule source changed ${prevSource} -> ${cur.scheduleSource}; baseline reset, no alert item.`
+      : 'Schedule dates corrected from an unusable baseline; no alert item.');
   } else {
     changes = diffSnapshots(prev, cur);
   }
